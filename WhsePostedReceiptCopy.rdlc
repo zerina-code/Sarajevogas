@@ -1,0 +1,256 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="Assgnd_PostedWhseRcpHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Assgnd_PostedWhseRcpHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Assgnd_PostedWhseRcpHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LocCode_PostedWhseRcpHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LocCode_PostedWhseRcpHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LocCode_PostedWhseRcpHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="No_PostedWhseRcpHeaderCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>No_PostedWhseRcpHeaderCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>No_PostedWhseRcpHeaderCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ShelfNo_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ShelfNo_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ShelfNo_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ItemNo_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ItemNo_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ItemNo_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Desc_PostedWhseRcptLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Desc_PostedWhseRcptLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Desc_PostedWhseRcptLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="UOM_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>UOM_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>UOM_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LocCode_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LocCode_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LocCode_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="Qty_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>Qty_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>Qty_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SourceNo_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SourceNo_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SourceNo_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="SourceDoc_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>SourceDoc_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>SourceDoc_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="ZoneCode_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>ZoneCode_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>ZoneCode_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="BinCode_PostedWhseRcpLineCaption">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>BinCode_PostedWhseRcpLineCaption</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>BinCode_PostedWhseRcpLineCaption</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="Assgnd_PostedWhseRcpHeader">
+          <DataField>Assgnd_PostedWhseRcpHeader</DataField>
+        </Field>
+        <Field Name="LocCode_PostedWhseRcpHeader">
+          <DataField>LocCode_PostedWhseRcpHeader</DataField>
+        </Field>
+        <Field Name="No_PostedWhseRcpHeader">
+          <DataField>No_PostedWhseRcpHeader</DataField>
+        </Field>
+        <Field Name="BinMandatoryShow1">
+          <DataField>BinMandatoryShow1</DataField>
+        </Field>
+        <Field Name="BinMandatoryShow2">
+          <DataField>BinMandatoryShow2</DataField>
+        </Field>
+        <Field Name="CurrReportPageNoCaption">
+          <DataField>CurrReportPageNoCaption</DataField>
+        </Field>
+        <Field Name="WarehousePostedReceiptCaption">
+          <DataField>WarehousePostedReceiptCaption</DataField>
+        </Field>
+        <Field Name="VendorShipmentNo">
+          <DataField>VendorShipmentNo</DataField>
+        </Field>
+        <Field Name="ShelfNo_PostedWhseRcpLine">
+          <DataField>ShelfNo_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="ItemNo_PostedWhseRcpLine">
+          <DataField>ItemNo_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="Desc_PostedWhseRcptLine">
+          <DataField>Desc_PostedWhseRcptLine</DataField>
+        </Field>
+        <Field Name="UOM_PostedWhseRcpLine">
+          <DataField>UOM_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="LocCode_PostedWhseRcpLine">
+          <DataField>LocCode_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseRcpLine">
+          <DataField>Qty_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseRcpLineFormat">
+          <DataField>Qty_PostedWhseRcpLineFormat</DataField>
+        </Field>
+        <Field Name="SourceNo_PostedWhseRcpLine">
+          <DataField>SourceNo_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="SourceDoc_PostedWhseRcpLine">
+          <DataField>SourceDoc_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="ZoneCode_PostedWhseRcpLine">
+          <DataField>ZoneCode_PostedWhseRcpLine</DataField>
+        </Field>
+        <Field Name="BinCode_PostedWhseRcpLine">
+          <DataField>BinCode_PostedWhseRcpLine</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,242 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAdress">
+          <DataField>CompanyAdress</DataField>
+        </Field>
+        <Field Name="JIB">
+          <DataField>JIB</DataField>
+        </Field>
+        <Field Name="Municipiality">
+          <DataField>Municipiality</DataField>
+        </Field>
+        <Field Name="Picture">
+          <DataField>Picture</DataField>
+        </Field>
+        <Field Name="StartDate">
+          <DataField>StartDate</DataField>
+        </Field>
+        <Field Name="EndDate">
+          <DataField>EndDate</DataField>
+        </Field>
+        <Field Name="pioiz">
+          <DataField>pioiz</DataField>
+        </Field>
+        <Field Name="pioizFormat">
+          <DataField>pioizFormat</DataField>
+        </Field>
+        <Field Name="dpioiz">
+          <DataField>dpioiz</DataField>
+        </Field>
+        <Field Name="dpioizFormat">
+          <DataField>dpioizFormat</DataField>
+        </Field>
+        <Field Name="zdraviz">
+          <DataField>zdraviz</DataField>
+        </Field>
+        <Field Name="zdravizFormat">
+          <DataField>zdravizFormat</DataField>
+        </Field>
+        <Field Name="dzdraviz">
+          <DataField>dzdraviz</DataField>
+        </Field>
+        <Field Name="dzdravizFormat">
+          <DataField>dzdravizFormat</DataField>
+        </Field>
+        <Field Name="nezapiz">
+          <DataField>nezapiz</DataField>
+        </Field>
+        <Field Name="nezapizFormat">
+          <DataField>nezapizFormat</DataField>
+        </Field>
+        <Field Name="ukupno">
+          <DataField>ukupno</DataField>
+        </Field>
+        <Field Name="ukupnoFormat">
+          <DataField>ukupnoFormat</DataField>
+        </Field>
+        <Field Name="ukupnoS">
+          <DataField>ukupnoS</DataField>
+        </Field>
+        <Field Name="ukupnoSFormat">
+          <DataField>ukupnoSFormat</DataField>
+        </Field>
+        <Field Name="Tax">
+          <DataField>Tax</DataField>
+        </Field>
+        <Field Name="TaxFormat">
+          <DataField>TaxFormat</DataField>
+        </Field>
+        <Field Name="piona">
+          <DataField>piona</DataField>
+        </Field>
+        <Field Name="pionaFormat">
+          <DataField>pionaFormat</DataField>
+        </Field>
+        <Field Name="dpiona">
+          <DataField>dpiona</DataField>
+        </Field>
+        <Field Name="dpionaFormat">
+          <DataField>dpionaFormat</DataField>
+        </Field>
+        <Field Name="zdravna">
+          <DataField>zdravna</DataField>
+        </Field>
+        <Field Name="zdravnaFormat">
+          <DataField>zdravnaFormat</DataField>
+        </Field>
+        <Field Name="dzdravna">
+          <DataField>dzdravna</DataField>
+        </Field>
+        <Field Name="dzdravnaFormat">
+          <DataField>dzdravnaFormat</DataField>
+        </Field>
+        <Field Name="nezapna">
+          <DataField>nezapna</DataField>
+        </Field>
+        <Field Name="nezapnaFormat">
+          <DataField>nezapnaFormat</DataField>
+        </Field>
+        <Field Name="dnezapna">
+          <DataField>dnezapna</DataField>
+        </Field>
+        <Field Name="dnezapnaFormat">
+          <DataField>dnezapnaFormat</DataField>
+        </Field>
+        <Field Name="dnezapiz">
+          <DataField>dnezapiz</DataField>
+        </Field>
+        <Field Name="dnezapizFormat">
+          <DataField>dnezapizFormat</DataField>
+        </Field>
+        <Field Name="UkupnoNa">
+          <DataField>UkupnoNa</DataField>
+        </Field>
+        <Field Name="UkupnoNaFormat">
+          <DataField>UkupnoNaFormat</DataField>
+        </Field>
+        <Field Name="UkupnoSNa">
+          <DataField>UkupnoSNa</DataField>
+        </Field>
+        <Field Name="UkupnoSNaFormat">
+          <DataField>UkupnoSNaFormat</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="PostOffice">
+          <DataField>PostOffice</DataField>
+        </Field>
+        <Field Name="SumE">
+          <DataField>SumE</DataField>
+        </Field>
+        <Field Name="DirectBrutto">
+          <DataField>DirectBrutto</DataField>
+        </Field>
+        <Field Name="DirectBruttoFormat">
+          <DataField>DirectBruttoFormat</DataField>
+        </Field>
+        <Field Name="IndirectBrutto">
+          <DataField>IndirectBrutto</DataField>
+        </Field>
+        <Field Name="IndirectBruttoFormat">
+          <DataField>IndirectBruttoFormat</DataField>
+        </Field>
+        <Field Name="ExactBrutto">
+          <DataField>ExactBrutto</DataField>
+        </Field>
+        <Field Name="ExactBruttoFormat">
+          <DataField>ExactBruttoFormat</DataField>
+        </Field>
+        <Field Name="IC">
+          <DataField>IC</DataField>
+        </Field>
+        <Field Name="IDMonth">
+          <DataField>IDMonth</DataField>
+        </Field>
+        <Field Name="IDYear">
+          <DataField>IDYear</DataField>
+        </Field>
+        <Field Name="IDMonthText">
+          <DataField>IDMonthText</DataField>
+        </Field>
+        <Field Name="IDYearText">
+          <DataField>IDYearText</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

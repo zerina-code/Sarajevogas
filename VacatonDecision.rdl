@@ -1,0 +1,1655 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+      <rd:DataSourceID>2ca40a08-007c-45d7-9ec3-b22ee025b2ff</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <ReportItems>
+          <Tablix Name="Tablix3">
+            <TablixBody>
+              <TablixColumns>
+                <TablixColumn>
+                  <Width>6.48595in</Width>
+                </TablixColumn>
+              </TablixColumns>
+              <TablixRows>
+                <TablixRow>
+                  <Height>6.15236in</Height>
+                  <TablixCells>
+                    <TablixCell>
+                      <CellContents>
+                        <Rectangle Name="Rectangle4">
+                          <ReportItems>
+                            <Textbox Name="Textbox6">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Broj: </Value>
+                                      <Style>
+                                        <FontWeight>Normal</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!BrojDokumenta.Value+"/"+Fields!ShortYear.value</Value>
+                                      <Style>
+                                        <FontWeight>Normal</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>2.13466cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>0.5559cm</Height>
+                              <Width>16.41201cm</Width>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox7">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Sarajevo, </Value>
+                                      <Style>
+                                        <FontWeight>Normal</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=Fields!DatumRjesenjaT.Value</Value>
+                                      <Style>
+                                        <FontWeight>Normal</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value> godine</Value>
+                                      <Style>
+                                        <FontWeight>Normal</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox1</rd:DefaultName>
+                              <Top>2.69056cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>0.52061cm</Height>
+                              <Width>16.42084cm</Width>
+                              <ZIndex>1</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox8">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=REPLACE(REPLACE(Code.TextOnlyJustify("U skladu sa Zakonom o radu (''Službene novine F BiH'', broj 26/16 i 89/18) i članovima 37. i 38. Pravilnika o radu, a na osnovu člana 47. Statuta KJKP ''Sarajevogas''-a d.o.o. Sarajevo, @donosim?", new System.Drawing.Font("Arial",10), false,640),"@","&lt;b&gt;"),"?","&lt;/b&gt;")</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>3.53397cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>0.59822cm</Height>
+                              <Width>16.44779cm</Width>
+                              <ZIndex>2</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox36">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>R J E Š E NJ E</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>o korištenju godišnjeg odmora</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox10</rd:DefaultName>
+                              <Top>1.66851in</Top>
+                              <Left>0.01044in</Left>
+                              <Height>0.475in</Height>
+                              <Width>6.46142in</Width>
+                              <ZIndex>3</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox37">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Code.TextOnlyJustify("Radniku "+Fields!FirstName.Value+" "+Fields!LastName.Value+" - "+Fields!Position.Value+" - " +Fields!Sector.value+" u KJKP ''Sarajevogas'' d.o.o. određuje se godišnji odmor za "+FORMAT(Fields!Year1.Value)+" godinu "+" u trajanju od "+FORMAT(Fields!Total_days.Value)+" radnih dana.", new System.Drawing.Font("Arial",10), false,640)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>5.69147cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>0.52061cm</Height>
+                              <Width>16.39436cm</Width>
+                              <ZIndex>4</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox38">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>DUŽINA GODIŠNJEG ODMORA UTVRĐUJE SE PO SLJEDEĆIM OSNOVAMA I MJERILIMA:</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>6.38847cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>0.56294cm</Height>
+                              <Width>16.41201cm</Width>
+                              <ZIndex>5</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox40">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Član 2.</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox10</rd:DefaultName>
+                              <Top>3.27786in</Top>
+                              <Left>0.01044in</Left>
+                              <Height>0.16389in</Height>
+                              <Width>6.46142in</Width>
+                              <ZIndex>6</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox41">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>RADNIK ĆE KORISTITI GODIŠNJI ODMOR U DVA DIJELA:</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>8.88316cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>0.44661cm</Height>
+                              <Width>16.42108cm</Width>
+                              <ZIndex>7</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox42">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Dostaviti:</Value>
+                                      <Style>
+                                        <FontSize>7pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox21</rd:DefaultName>
+                              <Top>14.00879cm</Top>
+                              <Left>0.15cm</Left>
+                              <Height>0.6cm</Height>
+                              <Width>2.52118cm</Width>
+                              <ZIndex>8</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                                <PaddingLeft>2pt</PaddingLeft>
+                                <PaddingRight>2pt</PaddingRight>
+                                <PaddingTop>2pt</PaddingTop>
+                                <PaddingBottom>2pt</PaddingBottom>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox43">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>- Radniku</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>- U dosije radnika</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>- Sektor ekonomike</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>- Sektor __________</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>- Arhiva</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontSize>7pt</FontSize>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox24</rd:DefaultName>
+                              <Top>14.00879cm</Top>
+                              <Left>2.74173cm</Left>
+                              <Height>1.61819cm</Height>
+                              <Width>4.17193cm</Width>
+                              <ZIndex>9</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox44">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Direktor:</Value>
+                                      <Style>
+                                        <FontWeight>Bold</FontWeight>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox21</rd:DefaultName>
+                              <Top>12.56892cm</Top>
+                              <Left>12.57783cm</Left>
+                              <Height>0.4871cm</Height>
+                              <Width>3.89648cm</Width>
+                              <ZIndex>10</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox35">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(REPLACE(Code.TextOnlyJustify("Prvi dio radnik će koristiti od? "+Format(Fields!StartFirstpart.value)+" godine do "+Format(Fields!EndFirstpart.value)+" godine?("+format(Fields!FirstPart.value)+" radna dana), s tim da se javi na posao; "+FORMAT(Fields!DanJavljanjanaposaoT.Value)+" godine, dok će drugi dio?("+FORMAT(Fields!DrugiDioDana.Value)+" radnih dana) koristiti u terminu koji će biti naknadno određen"+Fields!Izvrsni.value+"." + "&lt;br&gt; Radnik je ranije iskoristio "+format(Fields!Used_Days.value)+" dan/a godišnjeg odmora.", new System.Drawing.Font("Arial",10), false,640),"dio?(","dio &lt;b&gt;("),"od?","od&lt;b&gt;"),"dana)","dana)&lt;/b&gt;"),"posao","posao"),"godine,","godine,&lt;/b&gt;"),"dana)","dana)"),",","&lt;b&gt;,&lt;/b&gt;"),"godine?(","&lt;/b&gt;&lt;b&gt;godine ("),";","&lt;b&gt;")</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <SpaceBefore>0pt</SpaceBefore>
+                                  <SpaceAfter>0pt</SpaceAfter>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value />
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <SpaceBefore>0pt</SpaceBefore>
+                                  <SpaceAfter>0pt</SpaceAfter>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox35</rd:DefaultName>
+                              <Top>9.32977cm</Top>
+                              <Height>0.44478cm</Height>
+                              <Width>16.47431cm</Width>
+                              <ZIndex>11</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox9">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Zakonski minimum</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Prema dužini radnog staža</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Posebni uslovi rada</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Za socijalne uslove - Invalidnost</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Samohrani roditelj mlbd. djeteta</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Majka sa 1 ili više djece do 7 godina života</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>-  Po osnovu učešća u oružanim snagama</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value xml:space="preserve">  </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value> UKUPNO:</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style />
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>6.98669cm</Top>
+                              <Left>0.02652cm</Left>
+                              <Height>1.16268cm</Height>
+                              <Width>8.04543cm</Width>
+                              <ZIndex>12</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox46">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value xml:space="preserve">  </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!Legal_Grounds.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!WorkEXpDays.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!SpecialCircumstances.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!Disability.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!SingleParent.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value xml:space="preserve"> </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!MotherWithMoreCH.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!Millitary.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radnih dana             </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=FORMAT(Fields!Total_days.Value)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value>   Radna dana   </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                    <TextRun>
+                                      <Value xml:space="preserve">          </Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Right</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox8</rd:DefaultName>
+                              <Top>6.98669cm</Top>
+                              <Left>8.24834cm</Left>
+                              <Height>1.10624cm</Height>
+                              <Width>8.17254cm</Width>
+                              <ZIndex>13</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox47">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Član 3.</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox10</rd:DefaultName>
+                              <Top>3.87603in</Top>
+                              <Left>0.05324cm</Left>
+                              <Height>0.16389in</Height>
+                              <Width>6.46499in</Width>
+                              <ZIndex>14</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox39">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Code.TextOnlyJustify("Radnik ima pravo koristiti jedan /1/ dan godišnjeg odmora kad on to želi, s tim da o tome pismeno obavijesti neposrednog rukovodioca najmanje tri dana prije njegovog korištenja."+"                                                                              "+"Osim jednog dana iz stava 1. ovog člana, radnik ima pravo na korištenje ukupno dva /2/ dana godišnjeg odmora u kalendarskoj godini tokom vjerskog praznika Bajrama ili Božića, s tim da o tome pismeno obavijesti neposrednog rukovodioca najmanje tri dana prije njegovog korištenja." +"                                                                              "+"U slučaju kada radnik iskoristi neki od dana iz stava 1. i 2. ovog člana, skraćuje mu se drugi dio godišnjeg odmora za broj dana koje je radnik po tom osnovu iskoristio.", new System.Drawing.Font("Arial",10), false,640)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox35</rd:DefaultName>
+                              <Top>10.36723cm</Top>
+                              <Left>0.05324cm</Left>
+                              <Height>0.45674cm</Height>
+                              <Width>16.42107cm</Width>
+                              <ZIndex>15</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox48">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>Član 4.</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Bold</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Center</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox10</rd:DefaultName>
+                              <Top>4.28919in</Top>
+                              <Left>0.05324cm</Left>
+                              <Height>0.16389in</Height>
+                              <Width>6.46499in</Width>
+                              <ZIndex>16</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Textbox Name="Textbox49">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Code.TextOnlyJustify("Za vrijeme korištenja godišnjeg odmora radniku će se isplaćivati naknada plaće u skladu sa važećim propisima i opštim aktima preduzeća.", new System.Drawing.Font("Arial",10), false,640)</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>General</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=REPLACE(REPLACE(Code.TextOnlyJustify("'POUKA O PRAVNOM LIJEKU,: Protiv ovog Rješenja radnik može podnijeti prigovor Upravi Preduzeća u roku od 30 dana od dana prijema istog.", new System.Drawing.Font("Arial",10), false,640),"'","&lt;b&gt;"),",","&lt;/b&gt;")</Value>
+                                      <MarkupType>HTML</MarkupType>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>General</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox35</rd:DefaultName>
+                              <Top>11.41664cm</Top>
+                              <Left>0.05324cm</Left>
+                              <Height>0.43416cm</Height>
+                              <Width>16.42107cm</Width>
+                              <ZIndex>17</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                            <Image Name="Image1">
+                              <Source>Database</Source>
+                              <Value>=Fields!Company_logo.Value</Value>
+                              <MIMEType>image/jpeg</MIMEType>
+                              <Sizing>Fit</Sizing>
+                              <Top>0.15972in</Top>
+                              <Left>1.54588in</Left>
+                              <Height>0.46667in</Height>
+                              <Width>3.39167in</Width>
+                              <ZIndex>18</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Image>
+                            <Line Name="Line2">
+                              <Top>13.8324cm</Top>
+                              <Left>0.15cm</Left>
+                              <Height>0cm</Height>
+                              <Width>16.32431cm</Width>
+                              <ZIndex>19</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Line>
+                            <Line Name="Line1">
+                              <Top>0.76785in</Top>
+                              <Left>0.01044in</Left>
+                              <Height>0in</Height>
+                              <Width>6.46499in</Width>
+                              <ZIndex>20</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>Solid</Style>
+                                </Border>
+                              </Style>
+                            </Line>
+                            <Textbox Name="Textbox45">
+                              <CanGrow>true</CanGrow>
+                              <KeepTogether>true</KeepTogether>
+                              <Paragraphs>
+                                <Paragraph>
+                                  <TextRuns>
+                                    <TextRun>
+                                      <Value>=Fields!Director.Value</Value>
+                                      <Style>
+                                        <FontStyle>Normal</FontStyle>
+                                        <FontWeight>Normal</FontWeight>
+                                        <TextDecoration>None</TextDecoration>
+                                        <Color>#000000</Color>
+                                      </Style>
+                                    </TextRun>
+                                  </TextRuns>
+                                  <Style>
+                                    <TextAlign>Left</TextAlign>
+                                  </Style>
+                                </Paragraph>
+                              </Paragraphs>
+                              <rd:DefaultName>Textbox21</rd:DefaultName>
+                              <Top>13.23241cm</Top>
+                              <Left>12.57783cm</Left>
+                              <Height>0.4236cm</Height>
+                              <Width>3.89648cm</Width>
+                              <ZIndex>21</ZIndex>
+                              <Style>
+                                <Border>
+                                  <Style>None</Style>
+                                </Border>
+                              </Style>
+                            </Textbox>
+                          </ReportItems>
+                          <KeepTogether>true</KeepTogether>
+                          <Style>
+                            <Border>
+                              <Style>None</Style>
+                            </Border>
+                          </Style>
+                        </Rectangle>
+                      </CellContents>
+                    </TablixCell>
+                  </TablixCells>
+                </TablixRow>
+              </TablixRows>
+            </TablixBody>
+            <TablixColumnHierarchy>
+              <TablixMembers>
+                <TablixMember />
+              </TablixMembers>
+            </TablixColumnHierarchy>
+            <TablixRowHierarchy>
+              <TablixMembers>
+                <TablixMember>
+                  <Group Name="Details" />
+                </TablixMember>
+              </TablixMembers>
+            </TablixRowHierarchy>
+            <DataSetName>DataSet_Result</DataSetName>
+            <Top>0.00222in</Top>
+            <Left>0in</Left>
+            <Height>6.15236in</Height>
+            <Width>6.48595in</Width>
+            <Style>
+              <Border>
+                <Style>None</Style>
+              </Border>
+            </Style>
+          </Tablix>
+        </ReportItems>
+        <Height>15.63263cm</Height>
+        <Style />
+      </Body>
+      <Width>16.47431cm</Width>
+      <Page>
+        <PageHeight>27.94cm</PageHeight>
+        <PageWidth>21.59cm</PageWidth>
+        <LeftMargin>2.5cm</LeftMargin>
+        <RightMargin>2.5cm</RightMargin>
+        <TopMargin>1cm</TopMargin>
+        <BottomMargin>1cm</BottomMargin>
+        <ColumnSpacing>1.27cm</ColumnSpacing>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function TextOnlyJustify(text As String, font As System.Drawing.Font, bIndent As Boolean, width As Single) As String
+    Dim bmp As New System.Drawing.Bitmap(1024, 1024)
+    Dim gr = System.Drawing.Graphics.FromImage(bmp)
+    Dim sRtn As New System.Text.StringBuilder()
+ 
+    Dim paragraphs As String() = text.Split(ControlChars.NewLine)
+ 
+    For Each paragraph As String In paragraphs
+        Dim words As String() = paragraph.Split(" "C)
+        Dim start_word As Integer = 0
+        Dim indent As Single =If(bIndent, 40F, 0F)
+ 
+        ' Repeat until we run out of text or room.
+        While True
+            ' See how many words will fit.
+            ' Start with just the next word.
+            Dim line As String = words(start_word)
+ 
+            ' Add more words until the line won't fit.
+            Dim end_word As Integer = start_word + 1
+            While end_word &lt; words.Length
+                ' See if the next word fits.
+                Dim test_line As String = (line &amp; Convert.ToString(" ")) + words(end_word)
+                Dim line_size As System.Drawing.SizeF = gr.MeasureString(test_line, font)
+                If line_size.Width  &gt; width Then
+                    ' The line is too wide. Don't use the last word.
+                    end_word -= 1
+                    Exit While
+                Else
+                    ' The word fits. Save the test line.
+                    line = test_line
+                End If
+ 
+                ' Try the next word.
+                end_word += 1
+            End While
+ 
+            ' See if this is the last line in the paragraph.
+            If (end_word = words.Length) Then
+                ' This is the last line. Don't justify it.
+                sRtn.Append(line)
+            Else
+                ' This is not the last line. Justify it.
+ 
+                sRtn.Append(TextLine(gr, line, font, width , True))
+            End If
+ 
+            ' Start the next line at the next word.
+            start_word = end_word + 1
+            If start_word &gt;= words.Length Then
+                Exit While
+            End If
+ 
+            ' Don't indent subsequent lines in this paragraph.
+            indent = 0
+        End While
+ 
+        ' Add a gap after the paragraph.
+        sRtn.Append(vbLf &amp; vbCr)
+    Next
+ 
+    Return sRtn.ToString()
+End Function
+
+Public Function TextLine(gr As System.Drawing.Graphics, line As String, font As System.Drawing.Font, width As Single, justification As Boolean) As String
+    Dim sLine As New System.Text.StringBuilder()
+    ' See if we should use full justification.
+    If justification Then
+        ' Justify the text.
+        ' Break the text into words.
+        Dim words As String() = line.Split(" "c)
+ 
+        ' Add a space to each word and get their lengths.
+        Dim word_width As Single() = New Single(words.Length - 1) {}
+        Dim total_width As Single = 0
+        For i As Integer = 0 To words.Length - 1
+            ' See how wide this word is.
+            Dim size As System.Drawing.SizeF = gr.MeasureString(words(i), font)
+            word_width(i) = size.Width
+            total_width += word_width(i)
+        Next
+ 
+        ' Get the additional spacing between words.
+        Dim extra_space As Single = width - total_width
+        Dim num_spaces As Integer = words.Length - 1
+        If words.Length &gt; 1 Then
+            extra_space /= (num_spaces-1)
+        End If
+ 
+        For i2 As Integer = 1 To 100
+            Dim sTest As String = line.Replace(" ", New String(ChrW(&amp;H200A), i2))
+            If gr.MeasureString(sTest, font).Width &gt; width Then
+ 
+                For i3 As Integer = words.Length To 1 Step -1
+                    sTest = line.Replace(" ", New String(ChrW(&amp;H200A), i2 - 1))
+                    Dim sTemp = ReplaceSome(sTest, New String(ChrW(&amp;H200A), i2 - 1), New String(ChrW(&amp;H200A), i2), i3)
+                    If gr.MeasureString(sTemp, font).Width &lt; width Then
+                        Console.WriteLine("{0}, size: {1}", line, gr.MeasureString(sTemp, font).Width)
+                        Return sTemp + ControlChars.CrLf
+                    End If
+                Next
+ 
+                Console.WriteLine("{0}, size: {1}", line, gr.MeasureString(line.Replace(" ", New String(ChrW(&amp;H200A), i2 - 1)), font).Width)
+                Return line.Replace(" ", New String(ChrW(&amp;H200A), i2 - 1)) + ControlChars.CrLf
+            End If
+        Next
+ 
+ 
+    Else
+        Return line
+    End If
+End Function
+
+Private Function ReplaceSome(s As String, repl As String, wth As String, num As Integer) As String
+ 
+    ReplaceSome = String.Empty
+    Dim s2 As String() = s.Split(repl, num, StringSplitOptions.RemoveEmptyEntries)
+ 
+    For t As Integer = 0 To s2.Length - 2
+        ReplaceSome += s2(t) + wth
+    Next
+ 
+    ReplaceSome += s2(s2.Length - 1)
+End Function
+
+
+Public Function picText_Paint(text As String, sizeX As Integer, sizeY As Integer, resolution As Integer, LineSpacing As Single, ExtraParagraphSpacing As Single, font As System.Drawing.Font, TextMargin As System.Windows.Forms.Padding, colorBrush As System.Drawing.Brush) As Byte()
+    'Create a temporary bitmap in memory to use as the drawing surface. Use provided size (in Px) taking difference between desired
+    'resolution and default screen based resolution. This should provide a better quality image for printing without using all of the
+    'machine's memory to render the image.
+ 
+    'If an error occurs due to the image sizing and memory, a "can't load this image" x will appear in this image's place on report
+ 
+    sizeX *= (resolution / 96)
+    sizeY *= (resolution / 96)
+ 
+    Dim bmp As New System.Drawing.Bitmap(sizeX, sizeY, Drawing.Imaging.PixelFormat.Format32bppArgb)
+    bmp.SetResolution(resolution, resolution)
+ 
+    'Create the graphics object for drawing from that temp bitmap and blank out the background.
+    Dim g As System.Drawing.Graphics = System.Drawing.Graphics.FromImage(bmp)
+ 
+    'Set high quality rendering all around. If not smooth enough, try killing transparent background by clearing graphics with white.
+    g.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SingleBitPerPixelGridFit
+    g.SmoothingMode = Drawing.Drawing2D.SmoothingMode.HighQuality
+    g.InterpolationMode = Drawing.Drawing2D.InterpolationMode.HighQualityBicubic
+    g.CompositingQuality = Drawing.Drawing2D.CompositingQuality.HighQuality
+ 
+ 
+    ' Draw within a rectangle excluding the margins.
+    Dim rect As New System.Drawing.RectangleF(TextMargin.Left, TextMargin.Top, sizeX - TextMargin.Left - TextMargin.Right, sizeY - TextMargin.Top - TextMargin.Bottom)
+ 
+    'Draw the paragraphs of the provided text. This will split and loop using carriage return/line feed.
+    rect = DrawParagraphs(g, rect, font, colorBrush, text, LineSpacing, 0, ExtraParagraphSpacing)
+ 
+    'Use a memory stream to write the bitmap to an array of bytes
+    Dim stream As System.IO.MemoryStream = New IO.MemoryStream
+    Dim bitmapBytes As Byte()
+ 
+    bmp.Save(stream, Drawing.Imaging.ImageFormat.Png)
+    bitmapBytes = stream.ToArray
+    stream.Dispose()
+    bmp.Dispose()
+    g.Dispose()
+    Return bitmapBytes
+ 
+End Function
+
+Private Function DrawParagraphs(gr As System.Drawing.Graphics, rect As System.Drawing.RectangleF, font As System.Drawing.Font, brush As System.Drawing.Brush, text As String, line_spacing As Single, indent As Single, paragraph_spacing As Single) As System.Drawing.RectangleF
+    ' Split the text into paragraphs.
+    Dim paragraphs As String() = text.Split(ControlChars.Lf)
+ 
+    ' Draw each paragraph.
+    For Each paragraph As String In paragraphs
+        ' Draw the paragraph keeping track of remaining space.
+        rect = DrawParagraph(gr, rect, font, brush, paragraph,
+        line_spacing, indent, paragraph_spacing)
+ 
+        ' See if there's any room left.
+        If rect.Height &lt; gr.MeasureString("Hi", font).Height Then
+            Exit For
+        End If
+    Next
+ 
+    Return rect
+End Function
+
+Private Function DrawParagraph(gr As System.Drawing.Graphics, rect As System.Drawing.RectangleF, font As System.Drawing.Font, brush As System.Drawing.Brush, text As String, line_spacing As Single, indent As Single, extra_paragraph_spacing As Single) As System.Drawing.RectangleF
+        ' Get the coordinates for the first line.
+        Dim y As Single = rect.Top
+ 
+        ' Break the text into words.
+        Dim words As String() = text.Split(" "c)
+        Dim start_word As Integer = 0
+        Dim fh As Single
+ 
+        ' Repeat until we run out of text or room.
+        While True
+            ' See how many words will fit.
+            ' Start with just the next word.
+            Dim line As String = words(start_word)
+ 
+            ' Add more words until the line won't fit.
+            Dim end_word As Integer = start_word + 1
+            While end_word &lt; words.Length
+                ' See if the next word fits.
+                Dim test_line As String = (line &amp; Convert.ToString(" ")) + words(end_word)
+                Dim line_size As System.Drawing.SizeF = gr.MeasureString(test_line, font)
+                fh = line_size.Height
+                If line_size.Width + indent &gt; rect.Width Then
+                    ' The line is too wide. Don't use the last word.
+                    end_word -= 1
+                    Exit While
+                Else
+                    ' The word fits. Save the test line.
+                    line = test_line
+                End If
+ 
+                ' Try the next word.
+                end_word += 1
+            End While
+ 
+            ' See if this is the last line in the paragraph.
+            If (end_word = words.Length) Then
+                ' This is the last line. Don't justify it.
+                DrawLine(gr, line, font, brush, rect.Left + indent, y,
+                rect.Width - indent, False)
+            Else
+                ' This is not the last line. Justify it.
+                DrawLine(gr, line, font, brush, rect.Left + indent, y,
+                rect.Width - indent, True)
+            End If
+ 
+            ' Move down to draw the next line.
+            y += fh * line_spacing
+ 
+            ' Make sure there's room for another line.
+            If fh &gt; rect.Height Then
+                Exit While
+            End If
+ 
+            ' Start the next line at the next word.
+            start_word = end_word + 1
+            If start_word &gt;= words.Length Then
+                Exit While
+            End If
+ 
+            ' Don't indent subsequent lines in this paragraph.
+            indent = 0
+        End While
+ 
+        ' Add a gap after the paragraph.
+        y += fh * extra_paragraph_spacing
+ 
+        ' Return a RectangleF representing any unused
+        ' space in the original RectangleF.
+        Dim height As Single = rect.Bottom - y
+        If height &lt; 0 Then
+            height = 0
+        End If
+        Return New System.Drawing.RectangleF(rect.X, y, rect.Width, height)
+    End Function
+
+Private Sub DrawLine(gr As System.Drawing.Graphics, line As String, font As System.Drawing.Font, brush As System.Drawing.Brush, x As Single, y As Single,
+width As Single, justification As Boolean)
+    ' Make a rectangle to hold the text.
+    Dim rect As New System.Drawing.RectangleF(x, y, width, gr.MeasureString(line, font).Height)
+ 
+ 
+ 
+    ' See if we should use full justification.
+    If justification Then
+        ' Justify the text.
+        Dim words As String() = line.Split(" "c)
+ 
+        ' Add a space to each word and get their lengths.
+        Dim word_width As Single() = New Single(words.Length - 1) {}
+        Dim total_width As Single = 0
+        For i As Integer = 0 To words.Length - 1
+            ' See how wide this word is.
+            Dim size As System.Drawing.SizeF = gr.MeasureString(words(i), font)
+            word_width(i) = size.Width
+            total_width += word_width(i)
+        Next
+ 
+        ' Get the additional spacing between words.
+        Dim extra_space As Single = rect.Width - total_width
+        Dim num_spaces As Integer = words.Length - 1
+        If words.Length &gt; 1 Then
+            extra_space /= num_spaces
+        End If
+ 
+        ' Draw the words.
+        Dim x1 As Single = rect.Left
+        Dim y1 As Single = rect.Top
+ 
+        For i As Integer = 0 To words.Length - 1
+            ' Draw the word.
+            gr.DrawString(words(i), font, brush, x1, y1)
+ 
+            ' Move right to draw the next word.
+            x1 += word_width(i) + extra_space
+ 
+        Next
+    Else
+        ' Make a StringFormat to align the text.
+        Using sf As New System.Drawing.StringFormat()
+            ' Use the appropriate alignment.
+            sf.Alignment = System.Drawing.StringAlignment.Near
+            gr.DrawString(line, font, brush, rect, sf)
+ 
+ 
+        End Using
+    End If
+End Sub
+
+</Code>
+  <Language>=User!Language</Language>
+  <CodeModules>
+    <CodeModule>System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</CodeModule>
+    <CodeModule>System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</CodeModule>
+  </CodeModules>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Cm</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+        </Field>
+        <Field Name="Employee_No_">
+          <DataField>Employee_No_</DataField>
+        </Field>
+        <Field Name="WorkEXpDays">
+          <DataField>WorkEXpDays</DataField>
+        </Field>
+        <Field Name="FirstPart">
+          <DataField>FirstPart</DataField>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+        </Field>
+        <Field Name="Year1">
+          <DataField>Year1</DataField>
+        </Field>
+        <Field Name="BrojDokumenta">
+          <DataField>BrojDokumenta</DataField>
+        </Field>
+        <Field Name="ShortYear">
+          <DataField>ShortYear</DataField>
+        </Field>
+        <Field Name="DatumRjesenjaT">
+          <DataField>DatumRjesenjaT</DataField>
+        </Field>
+        <Field Name="Date_of_report">
+          <DataField>Date_of_report</DataField>
+        </Field>
+        <Field Name="Company_logo">
+          <DataField>Company_logo</DataField>
+        </Field>
+        <Field Name="YearofVac">
+          <DataField>YearofVac</DataField>
+        </Field>
+        <Field Name="Disability">
+          <DataField>Disability</DataField>
+        </Field>
+        <Field Name="Millitary">
+          <DataField>Millitary</DataField>
+        </Field>
+        <Field Name="MotherWithMoreCH">
+          <DataField>MotherWithMoreCH</DataField>
+        </Field>
+        <Field Name="SingleParent">
+          <DataField>SingleParent</DataField>
+        </Field>
+        <Field Name="SpecialCircumstances">
+          <DataField>SpecialCircumstances</DataField>
+        </Field>
+        <Field Name="Total_days">
+          <DataField>Total_days</DataField>
+        </Field>
+        <Field Name="Legal_Grounds">
+          <DataField>Legal_Grounds</DataField>
+        </Field>
+        <Field Name="StartFirstpart">
+          <DataField>StartFirstpart</DataField>
+        </Field>
+        <Field Name="EndFirstpart">
+          <DataField>EndFirstpart</DataField>
+        </Field>
+        <Field Name="Start2part">
+          <DataField>Start2part</DataField>
+        </Field>
+        <Field Name="End2part">
+          <DataField>End2part</DataField>
+        </Field>
+        <Field Name="Position">
+          <DataField>Position</DataField>
+        </Field>
+        <Field Name="Sector">
+          <DataField>Sector</DataField>
+        </Field>
+        <Field Name="BrojDanaPrviDio">
+          <DataField>BrojDanaPrviDio</DataField>
+        </Field>
+        <Field Name="DanJavljanjanaposao">
+          <DataField>DanJavljanjanaposao</DataField>
+        </Field>
+        <Field Name="DrugiDioDana">
+          <DataField>DrugiDioDana</DataField>
+        </Field>
+        <Field Name="RanijeIskoristeniDani">
+          <DataField>RanijeIskoristeniDani</DataField>
+        </Field>
+        <Field Name="StartFirstpartT">
+          <DataField>StartFirstpartT</DataField>
+        </Field>
+        <Field Name="EndFirstpartT">
+          <DataField>EndFirstpartT</DataField>
+        </Field>
+        <Field Name="StartSecondpartT">
+          <DataField>StartSecondpartT</DataField>
+        </Field>
+        <Field Name="EndSecondpartT">
+          <DataField>EndSecondpartT</DataField>
+        </Field>
+        <Field Name="DanJavljanjanaposaoT">
+          <DataField>DanJavljanjanaposaoT</DataField>
+        </Field>
+        <Field Name="Used_Days">
+          <DataField>Used_Days</DataField>
+        </Field>
+        <Field Name="Director">
+          <DataField>Director</DataField>
+        </Field>
+        <Field Name="Izvrsni">
+          <DataField>Izvrsni</DataField>
+        </Field>
+        <Field Name="CEODa">
+          <DataField>CEODa</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

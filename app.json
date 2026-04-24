@@ -1,0 +1,29 @@
+{
+  "id": "b5067e23-9025-4b5b-97af-b7d2d16868ae",
+  "name": "Sarajevogas",
+  "publisher": "Default publisher",
+  "version": "1.0.0.1",
+  "brief": "",
+  "description": "",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "17.0.0.0",
+  "idRanges": [
+    {
+      "from": 50000,
+      "to": 99999
+    }
+  ],
+
+  "showMyCode": true,
+  "runtime": "6.0",
+  "features": [ "TranslationFile","GenerateCaptions"],
+  "supportedLocales": ["hr-HR"],
+  "target":"OnPrem"
+}

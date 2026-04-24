@@ -1,0 +1,812 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="UkupnoFeb">
+          <DataField>UkupnoFeb</DataField>
+        </Field>
+        <Field Name="UkupnoFebFormat">
+          <DataField>UkupnoFebFormat</DataField>
+        </Field>
+        <Field Name="ZeneFeb">
+          <DataField>ZeneFeb</DataField>
+        </Field>
+        <Field Name="ZeneFebFormat">
+          <DataField>ZeneFebFormat</DataField>
+        </Field>
+        <Field Name="UkupnoDosli">
+          <DataField>UkupnoDosli</DataField>
+        </Field>
+        <Field Name="UkupnoDosliFormat">
+          <DataField>UkupnoDosliFormat</DataField>
+        </Field>
+        <Field Name="ZeneDosli">
+          <DataField>ZeneDosli</DataField>
+        </Field>
+        <Field Name="ZeneDosliFormat">
+          <DataField>ZeneDosliFormat</DataField>
+        </Field>
+        <Field Name="UkupnoOtisli">
+          <DataField>UkupnoOtisli</DataField>
+        </Field>
+        <Field Name="UkupnoOtisliFormat">
+          <DataField>UkupnoOtisliFormat</DataField>
+        </Field>
+        <Field Name="ZeneOtisli">
+          <DataField>ZeneOtisli</DataField>
+        </Field>
+        <Field Name="ZeneOtisliFormat">
+          <DataField>ZeneOtisliFormat</DataField>
+        </Field>
+        <Field Name="UkupnoMart">
+          <DataField>UkupnoMart</DataField>
+        </Field>
+        <Field Name="UkupnoMartFormat">
+          <DataField>UkupnoMartFormat</DataField>
+        </Field>
+        <Field Name="ZeneMart">
+          <DataField>ZeneMart</DataField>
+        </Field>
+        <Field Name="ZeneMartFormat">
+          <DataField>ZeneMartFormat</DataField>
+        </Field>
+        <Field Name="NazivKomp">
+          <DataField>NazivKomp</DataField>
+        </Field>
+        <Field Name="JIB">
+          <DataField>JIB</DataField>
+        </Field>
+        <Field Name="OrgID">
+          <DataField>OrgID</DataField>
+        </Field>
+        <Field Name="OrgName">
+          <DataField>OrgName</DataField>
+        </Field>
+        <Field Name="OrgAddress">
+          <DataField>OrgAddress</DataField>
+        </Field>
+        <Field Name="OrgTelephone">
+          <DataField>OrgTelephone</DataField>
+        </Field>
+        <Field Name="OrgJIB">
+          <DataField>OrgJIB</DataField>
+        </Field>
+        <Field Name="OrgJIBName">
+          <DataField>OrgJIBName</DataField>
+        </Field>
+        <Field Name="Telefon">
+          <DataField>Telefon</DataField>
+        </Field>
+        <Field Name="emaill">
+          <DataField>emaill</DataField>
+        </Field>
+        <Field Name="AdresaKomp">
+          <DataField>AdresaKomp</DataField>
+        </Field>
+        <Field Name="TelefonKomp">
+          <DataField>TelefonKomp</DataField>
+        </Field>
+        <Field Name="DjelatnostKomp">
+          <DataField>DjelatnostKomp</DataField>
+        </Field>
+        <Field Name="KompKanton">
+          <DataField>KompKanton</DataField>
+        </Field>
+        <Field Name="KompOpcina">
+          <DataField>KompOpcina</DataField>
+        </Field>
+        <Field Name="LastDateOfMonth">
+          <DataField>LastDateOfMonth</DataField>
+        </Field>
+        <Field Name="DayBeforeFirstDate">
+          <DataField>DayBeforeFirstDate</DataField>
+        </Field>
+        <Field Name="Monthlbl">
+          <DataField>Monthlbl</DataField>
+        </Field>
+        <Field Name="Neodr">
+          <DataField>Neodr</DataField>
+        </Field>
+        <Field Name="NeodrFormat">
+          <DataField>NeodrFormat</DataField>
+        </Field>
+        <Field Name="ZeneNeodr">
+          <DataField>ZeneNeodr</DataField>
+        </Field>
+        <Field Name="ZeneNeodrFormat">
+          <DataField>ZeneNeodrFormat</DataField>
+        </Field>
+        <Field Name="Odr">
+          <DataField>Odr</DataField>
+        </Field>
+        <Field Name="OdrFormat">
+          <DataField>OdrFormat</DataField>
+        </Field>
+        <Field Name="ZeneOdr">
+          <DataField>ZeneOdr</DataField>
+        </Field>
+        <Field Name="ZeneOdrFormat">
+          <DataField>ZeneOdrFormat</DataField>
+        </Field>
+        <Field Name="PripravniciUk">
+          <DataField>PripravniciUk</DataField>
+        </Field>
+        <Field Name="PripravniciUkFormat">
+          <DataField>PripravniciUkFormat</DataField>
+        </Field>
+        <Field Name="PripravniciZene">
+          <DataField>PripravniciZene</DataField>
+        </Field>
+        <Field Name="PripravniciZeneFormat">
+          <DataField>PripravniciZeneFormat</DataField>
+        </Field>
+        <Field Name="PunoRadnoVr">
+          <DataField>PunoRadnoVr</DataField>
+        </Field>
+        <Field Name="PunoRadnoVrFormat">
+          <DataField>PunoRadnoVrFormat</DataField>
+        </Field>
+        <Field Name="PunoRadnoVrZene">
+          <DataField>PunoRadnoVrZene</DataField>
+        </Field>
+        <Field Name="PunoRadnoVrZeneFormat">
+          <DataField>PunoRadnoVrZeneFormat</DataField>
+        </Field>
+        <Field Name="NepRadnVr">
+          <DataField>NepRadnVr</DataField>
+        </Field>
+        <Field Name="NepRadnVrFormat">
+          <DataField>NepRadnVrFormat</DataField>
+        </Field>
+        <Field Name="NepRadnVrZene">
+          <DataField>NepRadnVrZene</DataField>
+        </Field>
+        <Field Name="NepRadnVrZeneFormat">
+          <DataField>NepRadnVrZeneFormat</DataField>
+        </Field>
+        <Field Name="VSS">
+          <DataField>VSS</DataField>
+        </Field>
+        <Field Name="VSSFormat">
+          <DataField>VSSFormat</DataField>
+        </Field>
+        <Field Name="VSSZene">
+          <DataField>VSSZene</DataField>
+        </Field>
+        <Field Name="VSSZeneFormat">
+          <DataField>VSSZeneFormat</DataField>
+        </Field>
+        <Field Name="VŠS">
+          <DataField>VŠS</DataField>
+        </Field>
+        <Field Name="VŠSFormat">
+          <DataField>VŠSFormat</DataField>
+        </Field>
+        <Field Name="VŠSZene">
+          <DataField>VŠSZene</DataField>
+        </Field>
+        <Field Name="VŠSZeneFormat">
+          <DataField>VŠSZeneFormat</DataField>
+        </Field>
+        <Field Name="SSS">
+          <DataField>SSS</DataField>
+        </Field>
+        <Field Name="SSSFormat">
+          <DataField>SSSFormat</DataField>
+        </Field>
+        <Field Name="SSSZene">
+          <DataField>SSSZene</DataField>
+        </Field>
+        <Field Name="SSSZeneFormat">
+          <DataField>SSSZeneFormat</DataField>
+        </Field>
+        <Field Name="NizeStrucno">
+          <DataField>NizeStrucno</DataField>
+        </Field>
+        <Field Name="NizeStrucnoFormat">
+          <DataField>NizeStrucnoFormat</DataField>
+        </Field>
+        <Field Name="NizeStrucnoZene">
+          <DataField>NizeStrucnoZene</DataField>
+        </Field>
+        <Field Name="NizeStrucnoZeneFormat">
+          <DataField>NizeStrucnoZeneFormat</DataField>
+        </Field>
+        <Field Name="VKV">
+          <DataField>VKV</DataField>
+        </Field>
+        <Field Name="VKVFormat">
+          <DataField>VKVFormat</DataField>
+        </Field>
+        <Field Name="VKVZene">
+          <DataField>VKVZene</DataField>
+        </Field>
+        <Field Name="VKVZeneFormat">
+          <DataField>VKVZeneFormat</DataField>
+        </Field>
+        <Field Name="KV">
+          <DataField>KV</DataField>
+        </Field>
+        <Field Name="KVFormat">
+          <DataField>KVFormat</DataField>
+        </Field>
+        <Field Name="KVZene">
+          <DataField>KVZene</DataField>
+        </Field>
+        <Field Name="KVZeneFormat">
+          <DataField>KVZeneFormat</DataField>
+        </Field>
+        <Field Name="PK">
+          <DataField>PK</DataField>
+        </Field>
+        <Field Name="PKFormat">
+          <DataField>PKFormat</DataField>
+        </Field>
+        <Field Name="PKZene">
+          <DataField>PKZene</DataField>
+        </Field>
+        <Field Name="PKZeneFormat">
+          <DataField>PKZeneFormat</DataField>
+        </Field>
+        <Field Name="NK">
+          <DataField>NK</DataField>
+        </Field>
+        <Field Name="NKFormat">
+          <DataField>NKFormat</DataField>
+        </Field>
+        <Field Name="NKZene">
+          <DataField>NKZene</DataField>
+        </Field>
+        <Field Name="NKZeneFormat">
+          <DataField>NKZeneFormat</DataField>
+        </Field>
+        <Field Name="DR">
+          <DataField>DR</DataField>
+        </Field>
+        <Field Name="DRFormat">
+          <DataField>DRFormat</DataField>
+        </Field>
+        <Field Name="DRZene">
+          <DataField>DRZene</DataField>
+        </Field>
+        <Field Name="DRZeneFormat">
+          <DataField>DRZeneFormat</DataField>
+        </Field>
+        <Field Name="MR">
+          <DataField>MR</DataField>
+        </Field>
+        <Field Name="MRFormat">
+          <DataField>MRFormat</DataField>
+        </Field>
+        <Field Name="MRZene">
+          <DataField>MRZene</DataField>
+        </Field>
+        <Field Name="MRZeneFormat">
+          <DataField>MRZeneFormat</DataField>
+        </Field>
+        <Field Name="Do18">
+          <DataField>Do18</DataField>
+        </Field>
+        <Field Name="Do18Format">
+          <DataField>Do18Format</DataField>
+        </Field>
+        <Field Name="Do18Zene">
+          <DataField>Do18Zene</DataField>
+        </Field>
+        <Field Name="Do18ZeneFormat">
+          <DataField>Do18ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od19Do24">
+          <DataField>Od19Do24</DataField>
+        </Field>
+        <Field Name="Od19Do24Format">
+          <DataField>Od19Do24Format</DataField>
+        </Field>
+        <Field Name="Od19Do24Zene">
+          <DataField>Od19Do24Zene</DataField>
+        </Field>
+        <Field Name="Od19Do24ZeneFormat">
+          <DataField>Od19Do24ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od25Do29">
+          <DataField>Od25Do29</DataField>
+        </Field>
+        <Field Name="Od25Do29Format">
+          <DataField>Od25Do29Format</DataField>
+        </Field>
+        <Field Name="Od25Do29DoZene">
+          <DataField>Od25Do29DoZene</DataField>
+        </Field>
+        <Field Name="Od25Do29DoZeneFormat">
+          <DataField>Od25Do29DoZeneFormat</DataField>
+        </Field>
+        <Field Name="Od30Do34">
+          <DataField>Od30Do34</DataField>
+        </Field>
+        <Field Name="Od30Do34Format">
+          <DataField>Od30Do34Format</DataField>
+        </Field>
+        <Field Name="Od30Do34Zene">
+          <DataField>Od30Do34Zene</DataField>
+        </Field>
+        <Field Name="Od30Do34ZeneFormat">
+          <DataField>Od30Do34ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od35Do39">
+          <DataField>Od35Do39</DataField>
+        </Field>
+        <Field Name="Od35Do39Format">
+          <DataField>Od35Do39Format</DataField>
+        </Field>
+        <Field Name="Od35Do39Zene">
+          <DataField>Od35Do39Zene</DataField>
+        </Field>
+        <Field Name="Od35Do39ZeneFormat">
+          <DataField>Od35Do39ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od40Do44">
+          <DataField>Od40Do44</DataField>
+        </Field>
+        <Field Name="Od40Do44Format">
+          <DataField>Od40Do44Format</DataField>
+        </Field>
+        <Field Name="Od40Do44Zene">
+          <DataField>Od40Do44Zene</DataField>
+        </Field>
+        <Field Name="Od40Do44ZeneFormat">
+          <DataField>Od40Do44ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od45Do49">
+          <DataField>Od45Do49</DataField>
+        </Field>
+        <Field Name="Od45Do49Format">
+          <DataField>Od45Do49Format</DataField>
+        </Field>
+        <Field Name="Od45Do49Zene">
+          <DataField>Od45Do49Zene</DataField>
+        </Field>
+        <Field Name="Od45Do49ZeneFormat">
+          <DataField>Od45Do49ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od50Do54">
+          <DataField>Od50Do54</DataField>
+        </Field>
+        <Field Name="Od50Do54Format">
+          <DataField>Od50Do54Format</DataField>
+        </Field>
+        <Field Name="Od50Do54Zene">
+          <DataField>Od50Do54Zene</DataField>
+        </Field>
+        <Field Name="Od50Do54ZeneFormat">
+          <DataField>Od50Do54ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od55Do59">
+          <DataField>Od55Do59</DataField>
+        </Field>
+        <Field Name="Od55Do59Format">
+          <DataField>Od55Do59Format</DataField>
+        </Field>
+        <Field Name="Od55Do59Zene">
+          <DataField>Od55Do59Zene</DataField>
+        </Field>
+        <Field Name="Od55Do59ZeneFormat">
+          <DataField>Od55Do59ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od60Do64">
+          <DataField>Od60Do64</DataField>
+        </Field>
+        <Field Name="Od60Do64Format">
+          <DataField>Od60Do64Format</DataField>
+        </Field>
+        <Field Name="Od60Do64Zene">
+          <DataField>Od60Do64Zene</DataField>
+        </Field>
+        <Field Name="Od60Do64ZeneFormat">
+          <DataField>Od60Do64ZeneFormat</DataField>
+        </Field>
+        <Field Name="Od65Vise">
+          <DataField>Od65Vise</DataField>
+        </Field>
+        <Field Name="Od65ViseFormat">
+          <DataField>Od65ViseFormat</DataField>
+        </Field>
+        <Field Name="Od65ViseZene">
+          <DataField>Od65ViseZene</DataField>
+        </Field>
+        <Field Name="Od65ViseZeneFormat">
+          <DataField>Od65ViseZeneFormat</DataField>
+        </Field>
+        <Field Name="ManjeOd160">
+          <DataField>ManjeOd160</DataField>
+        </Field>
+        <Field Name="ManjeOd160Format">
+          <DataField>ManjeOd160Format</DataField>
+        </Field>
+        <Field Name="Do350">
+          <DataField>Do350</DataField>
+        </Field>
+        <Field Name="Do350Format">
+          <DataField>Do350Format</DataField>
+        </Field>
+        <Field Name="Od351Do500">
+          <DataField>Od351Do500</DataField>
+        </Field>
+        <Field Name="Od351Do500Format">
+          <DataField>Od351Do500Format</DataField>
+        </Field>
+        <Field Name="Od501Do650">
+          <DataField>Od501Do650</DataField>
+        </Field>
+        <Field Name="Od501Do650Format">
+          <DataField>Od501Do650Format</DataField>
+        </Field>
+        <Field Name="Od651Do800">
+          <DataField>Od651Do800</DataField>
+        </Field>
+        <Field Name="Od651Do800Format">
+          <DataField>Od651Do800Format</DataField>
+        </Field>
+        <Field Name="Od801Do950">
+          <DataField>Od801Do950</DataField>
+        </Field>
+        <Field Name="Od801Do950Format">
+          <DataField>Od801Do950Format</DataField>
+        </Field>
+        <Field Name="Od951Do1100">
+          <DataField>Od951Do1100</DataField>
+        </Field>
+        <Field Name="Od951Do1100Format">
+          <DataField>Od951Do1100Format</DataField>
+        </Field>
+        <Field Name="Od1101Do1400">
+          <DataField>Od1101Do1400</DataField>
+        </Field>
+        <Field Name="Od1101Do1400Format">
+          <DataField>Od1101Do1400Format</DataField>
+        </Field>
+        <Field Name="Od1401Do1700">
+          <DataField>Od1401Do1700</DataField>
+        </Field>
+        <Field Name="Od1401Do1700Format">
+          <DataField>Od1401Do1700Format</DataField>
+        </Field>
+        <Field Name="Od1701Do2000">
+          <DataField>Od1701Do2000</DataField>
+        </Field>
+        <Field Name="Od1701Do2000Format">
+          <DataField>Od1701Do2000Format</DataField>
+        </Field>
+        <Field Name="Od2001Do2500">
+          <DataField>Od2001Do2500</DataField>
+        </Field>
+        <Field Name="Od2001Do2500Format">
+          <DataField>Od2001Do2500Format</DataField>
+        </Field>
+        <Field Name="Od2501Do3000">
+          <DataField>Od2501Do3000</DataField>
+        </Field>
+        <Field Name="Od2501Do3000Format">
+          <DataField>Od2501Do3000Format</DataField>
+        </Field>
+        <Field Name="Preko3000">
+          <DataField>Preko3000</DataField>
+        </Field>
+        <Field Name="Preko3000Format">
+          <DataField>Preko3000Format</DataField>
+        </Field>
+        <Field Name="Preko200">
+          <DataField>Preko200</DataField>
+        </Field>
+        <Field Name="Preko200Format">
+          <DataField>Preko200Format</DataField>
+        </Field>
+        <Field Name="ZapZenePreth">
+          <DataField>ZapZenePreth</DataField>
+        </Field>
+        <Field Name="ZapZenePrethFormat">
+          <DataField>ZapZenePrethFormat</DataField>
+        </Field>
+        <Field Name="ZapMuskPreth">
+          <DataField>ZapMuskPreth</DataField>
+        </Field>
+        <Field Name="ZapMuskPrethFormat">
+          <DataField>ZapMuskPrethFormat</DataField>
+        </Field>
+        <Field Name="VSSPrethodna">
+          <DataField>VSSPrethodna</DataField>
+        </Field>
+        <Field Name="VSSPrethodnaFormat">
+          <DataField>VSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="VŠSPrethodna">
+          <DataField>VŠSPrethodna</DataField>
+        </Field>
+        <Field Name="VŠSPrethodnaFormat">
+          <DataField>VŠSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="SSSPrethodna">
+          <DataField>SSSPrethodna</DataField>
+        </Field>
+        <Field Name="SSSPrethodnaFormat">
+          <DataField>SSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NizaStrucnaPreth">
+          <DataField>NizaStrucnaPreth</DataField>
+        </Field>
+        <Field Name="NizaStrucnaPrethFormat">
+          <DataField>NizaStrucnaPrethFormat</DataField>
+        </Field>
+        <Field Name="VKPrethodna">
+          <DataField>VKPrethodna</DataField>
+        </Field>
+        <Field Name="VKPrethodnaFormat">
+          <DataField>VKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="KVPrethodna">
+          <DataField>KVPrethodna</DataField>
+        </Field>
+        <Field Name="KVPrethodnaFormat">
+          <DataField>KVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="PKPrethodna">
+          <DataField>PKPrethodna</DataField>
+        </Field>
+        <Field Name="PKPrethodnaFormat">
+          <DataField>PKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NKPrethodna">
+          <DataField>NKPrethodna</DataField>
+        </Field>
+        <Field Name="NKPrethodnaFormat">
+          <DataField>NKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoPrethZene">
+          <DataField>NetoPrethZene</DataField>
+        </Field>
+        <Field Name="NetoPrethZeneFormat">
+          <DataField>NetoPrethZeneFormat</DataField>
+        </Field>
+        <Field Name="NetoPrethMuskarci">
+          <DataField>NetoPrethMuskarci</DataField>
+        </Field>
+        <Field Name="NetoPrethMuskarciFormat">
+          <DataField>NetoPrethMuskarciFormat</DataField>
+        </Field>
+        <Field Name="NetoVSSPrethodna">
+          <DataField>NetoVSSPrethodna</DataField>
+        </Field>
+        <Field Name="NetoVSSPrethodnaFormat">
+          <DataField>NetoVSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoVŠSPrethodna">
+          <DataField>NetoVŠSPrethodna</DataField>
+        </Field>
+        <Field Name="NetoVŠSPrethodnaFormat">
+          <DataField>NetoVŠSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoSSSPrethodna">
+          <DataField>NetoSSSPrethodna</DataField>
+        </Field>
+        <Field Name="NetoSSSPrethodnaFormat">
+          <DataField>NetoSSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoNizaPrethodna">
+          <DataField>NetoNizaPrethodna</DataField>
+        </Field>
+        <Field Name="NetoNizaPrethodnaFormat">
+          <DataField>NetoNizaPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoVKVPrethodna">
+          <DataField>NetoVKVPrethodna</DataField>
+        </Field>
+        <Field Name="NetoVKVPrethodnaFormat">
+          <DataField>NetoVKVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoKVPrethodna">
+          <DataField>NetoKVPrethodna</DataField>
+        </Field>
+        <Field Name="NetoKVPrethodnaFormat">
+          <DataField>NetoKVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoPKPrethodna">
+          <DataField>NetoPKPrethodna</DataField>
+        </Field>
+        <Field Name="NetoPKPrethodnaFormat">
+          <DataField>NetoPKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="NetoNKPrethodna">
+          <DataField>NetoNKPrethodna</DataField>
+        </Field>
+        <Field Name="NetoNKPrethodnaFormat">
+          <DataField>NetoNKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoPrethZene">
+          <DataField>BrutoPrethZene</DataField>
+        </Field>
+        <Field Name="BrutoPrethZeneFormat">
+          <DataField>BrutoPrethZeneFormat</DataField>
+        </Field>
+        <Field Name="BrutoPrethMuskarci">
+          <DataField>BrutoPrethMuskarci</DataField>
+        </Field>
+        <Field Name="BrutoPrethMuskarciFormat">
+          <DataField>BrutoPrethMuskarciFormat</DataField>
+        </Field>
+        <Field Name="BrutoVSSPrethodna">
+          <DataField>BrutoVSSPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoVSSPrethodnaFormat">
+          <DataField>BrutoVSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoVŠSPrethodna">
+          <DataField>BrutoVŠSPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoVŠSPrethodnaFormat">
+          <DataField>BrutoVŠSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoSSSPrethodna">
+          <DataField>BrutoSSSPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoSSSPrethodnaFormat">
+          <DataField>BrutoSSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoNizaPrethodna">
+          <DataField>BrutoNizaPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoNizaPrethodnaFormat">
+          <DataField>BrutoNizaPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoVKVPrethodna">
+          <DataField>BrutoVKVPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoVKVPrethodnaFormat">
+          <DataField>BrutoVKVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoKVPrethodna">
+          <DataField>BrutoKVPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoKVPrethodnaFormat">
+          <DataField>BrutoKVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoPKPrethodna">
+          <DataField>BrutoPKPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoPKPrethodnaFormat">
+          <DataField>BrutoPKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="BrutoNKPrethodna">
+          <DataField>BrutoNKPrethodna</DataField>
+        </Field>
+        <Field Name="BrutoNKPrethodnaFormat">
+          <DataField>BrutoNKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoPrethZene">
+          <DataField>ProsjNetoPrethZene</DataField>
+        </Field>
+        <Field Name="ProsjNetoPrethZeneFormat">
+          <DataField>ProsjNetoPrethZeneFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoPrethMuskarci">
+          <DataField>ProsjNetoPrethMuskarci</DataField>
+        </Field>
+        <Field Name="ProsjNetoPrethMuskarciFormat">
+          <DataField>ProsjNetoPrethMuskarciFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoVSSPrethodna">
+          <DataField>ProsjNetoVSSPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoVSSPrethodnaFormat">
+          <DataField>ProsjNetoVSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoVŠSPrethodna">
+          <DataField>ProsjNetoVŠSPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoVŠSPrethodnaFormat">
+          <DataField>ProsjNetoVŠSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoSSSPrethodna">
+          <DataField>ProsjNetoSSSPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoSSSPrethodnaFormat">
+          <DataField>ProsjNetoSSSPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoNizaPrethodna">
+          <DataField>ProsjNetoNizaPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoNizaPrethodnaFormat">
+          <DataField>ProsjNetoNizaPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoVKVPrethodna">
+          <DataField>ProsjNetoVKVPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoVKVPrethodnaFormat">
+          <DataField>ProsjNetoVKVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoKVPrethodna">
+          <DataField>ProsjNetoKVPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoKVPrethodnaFormat">
+          <DataField>ProsjNetoKVPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoPKPrethodna">
+          <DataField>ProsjNetoPKPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoPKPrethodnaFormat">
+          <DataField>ProsjNetoPKPrethodnaFormat</DataField>
+        </Field>
+        <Field Name="ProsjNetoNKPrethodna">
+          <DataField>ProsjNetoNKPrethodna</DataField>
+        </Field>
+        <Field Name="ProsjNetoNKPrethodnaFormat">
+          <DataField>ProsjNetoNKPrethodnaFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

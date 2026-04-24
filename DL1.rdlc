@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="MjesecPoreza">
+          <DataField>MjesecPoreza</DataField>
+        </Field>
+        <Field Name="IDMonthText">
+          <DataField>IDMonthText</DataField>
+        </Field>
+        <Field Name="IDMonthText2">
+          <DataField>IDMonthText2</DataField>
+        </Field>
+        <Field Name="IDDayText">
+          <DataField>IDDayText</DataField>
+        </Field>
+        <Field Name="GodinaPoreza">
+          <DataField>GodinaPoreza</DataField>
+        </Field>
+        <Field Name="TodayDay">
+          <DataField>TodayDay</DataField>
+        </Field>
+        <Field Name="TodayMonth">
+          <DataField>TodayMonth</DataField>
+        </Field>
+        <Field Name="TodayYear">
+          <DataField>TodayYear</DataField>
+        </Field>
+        <Field Name="InputDate">
+          <DataField>InputDate</DataField>
+        </Field>
+        <Field Name="CompanyEmail">
+          <DataField>CompanyEmail</DataField>
+        </Field>
+        <Field Name="CompanyMunicipalityCode2">
+          <DataField>CompanyMunicipalityCode2</DataField>
+        </Field>
+        <Field Name="MunicipalityName">
+          <DataField>MunicipalityName</DataField>
+        </Field>
+        <Field Name="Period">
+          <DataField>Period</DataField>
+        </Field>
+        <Field Name="MjesecPlateWC">
+          <DataField>MjesecPlateWC</DataField>
+        </Field>
+        <Field Name="GodinaPlateWC">
+          <DataField>GodinaPlateWC</DataField>
+        </Field>
+        <Field Name="BrojObracuna">
+          <DataField>BrojObracuna</DataField>
+        </Field>
+        <Field Name="BrojZaposlenikaWC">
+          <DataField>BrojZaposlenikaWC</DataField>
+        </Field>
+        <Field Name="MjesecObracuna">
+          <DataField>MjesecObracuna</DataField>
+        </Field>
+        <Field Name="UnpaidHours">
+          <DataField>UnpaidHours</DataField>
+        </Field>
+        <Field Name="UnpaidHoursFormat">
+          <DataField>UnpaidHoursFormat</DataField>
+        </Field>
+        <Field Name="BrojRadnihSati">
+          <DataField>BrojRadnihSati</DataField>
+        </Field>
+        <Field Name="BrojRadnihSatiFormat">
+          <DataField>BrojRadnihSatiFormat</DataField>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+        </Field>
+        <Field Name="WageEmployeeNo">
+          <DataField>WageEmployeeNo</DataField>
+        </Field>
+        <Field Name="DepMun">
+          <DataField>DepMun</DataField>
+        </Field>
+        <Field Name="TaxDeductions">
+          <DataField>TaxDeductions</DataField>
+        </Field>
+        <Field Name="TaxDeductionsFormat">
+          <DataField>TaxDeductionsFormat</DataField>
+        </Field>
+        <Field Name="Brojac">
+          <DataField>Brojac</DataField>
+        </Field>
+        <Field Name="BrojZaposlenika">
+          <DataField>BrojZaposlenika</DataField>
+        </Field>
+        <Field Name="JMB">
+          <DataField>JMB</DataField>
+        </Field>
+        <Field Name="RedniBr">
+          <DataField>RedniBr</DataField>
+        </Field>
+        <Field Name="EmployeeFirstName">
+          <DataField>EmployeeFirstName</DataField>
+        </Field>
+        <Field Name="EmployeeLastName">
+          <DataField>EmployeeLastName</DataField>
+        </Field>
+        <Field Name="PositionCode">
+          <DataField>PositionCode</DataField>
+        </Field>
+        <Field Name="Coef">
+          <DataField>Coef</DataField>
+        </Field>
+        <Field Name="CoefFormat">
+          <DataField>CoefFormat</DataField>
+        </Field>
+        <Field Name="EmployeeNo">
+          <DataField>EmployeeNo</DataField>
+        </Field>
+        <Field Name="EmployeeID">
+          <DataField>EmployeeID</DataField>
+        </Field>
+        <Field Name="HoursInDay">
+          <DataField>HoursInDay</DataField>
+        </Field>
+        <Field Name="Brutto">
+          <DataField>Brutto</DataField>
+        </Field>
+        <Field Name="BruttoFormat">
+          <DataField>BruttoFormat</DataField>
+        </Field>
+        <Field Name="SatiNaBolovanju">
+          <DataField>SatiNaBolovanju</DataField>
+        </Field>
+        <Field Name="SatiNaBolovanjuFormat">
+          <DataField>SatiNaBolovanjuFormat</DataField>
+        </Field>
+        <Field Name="sumPIO">
+          <DataField>sumPIO</DataField>
+        </Field>
+        <Field Name="sumPIOFormat">
+          <DataField>sumPIOFormat</DataField>
+        </Field>
+        <Field Name="sumZO">
+          <DataField>sumZO</DataField>
+        </Field>
+        <Field Name="sumZOFormat">
+          <DataField>sumZOFormat</DataField>
+        </Field>
+        <Field Name="sumDZ">
+          <DataField>sumDZ</DataField>
+        </Field>
+        <Field Name="sumDZFormat">
+          <DataField>sumDZFormat</DataField>
+        </Field>
+        <Field Name="sumZN">
+          <DataField>sumZN</DataField>
+        </Field>
+        <Field Name="sumZNFormat">
+          <DataField>sumZNFormat</DataField>
+        </Field>
+        <Field Name="Base">
+          <DataField>Base</DataField>
+        </Field>
+        <Field Name="BaseFormat">
+          <DataField>BaseFormat</DataField>
+        </Field>
+        <Field Name="ZO">
+          <DataField>ZO</DataField>
+        </Field>
+        <Field Name="ZOFormat">
+          <DataField>ZOFormat</DataField>
+        </Field>
+        <Field Name="PIO">
+          <DataField>PIO</DataField>
+        </Field>
+        <Field Name="PIOFormat">
+          <DataField>PIOFormat</DataField>
+        </Field>
+        <Field Name="DZ">
+          <DataField>DZ</DataField>
+        </Field>
+        <Field Name="DZFormat">
+          <DataField>DZFormat</DataField>
+        </Field>
+        <Field Name="ZN">
+          <DataField>ZN</DataField>
+        </Field>
+        <Field Name="ZNFormat">
+          <DataField>ZNFormat</DataField>
+        </Field>
+        <Field Name="Tax">
+          <DataField>Tax</DataField>
+        </Field>
+        <Field Name="TaxFormat">
+          <DataField>TaxFormat</DataField>
+        </Field>
+        <Field Name="BaseSum">
+          <DataField>BaseSum</DataField>
+        </Field>
+        <Field Name="BaseSumFormat">
+          <DataField>BaseSumFormat</DataField>
+        </Field>
+        <Field Name="ZOSum">
+          <DataField>ZOSum</DataField>
+        </Field>
+        <Field Name="ZOSumFormat">
+          <DataField>ZOSumFormat</DataField>
+        </Field>
+        <Field Name="SumTotal">
+          <DataField>SumTotal</DataField>
+        </Field>
+        <Field Name="SumTotalFormat">
+          <DataField>SumTotalFormat</DataField>
+        </Field>
+        <Field Name="ZNSum">
+          <DataField>ZNSum</DataField>
+        </Field>
+        <Field Name="ZNSumFormat">
+          <DataField>ZNSumFormat</DataField>
+        </Field>
+        <Field Name="HoursSum">
+          <DataField>HoursSum</DataField>
+        </Field>
+        <Field Name="HoursSumFormat">
+          <DataField>HoursSumFormat</DataField>
+        </Field>
+        <Field Name="TotalZN">
+          <DataField>TotalZN</DataField>
+        </Field>
+        <Field Name="TotalZNFormat">
+          <DataField>TotalZNFormat</DataField>
+        </Field>
+        <Field Name="PIOSum">
+          <DataField>PIOSum</DataField>
+        </Field>
+        <Field Name="PIOSumFormat">
+          <DataField>PIOSumFormat</DataField>
+        </Field>
+        <Field Name="AmountFromBrutto">
+          <DataField>AmountFromBrutto</DataField>
+        </Field>
+        <Field Name="AmountFromBruttoFormat">
+          <DataField>AmountFromBruttoFormat</DataField>
+        </Field>
+        <Field Name="TotalHours">
+          <DataField>TotalHours</DataField>
+        </Field>
+        <Field Name="TotalHoursFormat">
+          <DataField>TotalHoursFormat</DataField>
+        </Field>
+        <Field Name="Total">
+          <DataField>Total</DataField>
+        </Field>
+        <Field Name="TotalFormat">
+          <DataField>TotalFormat</DataField>
+        </Field>
+        <Field Name="TaxTotal">
+          <DataField>TaxTotal</DataField>
+        </Field>
+        <Field Name="TaxTotalFormat">
+          <DataField>TaxTotalFormat</DataField>
+        </Field>
+        <Field Name="MunicipalityCIPS">
+          <DataField>MunicipalityCIPS</DataField>
+        </Field>
+        <Field Name="MunName">
+          <DataField>MunName</DataField>
+        </Field>
+        <Field Name="CompanyJIB2">
+          <DataField>CompanyJIB2</DataField>
+        </Field>
+        <Field Name="Kol12">
+          <DataField>Kol12</DataField>
+        </Field>
+        <Field Name="Kol12Format">
+          <DataField>Kol12Format</DataField>
+        </Field>
+        <Field Name="Kol13">
+          <DataField>Kol13</DataField>
+        </Field>
+        <Field Name="Kol13Format">
+          <DataField>Kol13Format</DataField>
+        </Field>
+        <Field Name="Kol14">
+          <DataField>Kol14</DataField>
+        </Field>
+        <Field Name="Kol14Format">
+          <DataField>Kol14Format</DataField>
+        </Field>
+        <Field Name="Kol16">
+          <DataField>Kol16</DataField>
+        </Field>
+        <Field Name="Kol16Format">
+          <DataField>Kol16Format</DataField>
+        </Field>
+        <Field Name="Kol17">
+          <DataField>Kol17</DataField>
+        </Field>
+        <Field Name="Kol17Format">
+          <DataField>Kol17Format</DataField>
+        </Field>
+        <Field Name="Kol19_1">
+          <DataField>Kol19_1</DataField>
+        </Field>
+        <Field Name="Kol19_1Format">
+          <DataField>Kol19_1Format</DataField>
+        </Field>
+        <Field Name="SumKol15">
+          <DataField>SumKol15</DataField>
+        </Field>
+        <Field Name="SumKol15Format">
+          <DataField>SumKol15Format</DataField>
+        </Field>
+        <Field Name="SumKol12">
+          <DataField>SumKol12</DataField>
+        </Field>
+        <Field Name="SumKol12Format">
+          <DataField>SumKol12Format</DataField>
+        </Field>
+        <Field Name="SumKol13">
+          <DataField>SumKol13</DataField>
+        </Field>
+        <Field Name="SumKol13Format">
+          <DataField>SumKol13Format</DataField>
+        </Field>
+        <Field Name="SumKol14">
+          <DataField>SumKol14</DataField>
+        </Field>
+        <Field Name="SumKol14Format">
+          <DataField>SumKol14Format</DataField>
+        </Field>
+        <Field Name="SumKol16">
+          <DataField>SumKol16</DataField>
+        </Field>
+        <Field Name="SumKol16Format">
+          <DataField>SumKol16Format</DataField>
+        </Field>
+        <Field Name="SumKol17">
+          <DataField>SumKol17</DataField>
+        </Field>
+        <Field Name="SumKol17Format">
+          <DataField>SumKol17Format</DataField>
+        </Field>
+        <Field Name="SumKol19">
+          <DataField>SumKol19</DataField>
+        </Field>
+        <Field Name="SumKol19Format">
+          <DataField>SumKol19Format</DataField>
+        </Field>
+        <Field Name="Kol15">
+          <DataField>Kol15</DataField>
+        </Field>
+        <Field Name="Kol15Format">
+          <DataField>Kol15Format</DataField>
+        </Field>
+        <Field Name="DZSum">
+          <DataField>DZSum</DataField>
+        </Field>
+        <Field Name="DZSumFormat">
+          <DataField>DZSumFormat</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAddress">
+          <DataField>CompanyAddress</DataField>
+        </Field>
+        <Field Name="CompanyPhone">
+          <DataField>CompanyPhone</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

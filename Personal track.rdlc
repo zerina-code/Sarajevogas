@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="RptTitle">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>RptTitle</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>RptTitle</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="EmployeeNo">
+          <DataField>EmployeeNo</DataField>
+        </Field>
+        <Field Name="FirstName">
+          <DataField>FirstName</DataField>
+        </Field>
+        <Field Name="Evidencija">
+          <DataField>Evidencija</DataField>
+        </Field>
+        <Field Name="JMBG">
+          <DataField>JMBG</DataField>
+        </Field>
+        <Field Name="Gender">
+          <DataField>Gender</DataField>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+        </Field>
+        <Field Name="BirthDate">
+          <DataField>BirthDate</DataField>
+        </Field>
+        <Field Name="BirthCity">
+          <DataField>BirthCity</DataField>
+        </Field>
+        <Field Name="BirthMunicipality">
+          <DataField>BirthMunicipality</DataField>
+        </Field>
+        <Field Name="BirthState">
+          <DataField>BirthState</DataField>
+        </Field>
+        <Field Name="CityCIPS">
+          <DataField>CityCIPS</DataField>
+        </Field>
+        <Field Name="AddressCIPS">
+          <DataField>AddressCIPS</DataField>
+        </Field>
+        <Field Name="MunicipalityCIPS">
+          <DataField>MunicipalityCIPS</DataField>
+        </Field>
+        <Field Name="EntitetCIPS">
+          <DataField>EntitetCIPS</DataField>
+        </Field>
+        <Field Name="Citizenship">
+          <DataField>Citizenship</DataField>
+        </Field>
+        <Field Name="WorkPermitCode">
+          <DataField>WorkPermitCode</DataField>
+        </Field>
+        <Field Name="WorkPermitType">
+          <DataField>WorkPermitType</DataField>
+        </Field>
+        <Field Name="WorkPermitFrom">
+          <DataField>WorkPermitFrom</DataField>
+        </Field>
+        <Field Name="WorkPermitTo">
+          <DataField>WorkPermitTo</DataField>
+        </Field>
+        <Field Name="ResidenceCode">
+          <DataField>ResidenceCode</DataField>
+        </Field>
+        <Field Name="ResidenceFrom">
+          <DataField>ResidenceFrom</DataField>
+        </Field>
+        <Field Name="ResidenceTo">
+          <DataField>ResidenceTo</DataField>
+        </Field>
+        <Field Name="EducationLevel">
+          <DataField>EducationLevel</DataField>
+        </Field>
+        <Field Name="ProffesionalExam">
+          <DataField>ProffesionalExam</DataField>
+        </Field>
+        <Field Name="AdditionalEducation">
+          <DataField>AdditionalEducation</DataField>
+        </Field>
+        <Field Name="TitleDesc">
+          <DataField>TitleDesc</DataField>
+        </Field>
+        <Field Name="ExtractAdditional">
+          <DataField>ExtractAdditional</DataField>
+        </Field>
+        <Field Name="Certificate">
+          <DataField>Certificate</DataField>
+        </Field>
+        <Field Name="BrojUgovora">
+          <DataField>BrojUgovora</DataField>
+        </Field>
+        <Field Name="DatumZakljucenjaUgovora">
+          <DataField>DatumZakljucenjaUgovora</DataField>
+        </Field>
+        <Field Name="DatumZaposlenja">
+          <DataField>DatumZaposlenja</DataField>
+        </Field>
+        <Field Name="PositionName">
+          <DataField>PositionName</DataField>
+        </Field>
+        <Field Name="WorkingPlace">
+          <DataField>WorkingPlace</DataField>
+        </Field>
+        <Field Name="ContractType">
+          <DataField>ContractType</DataField>
+        </Field>
+        <Field Name="ContractFrom">
+          <DataField>ContractFrom</DataField>
+        </Field>
+        <Field Name="ContractTo">
+          <DataField>ContractTo</DataField>
+        </Field>
+        <Field Name="ProbationFrom">
+          <DataField>ProbationFrom</DataField>
+        </Field>
+        <Field Name="ProbationTo">
+          <DataField>ProbationTo</DataField>
+        </Field>
+        <Field Name="PrenticeContractNo">
+          <DataField>PrenticeContractNo</DataField>
+        </Field>
+        <Field Name="PrenticeContractFrom">
+          <DataField>PrenticeContractFrom</DataField>
+        </Field>
+        <Field Name="PrenticeContractTo">
+          <DataField>PrenticeContractTo</DataField>
+        </Field>
+        <Field Name="ProffExamDate">
+          <DataField>ProffExamDate</DataField>
+        </Field>
+        <Field Name="ProffExamResult">
+          <DataField>ProffExamResult</DataField>
+        </Field>
+        <Field Name="AbroadFrom">
+          <DataField>AbroadFrom</DataField>
+        </Field>
+        <Field Name="AbroadTo">
+          <DataField>AbroadTo</DataField>
+        </Field>
+        <Field Name="AbroadCity">
+          <DataField>AbroadCity</DataField>
+        </Field>
+        <Field Name="AbroadState">
+          <DataField>AbroadState</DataField>
+        </Field>
+        <Field Name="WorkinHoursWeek">
+          <DataField>WorkinHoursWeek</DataField>
+        </Field>
+        <Field Name="WorkingHoursDay">
+          <DataField>WorkingHoursDay</DataField>
+        </Field>
+        <Field Name="Indication2">
+          <DataField>Indication2</DataField>
+        </Field>
+        <Field Name="Indication1">
+          <DataField>Indication1</DataField>
+        </Field>
+        <Field Name="AnotherPlace">
+          <DataField>AnotherPlace</DataField>
+        </Field>
+        <Field Name="WorkExperienceYear">
+          <DataField>WorkExperienceYear</DataField>
+        </Field>
+        <Field Name="WorkExperienceMonth">
+          <DataField>WorkExperienceMonth</DataField>
+        </Field>
+        <Field Name="WorkExperienceDay">
+          <DataField>WorkExperienceDay</DataField>
+        </Field>
+        <Field Name="RetYear">
+          <DataField>RetYear</DataField>
+        </Field>
+        <Field Name="RetMonth">
+          <DataField>RetMonth</DataField>
+        </Field>
+        <Field Name="RetDay">
+          <DataField>RetDay</DataField>
+        </Field>
+        <Field Name="InactionTO">
+          <DataField>InactionTO</DataField>
+        </Field>
+        <Field Name="InactionFrom">
+          <DataField>InactionFrom</DataField>
+        </Field>
+        <Field Name="TerminationDate">
+          <DataField>TerminationDate</DataField>
+        </Field>
+        <Field Name="TerminationReason">
+          <DataField>TerminationReason</DataField>
+        </Field>
+        <Field Name="PregnancyKeepingFrom">
+          <DataField>PregnancyKeepingFrom</DataField>
+        </Field>
+        <Field Name="PregnancyLeaveFrom">
+          <DataField>PregnancyLeaveFrom</DataField>
+        </Field>
+        <Field Name="LineNo_Personaltrackreport">
+          <DataField>LineNo_Personaltrackreport</DataField>
+        </Field>
+        <Field Name="BreastfeedingFrom">
+          <DataField>BreastfeedingFrom</DataField>
+        </Field>
+        <Field Name="ProffessionalIllness">
+          <DataField>ProffessionalIllness</DataField>
+        </Field>
+        <Field Name="DecreaseInability">
+          <DataField>DecreaseInability</DataField>
+        </Field>
+        <Field Name="EmployeeDisability">
+          <DataField>EmployeeDisability</DataField>
+        </Field>
+        <Field Name="WorkViolationNote">
+          <DataField>WorkViolationNote</DataField>
+        </Field>
+        <Field Name="Other">
+          <DataField>Other</DataField>
+        </Field>
+        <Field Name="ActDate">
+          <DataField>ActDate</DataField>
+        </Field>
+        <Field Name="ActName">
+          <DataField>ActName</DataField>
+        </Field>
+        <Field Name="NumberOfAct">
+          <DataField>NumberOfAct</DataField>
+        </Field>
+        <Field Name="Proof">
+          <DataField>Proof</DataField>
+        </Field>
+        <Field Name="DateOfChange">
+          <DataField>DateOfChange</DataField>
+        </Field>
+        <Field Name="OpisiPoslova">
+          <DataField>OpisiPoslova</DataField>
+        </Field>
+        <Field Name="URLTEXT">
+          <DataField>URLTEXT</DataField>
+        </Field>
+        <Field Name="EmployeeContractNo">
+          <DataField>EmployeeContractNo</DataField>
+        </Field>
+        <Field Name="LineNo">
+          <DataField>LineNo</DataField>
+        </Field>
+        <Field Name="AdresaReal">
+          <DataField>AdresaReal</DataField>
+        </Field>
+        <Field Name="CityReal">
+          <DataField>CityReal</DataField>
+        </Field>
+        <Field Name="MunicipalityReal">
+          <DataField>MunicipalityReal</DataField>
+        </Field>
+        <Field Name="EntitetReal">
+          <DataField>EntitetReal</DataField>
+        </Field>
+        <Field Name="SvrhaPosla">
+          <DataField>SvrhaPosla</DataField>
+        </Field>
+        <Field Name="WorkingState">
+          <DataField>WorkingState</DataField>
+        </Field>
+        <Field Name="WorkingMunicipality">
+          <DataField>WorkingMunicipality</DataField>
+        </Field>
+        <Field Name="Uzivalac">
+          <DataField>Uzivalac</DataField>
+        </Field>
+        <Field Name="DaLiSamostalno">
+          <DataField>DaLiSamostalno</DataField>
+        </Field>
+        <Field Name="RadniciNepotpuno">
+          <DataField>RadniciNepotpuno</DataField>
+        </Field>
+        <Field Name="DjelatnostPoslodavca">
+          <DataField>DjelatnostPoslodavca</DataField>
+        </Field>
+        <Field Name="SamohraniRoditelj">
+          <DataField>SamohraniRoditelj</DataField>
+        </Field>
+        <Field Name="StatusUsvojitelja">
+          <DataField>StatusUsvojitelja</DataField>
+        </Field>
+        <Field Name="ProfesionalnaNesposobnost">
+          <DataField>ProfesionalnaNesposobnost</DataField>
+        </Field>
+        <Field Name="Smanjenje">
+          <DataField>Smanjenje</DataField>
+        </Field>
+        <Field Name="NeposretnoSmanjenje">
+          <DataField>NeposretnoSmanjenje</DataField>
+        </Field>
+        <Field Name="NeposrednoInvalidnost">
+          <DataField>NeposrednoInvalidnost</DataField>
+        </Field>
+        <Field Name="StepenInvalidnosti">
+          <DataField>StepenInvalidnosti</DataField>
+        </Field>
+        <Field Name="Identitet">
+          <DataField>Identitet</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

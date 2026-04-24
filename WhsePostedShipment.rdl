@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="TodayFormatted">
+          <DataField>TodayFormatted</DataField>
+        </Field>
+        <Field Name="AssgndUID_PostedWhseShptHeader">
+          <DataField>AssgndUID_PostedWhseShptHeader</DataField>
+        </Field>
+        <Field Name="LocCode_PostedWhseShptHeader">
+          <DataField>LocCode_PostedWhseShptHeader</DataField>
+        </Field>
+        <Field Name="No_PostedWhseShptHeader">
+          <DataField>No_PostedWhseShptHeader</DataField>
+        </Field>
+        <Field Name="BinMandatoryShow1">
+          <DataField>BinMandatoryShow1</DataField>
+        </Field>
+        <Field Name="BinMandatoryShow2">
+          <DataField>BinMandatoryShow2</DataField>
+        </Field>
+        <Field Name="AssgndUID_PostedWhseShptHeaderCaption">
+          <DataField>AssgndUID_PostedWhseShptHeaderCaption</DataField>
+        </Field>
+        <Field Name="LocCode_PostedWhseShptHeaderCaption">
+          <DataField>LocCode_PostedWhseShptHeaderCaption</DataField>
+        </Field>
+        <Field Name="No_PostedWhseShptHeaderCaption">
+          <DataField>No_PostedWhseShptHeaderCaption</DataField>
+        </Field>
+        <Field Name="ShelfNo_PostedWhseShptLineCaption">
+          <DataField>ShelfNo_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="ItemNo_PostedWhseShptLineCaption">
+          <DataField>ItemNo_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="Desc_PostedWhseShptLineCaption">
+          <DataField>Desc_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="UOM_PostedWhseShptLineCaption">
+          <DataField>UOM_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseShptLineCaption">
+          <DataField>Qty_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="SourceNo_PostedWhseShptLineCaption">
+          <DataField>SourceNo_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="SourceDoc_PostedWhseShptLineCaption">
+          <DataField>SourceDoc_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="ZoneCode_PostedWhseShptLineCaption">
+          <DataField>ZoneCode_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="BinCode_PostedWhseShptLineCaption">
+          <DataField>BinCode_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="LocCode_PostedWhseShptLineCaption">
+          <DataField>LocCode_PostedWhseShptLineCaption</DataField>
+        </Field>
+        <Field Name="CurrReportPAGENOCaption">
+          <DataField>CurrReportPAGENOCaption</DataField>
+        </Field>
+        <Field Name="WarehousePostedShipmentCaption">
+          <DataField>WarehousePostedShipmentCaption</DataField>
+        </Field>
+        <Field Name="ShelfNo_PostedWhseShptLine">
+          <DataField>ShelfNo_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="ItemNo_PostedWhseShptLine">
+          <DataField>ItemNo_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Desc_PostedWhseShptLine">
+          <DataField>Desc_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="UOM_PostedWhseShptLine">
+          <DataField>UOM_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="LocCode_PostedWhseShptLine">
+          <DataField>LocCode_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseShptLine">
+          <DataField>Qty_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Qty_PostedWhseShptLineFormat">
+          <DataField>Qty_PostedWhseShptLineFormat</DataField>
+        </Field>
+        <Field Name="SourceNo_PostedWhseShptLine">
+          <DataField>SourceNo_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="SourceDoc_PostedWhseShptLine">
+          <DataField>SourceDoc_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="ZoneCode_PostedWhseShptLine">
+          <DataField>ZoneCode_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="BinCode_PostedWhseShptLine">
+          <DataField>BinCode_PostedWhseShptLine</DataField>
+        </Field>
+        <Field Name="Vendor_Shipment_No_">
+          <DataField>Vendor_Shipment_No_</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

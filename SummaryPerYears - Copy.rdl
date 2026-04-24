@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString>Data Source=192.168.14.102</ConnectString>
+        <Prompt>Specify a user name and password for data source DataSource:</Prompt>
+      </ConnectionProperties>
+      <rd:SecurityType>DataBase</rd:SecurityType>
+      <rd:DataSourceID>96fa5a0d-5db4-4f8a-a5f6-d24e80bd2b3f</rd:DataSourceID>
+    </DataSource>
+  </DataSources>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+      <Fields>
+        <Field Name="ColumnName">
+          <DataField>ColumnName</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih1">
+          <DataField>BrojZaposlenih1</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih1Format">
+          <DataField>BrojZaposlenih1Format</DataField>
+        </Field>
+        <Field Name="Bruto1">
+          <DataField>Bruto1</DataField>
+        </Field>
+        <Field Name="Bruto1Format">
+          <DataField>Bruto1Format</DataField>
+        </Field>
+        <Field Name="DatumUplate1">
+          <DataField>DatumUplate1</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih2">
+          <DataField>BrojZaposlenih2</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih2Format">
+          <DataField>BrojZaposlenih2Format</DataField>
+        </Field>
+        <Field Name="Bruto2">
+          <DataField>Bruto2</DataField>
+        </Field>
+        <Field Name="Bruto2Format">
+          <DataField>Bruto2Format</DataField>
+        </Field>
+        <Field Name="DatumUplate2">
+          <DataField>DatumUplate2</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih3">
+          <DataField>BrojZaposlenih3</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih3Format">
+          <DataField>BrojZaposlenih3Format</DataField>
+        </Field>
+        <Field Name="Bruto3">
+          <DataField>Bruto3</DataField>
+        </Field>
+        <Field Name="Bruto3Format">
+          <DataField>Bruto3Format</DataField>
+        </Field>
+        <Field Name="DatumUplate3">
+          <DataField>DatumUplate3</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih4">
+          <DataField>BrojZaposlenih4</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih4Format">
+          <DataField>BrojZaposlenih4Format</DataField>
+        </Field>
+        <Field Name="Bruto4">
+          <DataField>Bruto4</DataField>
+        </Field>
+        <Field Name="Bruto4Format">
+          <DataField>Bruto4Format</DataField>
+        </Field>
+        <Field Name="DatumUplate4">
+          <DataField>DatumUplate4</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih5">
+          <DataField>BrojZaposlenih5</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih5Format">
+          <DataField>BrojZaposlenih5Format</DataField>
+        </Field>
+        <Field Name="Bruto5">
+          <DataField>Bruto5</DataField>
+        </Field>
+        <Field Name="Bruto5Format">
+          <DataField>Bruto5Format</DataField>
+        </Field>
+        <Field Name="DatumUplate5">
+          <DataField>DatumUplate5</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih6">
+          <DataField>BrojZaposlenih6</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih6Format">
+          <DataField>BrojZaposlenih6Format</DataField>
+        </Field>
+        <Field Name="Bruto6">
+          <DataField>Bruto6</DataField>
+        </Field>
+        <Field Name="Bruto6Format">
+          <DataField>Bruto6Format</DataField>
+        </Field>
+        <Field Name="DatumUplate6">
+          <DataField>DatumUplate6</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih7">
+          <DataField>BrojZaposlenih7</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih7Format">
+          <DataField>BrojZaposlenih7Format</DataField>
+        </Field>
+        <Field Name="Bruto7">
+          <DataField>Bruto7</DataField>
+        </Field>
+        <Field Name="Bruto7Format">
+          <DataField>Bruto7Format</DataField>
+        </Field>
+        <Field Name="DatumUplate7">
+          <DataField>DatumUplate7</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih8">
+          <DataField>BrojZaposlenih8</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih8Format">
+          <DataField>BrojZaposlenih8Format</DataField>
+        </Field>
+        <Field Name="Bruto8">
+          <DataField>Bruto8</DataField>
+        </Field>
+        <Field Name="Bruto8Format">
+          <DataField>Bruto8Format</DataField>
+        </Field>
+        <Field Name="DatumUplate8">
+          <DataField>DatumUplate8</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih9">
+          <DataField>BrojZaposlenih9</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih9Format">
+          <DataField>BrojZaposlenih9Format</DataField>
+        </Field>
+        <Field Name="Bruto9">
+          <DataField>Bruto9</DataField>
+        </Field>
+        <Field Name="Bruto9Format">
+          <DataField>Bruto9Format</DataField>
+        </Field>
+        <Field Name="DatumUplate9">
+          <DataField>DatumUplate9</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih10">
+          <DataField>BrojZaposlenih10</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih10Format">
+          <DataField>BrojZaposlenih10Format</DataField>
+        </Field>
+        <Field Name="Bruto10">
+          <DataField>Bruto10</DataField>
+        </Field>
+        <Field Name="Bruto10Format">
+          <DataField>Bruto10Format</DataField>
+        </Field>
+        <Field Name="DatumUplate10">
+          <DataField>DatumUplate10</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih11">
+          <DataField>BrojZaposlenih11</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih11Format">
+          <DataField>BrojZaposlenih11Format</DataField>
+        </Field>
+        <Field Name="Bruto11">
+          <DataField>Bruto11</DataField>
+        </Field>
+        <Field Name="Bruto11Format">
+          <DataField>Bruto11Format</DataField>
+        </Field>
+        <Field Name="DatumUplate11">
+          <DataField>DatumUplate11</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih12">
+          <DataField>BrojZaposlenih12</DataField>
+        </Field>
+        <Field Name="BrojZaposlenih12Format">
+          <DataField>BrojZaposlenih12Format</DataField>
+        </Field>
+        <Field Name="Bruto12">
+          <DataField>Bruto12</DataField>
+        </Field>
+        <Field Name="Bruto12Format">
+          <DataField>Bruto12Format</DataField>
+        </Field>
+        <Field Name="DatumUplate12">
+          <DataField>DatumUplate12</DataField>
+        </Field>
+        <Field Name="Name_CompanyInformation">
+          <DataField>Name_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Address_CompanyInformation">
+          <DataField>Address_CompanyInformation</DataField>
+        </Field>
+        <Field Name="City_CompanyInformation">
+          <DataField>City_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Picture_CompanyInformation">
+          <DataField>Picture_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Date_CompanyInformation">
+          <DataField>Date_CompanyInformation</DataField>
+        </Field>
+        <Field Name="RegistrationNo_CompanyInformation">
+          <DataField>RegistrationNo_CompanyInformation</DataField>
+        </Field>
+        <Field Name="Year">
+          <DataField>Year</DataField>
+        </Field>
+        <Field Name="PaymentDate1">
+          <DataField>PaymentDate1</DataField>
+        </Field>
+        <Field Name="PaymentDate2">
+          <DataField>PaymentDate2</DataField>
+        </Field>
+        <Field Name="PaymentDate3">
+          <DataField>PaymentDate3</DataField>
+        </Field>
+        <Field Name="PaymentDate4">
+          <DataField>PaymentDate4</DataField>
+        </Field>
+        <Field Name="PaymentDate5">
+          <DataField>PaymentDate5</DataField>
+        </Field>
+        <Field Name="PaymentDate6">
+          <DataField>PaymentDate6</DataField>
+        </Field>
+        <Field Name="PaymentDate7">
+          <DataField>PaymentDate7</DataField>
+        </Field>
+        <Field Name="PaymentDate8">
+          <DataField>PaymentDate8</DataField>
+        </Field>
+        <Field Name="PaymentDate9">
+          <DataField>PaymentDate9</DataField>
+        </Field>
+        <Field Name="PaymentDate10">
+          <DataField>PaymentDate10</DataField>
+        </Field>
+        <Field Name="PaymentDate11">
+          <DataField>PaymentDate11</DataField>
+        </Field>
+        <Field Name="PaymentDate12">
+          <DataField>PaymentDate12</DataField>
+        </Field>
+        <Field Name="BrojInvalida1">
+          <DataField>BrojInvalida1</DataField>
+        </Field>
+        <Field Name="BrojInvalida2">
+          <DataField>BrojInvalida2</DataField>
+        </Field>
+        <Field Name="BrojInvalida3">
+          <DataField>BrojInvalida3</DataField>
+        </Field>
+        <Field Name="BrojInvalida4">
+          <DataField>BrojInvalida4</DataField>
+        </Field>
+        <Field Name="BrojInvalida5">
+          <DataField>BrojInvalida5</DataField>
+        </Field>
+        <Field Name="BrojInvalida6">
+          <DataField>BrojInvalida6</DataField>
+        </Field>
+        <Field Name="BrojInvalida7">
+          <DataField>BrojInvalida7</DataField>
+        </Field>
+        <Field Name="BrojInvalida8">
+          <DataField>BrojInvalida8</DataField>
+        </Field>
+        <Field Name="BrojInvalida9">
+          <DataField>BrojInvalida9</DataField>
+        </Field>
+        <Field Name="BrojInvalida10">
+          <DataField>BrojInvalida10</DataField>
+        </Field>
+        <Field Name="BrojInvalida11">
+          <DataField>BrojInvalida11</DataField>
+        </Field>
+        <Field Name="BrojInvalida12">
+          <DataField>BrojInvalida12</DataField>
+        </Field>
+        <Field Name="ProsjekNeto1">
+          <DataField>ProsjekNeto1</DataField>
+        </Field>
+        <Field Name="ProsjekNeto1Format">
+          <DataField>ProsjekNeto1Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto2">
+          <DataField>ProsjekNeto2</DataField>
+        </Field>
+        <Field Name="ProsjekNeto2Format">
+          <DataField>ProsjekNeto2Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto3">
+          <DataField>ProsjekNeto3</DataField>
+        </Field>
+        <Field Name="ProsjekNeto3Format">
+          <DataField>ProsjekNeto3Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto4">
+          <DataField>ProsjekNeto4</DataField>
+        </Field>
+        <Field Name="ProsjekNeto4Format">
+          <DataField>ProsjekNeto4Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto5">
+          <DataField>ProsjekNeto5</DataField>
+        </Field>
+        <Field Name="ProsjekNeto5Format">
+          <DataField>ProsjekNeto5Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto6">
+          <DataField>ProsjekNeto6</DataField>
+        </Field>
+        <Field Name="ProsjekNeto6Format">
+          <DataField>ProsjekNeto6Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto7">
+          <DataField>ProsjekNeto7</DataField>
+        </Field>
+        <Field Name="ProsjekNeto7Format">
+          <DataField>ProsjekNeto7Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto8">
+          <DataField>ProsjekNeto8</DataField>
+        </Field>
+        <Field Name="ProsjekNeto8Format">
+          <DataField>ProsjekNeto8Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto9">
+          <DataField>ProsjekNeto9</DataField>
+        </Field>
+        <Field Name="ProsjekNeto9Format">
+          <DataField>ProsjekNeto9Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto10">
+          <DataField>ProsjekNeto10</DataField>
+        </Field>
+        <Field Name="ProsjekNeto10Format">
+          <DataField>ProsjekNeto10Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto11">
+          <DataField>ProsjekNeto11</DataField>
+        </Field>
+        <Field Name="ProsjekNeto11Format">
+          <DataField>ProsjekNeto11Format</DataField>
+        </Field>
+        <Field Name="ProsjekNeto12">
+          <DataField>ProsjekNeto12</DataField>
+        </Field>
+        <Field Name="ProsjekNeto12Format">
+          <DataField>ProsjekNeto12Format</DataField>
+        </Field>
+        <Field Name="Doprinos1">
+          <DataField>Doprinos1</DataField>
+        </Field>
+        <Field Name="Doprinos1Format">
+          <DataField>Doprinos1Format</DataField>
+        </Field>
+        <Field Name="Doprinos2">
+          <DataField>Doprinos2</DataField>
+        </Field>
+        <Field Name="Doprinos2Format">
+          <DataField>Doprinos2Format</DataField>
+        </Field>
+        <Field Name="Doprinos3">
+          <DataField>Doprinos3</DataField>
+        </Field>
+        <Field Name="Doprinos3Format">
+          <DataField>Doprinos3Format</DataField>
+        </Field>
+        <Field Name="Doprinos4">
+          <DataField>Doprinos4</DataField>
+        </Field>
+        <Field Name="Doprinos4Format">
+          <DataField>Doprinos4Format</DataField>
+        </Field>
+        <Field Name="Doprinos5">
+          <DataField>Doprinos5</DataField>
+        </Field>
+        <Field Name="Doprinos5Format">
+          <DataField>Doprinos5Format</DataField>
+        </Field>
+        <Field Name="Doprinos6">
+          <DataField>Doprinos6</DataField>
+        </Field>
+        <Field Name="Doprinos6Format">
+          <DataField>Doprinos6Format</DataField>
+        </Field>
+        <Field Name="Doprinos7">
+          <DataField>Doprinos7</DataField>
+        </Field>
+        <Field Name="Doprinos7Format">
+          <DataField>Doprinos7Format</DataField>
+        </Field>
+        <Field Name="Doprinos8">
+          <DataField>Doprinos8</DataField>
+        </Field>
+        <Field Name="Doprinos8Format">
+          <DataField>Doprinos8Format</DataField>
+        </Field>
+        <Field Name="Doprinos9">
+          <DataField>Doprinos9</DataField>
+        </Field>
+        <Field Name="Doprinos9Format">
+          <DataField>Doprinos9Format</DataField>
+        </Field>
+        <Field Name="Doprinos10">
+          <DataField>Doprinos10</DataField>
+        </Field>
+        <Field Name="Doprinos10Format">
+          <DataField>Doprinos10Format</DataField>
+        </Field>
+        <Field Name="Doprinos11">
+          <DataField>Doprinos11</DataField>
+        </Field>
+        <Field Name="Doprinos11Format">
+          <DataField>Doprinos11Format</DataField>
+        </Field>
+        <Field Name="Doprinos12">
+          <DataField>Doprinos12</DataField>
+        </Field>
+        <Field Name="Doprinos12Format">
+          <DataField>Doprinos12Format</DataField>
+        </Field>
+        <Field Name="BrutoI1">
+          <DataField>BrutoI1</DataField>
+        </Field>
+        <Field Name="BrutoI1Format">
+          <DataField>BrutoI1Format</DataField>
+        </Field>
+        <Field Name="BrutoI2">
+          <DataField>BrutoI2</DataField>
+        </Field>
+        <Field Name="BrutoI2Format">
+          <DataField>BrutoI2Format</DataField>
+        </Field>
+        <Field Name="BrutoI3">
+          <DataField>BrutoI3</DataField>
+        </Field>
+        <Field Name="BrutoI3Format">
+          <DataField>BrutoI3Format</DataField>
+        </Field>
+        <Field Name="BrutoI4">
+          <DataField>BrutoI4</DataField>
+        </Field>
+        <Field Name="BrutoI4Format">
+          <DataField>BrutoI4Format</DataField>
+        </Field>
+        <Field Name="BrutoI5">
+          <DataField>BrutoI5</DataField>
+        </Field>
+        <Field Name="BrutoI5Format">
+          <DataField>BrutoI5Format</DataField>
+        </Field>
+        <Field Name="BrutoI6">
+          <DataField>BrutoI6</DataField>
+        </Field>
+        <Field Name="BrutoI6Format">
+          <DataField>BrutoI6Format</DataField>
+        </Field>
+        <Field Name="BrutoI7">
+          <DataField>BrutoI7</DataField>
+        </Field>
+        <Field Name="BrutoI7Format">
+          <DataField>BrutoI7Format</DataField>
+        </Field>
+        <Field Name="BrutoI8">
+          <DataField>BrutoI8</DataField>
+        </Field>
+        <Field Name="BrutoI8Format">
+          <DataField>BrutoI8Format</DataField>
+        </Field>
+        <Field Name="BrutoI9">
+          <DataField>BrutoI9</DataField>
+        </Field>
+        <Field Name="BrutoI9Format">
+          <DataField>BrutoI9Format</DataField>
+        </Field>
+        <Field Name="BrutoI10">
+          <DataField>BrutoI10</DataField>
+        </Field>
+        <Field Name="BrutoI10Format">
+          <DataField>BrutoI10Format</DataField>
+        </Field>
+        <Field Name="BrutoI11">
+          <DataField>BrutoI11</DataField>
+        </Field>
+        <Field Name="BrutoI11Format">
+          <DataField>BrutoI11Format</DataField>
+        </Field>
+        <Field Name="BrutoI12">
+          <DataField>BrutoI12</DataField>
+        </Field>
+        <Field Name="BrutoI12Format">
+          <DataField>BrutoI12Format</DataField>
+        </Field>
+      </Fields>
+    </DataSet>
+  </DataSets>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>4.35501in</Height>
+        <Style />
+      </Body>
+      <Width>8.97166in</Width>
+      <Page>
+        <PageHeader>
+          <Height>2.38333in</Height>
+          <PrintOnFirstPage>true</PrintOnFirstPage>
+          <PrintOnLastPage>true</PrintOnLastPage>
+          <Style>
+            <Border>
+              <Style>None</Style>
+            </Border>
+          </Style>
+        </PageHeader>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParametersLayout>
+    <GridLayoutDefinition>
+      <NumberOfColumns>4</NumberOfColumns>
+      <NumberOfRows>2</NumberOfRows>
+    </GridLayoutDefinition>
+  </ReportParametersLayout>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+</Report>

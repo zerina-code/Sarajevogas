@@ -1,0 +1,298 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <ReportParameters>
+    <ReportParameter Name="LblNo">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblNo</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblNo</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblHiringManager">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblHiringManager</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblHiringManager</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblContactPerson">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblContactPerson</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblContactPerson</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblNumberofCandidates">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblNumberofCandidates</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblNumberofCandidates</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblPublishedDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblPublishedDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblPublishedDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblEmploymentDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblEmploymentDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblEmploymentDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblClosingDate">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblClosingDate</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblClosingDate</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblStatus">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblStatus</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblStatus</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblPosition">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblPosition</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblPosition</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblGrade">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblGrade</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblGrade</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblRollCode">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblRollCode</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblRollCode</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblDepartmentName">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblDepartmentName</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblDepartmentName</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblManagementLevel">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblManagementLevel</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblManagementLevel</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblNameoftheCompany">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblNameoftheCompany</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblNameoftheCompany</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblNumberAppliedCandidates">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblNumberAppliedCandidates</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblNumberAppliedCandidates</Prompt>
+    </ReportParameter>
+    <ReportParameter Name="LblAverageValue">
+      <DataType>String</DataType>
+      <DefaultValue>
+        <Values>
+          <Value>LblAverageValue</Value>
+        </Values>
+      </DefaultValue>
+      <Prompt>LblAverageValue</Prompt>
+    </ReportParameter>
+  </ReportParameters>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_Posting">
+          <DataField>No_Posting</DataField>
+        </Field>
+        <Field Name="HiringManager_Posting">
+          <DataField>HiringManager_Posting</DataField>
+        </Field>
+        <Field Name="ContactPerson_Posting">
+          <DataField>ContactPerson_Posting</DataField>
+        </Field>
+        <Field Name="NumberofCandidates_Posting">
+          <DataField>NumberofCandidates_Posting</DataField>
+        </Field>
+        <Field Name="PublishedDate_Posting">
+          <DataField>PublishedDate_Posting</DataField>
+        </Field>
+        <Field Name="ClosingDate_Posting">
+          <DataField>ClosingDate_Posting</DataField>
+        </Field>
+        <Field Name="Status_Posting">
+          <DataField>Status_Posting</DataField>
+        </Field>
+        <Field Name="Position_Posting">
+          <DataField>Position_Posting</DataField>
+        </Field>
+        <Field Name="Grade_Posting">
+          <DataField>Grade_Posting</DataField>
+        </Field>
+        <Field Name="RollCode_Posting">
+          <DataField>RollCode_Posting</DataField>
+        </Field>
+        <Field Name="Benefits_Posting">
+          <DataField>Benefits_Posting</DataField>
+        </Field>
+        <Field Name="DepartmentName_Posting">
+          <DataField>DepartmentName_Posting</DataField>
+        </Field>
+        <Field Name="ManagementLevel_Posting">
+          <DataField>ManagementLevel_Posting</DataField>
+        </Field>
+        <Field Name="NameoftheCompany_Posting">
+          <DataField>NameoftheCompany_Posting</DataField>
+        </Field>
+        <Field Name="NumberAppliedCandidates_Posting">
+          <DataField>NumberAppliedCandidates_Posting</DataField>
+        </Field>
+        <Field Name="DepartmentCode_Posting">
+          <DataField>DepartmentCode_Posting</DataField>
+        </Field>
+        <Field Name="OrgStructure_Posting">
+          <DataField>OrgStructure_Posting</DataField>
+        </Field>
+        <Field Name="PositionCode_Posting">
+          <DataField>PositionCode_Posting</DataField>
+        </Field>
+        <Field Name="OrgSheme_Posting">
+          <DataField>OrgSheme_Posting</DataField>
+        </Field>
+        <Field Name="EmploymentDate_Posting">
+          <DataField>EmploymentDate_Posting</DataField>
+        </Field>
+        <Field Name="AverageNumberOfDays">
+          <DataField>AverageNumberOfDays</DataField>
+        </Field>
+        <Field Name="AverageNumberOfDaysFormat">
+          <DataField>AverageNumberOfDaysFormat</DataField>
+        </Field>
+        <Field Name="DateTime">
+          <DataField>DateTime</DataField>
+        </Field>
+        <Field Name="UserName">
+          <DataField>UserName</DataField>
+        </Field>
+        <Field Name="Filter">
+          <DataField>Filter</DataField>
+        </Field>
+        <Field Name="Selection_Posting">
+          <DataField>Selection_Posting</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

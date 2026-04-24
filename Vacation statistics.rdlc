@@ -1,0 +1,215 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner" xmlns:cl="http://schemas.microsoft.com/sqlserver/reporting/2010/01/componentdefinition" xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/reportdefinition">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAdress">
+          <DataField>CompanyAdress</DataField>
+        </Field>
+        <Field Name="CompanyCity">
+          <DataField>CompanyCity</DataField>
+        </Field>
+        <Field Name="CompanyLogo">
+          <DataField>CompanyLogo</DataField>
+        </Field>
+        <Field Name="CompanyPostCode">
+          <DataField>CompanyPostCode</DataField>
+        </Field>
+        <Field Name="PhoneNo">
+          <DataField>PhoneNo</DataField>
+        </Field>
+        <Field Name="PhoneNo2">
+          <DataField>PhoneNo2</DataField>
+        </Field>
+        <Field Name="FaxNo">
+          <DataField>FaxNo</DataField>
+        </Field>
+        <Field Name="Email">
+          <DataField>Email</DataField>
+        </Field>
+        <Field Name="HomePage">
+          <DataField>HomePage</DataField>
+        </Field>
+        <Field Name="No">
+          <DataField>No</DataField>
+        </Field>
+        <Field Name="FirsName">
+          <DataField>FirsName</DataField>
+        </Field>
+        <Field Name="LastName">
+          <DataField>LastName</DataField>
+        </Field>
+        <Field Name="ExYearDays">
+          <DataField>ExYearDays</DataField>
+        </Field>
+        <Field Name="ExYearDaysUsed">
+          <DataField>ExYearDaysUsed</DataField>
+        </Field>
+        <Field Name="ExYearsDaysLeft">
+          <DataField>ExYearsDaysLeft</DataField>
+        </Field>
+        <Field Name="Valid">
+          <DataField>Valid</DataField>
+        </Field>
+        <Field Name="CurrDays">
+          <DataField>CurrDays</DataField>
+        </Field>
+        <Field Name="CurrDaysUsed">
+          <DataField>CurrDaysUsed</DataField>
+        </Field>
+        <Field Name="CurrDaysLeft">
+          <DataField>CurrDaysLeft</DataField>
+        </Field>
+        <Field Name="Total">
+          <DataField>Total</DataField>
+        </Field>
+        <Field Name="OsnovaGOtrenutna">
+          <DataField>OsnovaGOtrenutna</DataField>
+        </Field>
+        <Field Name="OsnovaGOprosla">
+          <DataField>OsnovaGOprosla</DataField>
+        </Field>
+        <Field Name="Position">
+          <DataField>Position</DataField>
+        </Field>
+        <Field Name="Department">
+          <DataField>Department</DataField>
+        </Field>
+        <Field Name="Stream">
+          <DataField>Stream</DataField>
+        </Field>
+        <Field Name="B1Regions">
+          <DataField>B1Regions</DataField>
+        </Field>
+        <Field Name="Status">
+          <DataField>Status</DataField>
+        </Field>
+        <Field Name="B1">
+          <DataField>B1</DataField>
+        </Field>
+        <Field Name="IDOJ">
+          <DataField>IDOJ</DataField>
+        </Field>
+        <Field Name="EmploymentDate">
+          <DataField>EmploymentDate</DataField>
+        </Field>
+        <Field Name="MaxDays">
+          <DataField>MaxDays</DataField>
+        </Field>
+        <Field Name="Dosje">
+          <DataField>Dosje</DataField>
+        </Field>
+        <Field Name="Sektor">
+          <DataField>Sektor</DataField>
+        </Field>
+        <Field Name="Odjel">
+          <DataField>Odjel</DataField>
+        </Field>
+        <Field Name="Grupa">
+          <DataField>Grupa</DataField>
+        </Field>
+        <Field Name="Tim">
+          <DataField>Tim</DataField>
+        </Field>
+        <Field Name="VPIsk">
+          <DataField>VPIsk</DataField>
+        </Field>
+        <Field Name="VPNeIsk">
+          <DataField>VPNeIsk</DataField>
+        </Field>
+        <Field Name="IskOstaloP">
+          <DataField>IskOstaloP</DataField>
+        </Field>
+        <Field Name="IskOstaloNeP">
+          <DataField>IskOstaloNeP</DataField>
+        </Field>
+        <Field Name="TotalBo">
+          <DataField>TotalBo</DataField>
+        </Field>
+        <Field Name="Porod">
+          <DataField>Porod</DataField>
+        </Field>
+        <Field Name="Sluzbeni">
+          <DataField>Sluzbeni</DataField>
+        </Field>
+        <Field Name="Praznik">
+          <DataField>Praznik</DataField>
+        </Field>
+        <Field Name="Suspenzija">
+          <DataField>Suspenzija</DataField>
+        </Field>
+        <Field Name="Neopravdano">
+          <DataField>Neopravdano</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="EmpNo">
+          <DataField>EmpNo</DataField>
+        </Field>
+        <Field Name="MjesecPoreza">
+          <DataField>MjesecPoreza</DataField>
+        </Field>
+        <Field Name="IDMonthText">
+          <DataField>IDMonthText</DataField>
+        </Field>
+        <Field Name="GodinaPoreza">
+          <DataField>GodinaPoreza</DataField>
+        </Field>
+        <Field Name="EmpName">
+          <DataField>EmpName</DataField>
+        </Field>
+        <Field Name="EmpMName">
+          <DataField>EmpMName</DataField>
+        </Field>
+        <Field Name="EmpLName">
+          <DataField>EmpLName</DataField>
+        </Field>
+        <Field Name="EmpID">
+          <DataField>EmpID</DataField>
+        </Field>
+        <Field Name="CompanyNAme">
+          <DataField>CompanyNAme</DataField>
+        </Field>
+        <Field Name="CompanyAdress">
+          <DataField>CompanyAdress</DataField>
+        </Field>
+        <Field Name="CompanyRegNo">
+          <DataField>CompanyRegNo</DataField>
+        </Field>
+        <Field Name="JIB">
+          <DataField>JIB</DataField>
+        </Field>
+        <Field Name="Kol10">
+          <DataField>Kol10</DataField>
+        </Field>
+        <Field Name="Kol10Format">
+          <DataField>Kol10Format</DataField>
+        </Field>
+        <Field Name="Kol11">
+          <DataField>Kol11</DataField>
+        </Field>
+        <Field Name="Kol11Format">
+          <DataField>Kol11Format</DataField>
+        </Field>
+        <Field Name="Kol12">
+          <DataField>Kol12</DataField>
+        </Field>
+        <Field Name="Kol12Format">
+          <DataField>Kol12Format</DataField>
+        </Field>
+        <Field Name="Kol13">
+          <DataField>Kol13</DataField>
+        </Field>
+        <Field Name="Kol13Format">
+          <DataField>Kol13Format</DataField>
+        </Field>
+        <Field Name="Kol14">
+          <DataField>Kol14</DataField>
+        </Field>
+        <Field Name="Kol14Format">
+          <DataField>Kol14Format</DataField>
+        </Field>
+        <Field Name="Kol15">
+          <DataField>Kol15</DataField>
+        </Field>
+        <Field Name="Kol15Format">
+          <DataField>Kol15Format</DataField>
+        </Field>
+        <Field Name="SumKol15">
+          <DataField>SumKol15</DataField>
+        </Field>
+        <Field Name="SumKol15Format">
+          <DataField>SumKol15Format</DataField>
+        </Field>
+        <Field Name="SumKol12">
+          <DataField>SumKol12</DataField>
+        </Field>
+        <Field Name="SumKol12Format">
+          <DataField>SumKol12Format</DataField>
+        </Field>
+        <Field Name="TaxBasis">
+          <DataField>TaxBasis</DataField>
+        </Field>
+        <Field Name="TaxBasisFormat">
+          <DataField>TaxBasisFormat</DataField>
+        </Field>
+        <Field Name="Tax">
+          <DataField>Tax</DataField>
+        </Field>
+        <Field Name="TaxFormat">
+          <DataField>TaxFormat</DataField>
+        </Field>
+        <Field Name="Brutto">
+          <DataField>Brutto</DataField>
+        </Field>
+        <Field Name="BruttoFormat">
+          <DataField>BruttoFormat</DataField>
+        </Field>
+        <Field Name="ContributionFromBruto">
+          <DataField>ContributionFromBruto</DataField>
+        </Field>
+        <Field Name="ContributionFromBrutoFormat">
+          <DataField>ContributionFromBrutoFormat</DataField>
+        </Field>
+        <Field Name="ApprovedExpenditures">
+          <DataField>ApprovedExpenditures</DataField>
+        </Field>
+        <Field Name="ApprovedExpendituresFormat">
+          <DataField>ApprovedExpendituresFormat</DataField>
+        </Field>
+        <Field Name="PDate">
+          <DataField>PDate</DataField>
+        </Field>
+        <Field Name="PDateText">
+          <DataField>PDateText</DataField>
+        </Field>
+        <Field Name="NetWage">
+          <DataField>NetWage</DataField>
+        </Field>
+        <Field Name="NetWageFormat">
+          <DataField>NetWageFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,1694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="No_">
+          <DataField>No_</DataField>
+        </Field>
+        <Field Name="No_GEO">
+          <DataField>No_GEO</DataField>
+        </Field>
+        <Field Name="CZkPhoneNumber">
+          <DataField>CZkPhoneNumber</DataField>
+        </Field>
+        <Field Name="GEO_WorkPlacesOffice">
+          <DataField>GEO_WorkPlacesOffice</DataField>
+        </Field>
+        <Field Name="Name">
+          <DataField>Name</DataField>
+        </Field>
+        <Field Name="CZKRN">
+          <DataField>CZKRN</DataField>
+        </Field>
+        <Field Name="BrojKubika">
+          <DataField>BrojKubika</DataField>
+        </Field>
+        <Field Name="BrojKubikaFormat">
+          <DataField>BrojKubikaFormat</DataField>
+        </Field>
+        <Field Name="DateBrojKubika">
+          <DataField>DateBrojKubika</DataField>
+        </Field>
+        <Field Name="SigPosText">
+          <DataField>SigPosText</DataField>
+        </Field>
+        <Field Name="SigName">
+          <DataField>SigName</DataField>
+        </Field>
+        <Field Name="transaction6Name">
+          <DataField>transaction6Name</DataField>
+        </Field>
+        <Field Name="RokPlacanja">
+          <DataField>RokPlacanja</DataField>
+        </Field>
+        <Field Name="transaction6">
+          <DataField>transaction6</DataField>
+        </Field>
+        <Field Name="transaction7Name">
+          <DataField>transaction7Name</DataField>
+        </Field>
+        <Field Name="transaction7">
+          <DataField>transaction7</DataField>
+        </Field>
+        <Field Name="transaction8">
+          <DataField>transaction8</DataField>
+        </Field>
+        <Field Name="transaction8Name">
+          <DataField>transaction8Name</DataField>
+        </Field>
+        <Field Name="transaction9Name">
+          <DataField>transaction9Name</DataField>
+        </Field>
+        <Field Name="transaction9">
+          <DataField>transaction9</DataField>
+        </Field>
+        <Field Name="transaction10">
+          <DataField>transaction10</DataField>
+        </Field>
+        <Field Name="transaction10Name">
+          <DataField>transaction10Name</DataField>
+        </Field>
+        <Field Name="transaction4">
+          <DataField>transaction4</DataField>
+        </Field>
+        <Field Name="transaction4Name">
+          <DataField>transaction4Name</DataField>
+        </Field>
+        <Field Name="transaction1Name">
+          <DataField>transaction1Name</DataField>
+        </Field>
+        <Field Name="transaction2Name">
+          <DataField>transaction2Name</DataField>
+        </Field>
+        <Field Name="transaction3Name">
+          <DataField>transaction3Name</DataField>
+        </Field>
+        <Field Name="transaction5Name">
+          <DataField>transaction5Name</DataField>
+        </Field>
+        <Field Name="transaction5">
+          <DataField>transaction5</DataField>
+        </Field>
+        <Field Name="transaction2">
+          <DataField>transaction2</DataField>
+        </Field>
+        <Field Name="transaction1">
+          <DataField>transaction1</DataField>
+        </Field>
+        <Field Name="Comp_PostCode">
+          <DataField>Comp_PostCode</DataField>
+        </Field>
+        <Field Name="Comp_City">
+          <DataField>Comp_City</DataField>
+        </Field>
+        <Field Name="Comp_Address">
+          <DataField>Comp_Address</DataField>
+        </Field>
+        <Field Name="transaction3">
+          <DataField>transaction3</DataField>
+        </Field>
+        <Field Name="registrationNumber">
+          <DataField>registrationNumber</DataField>
+        </Field>
+        <Field Name="vatNumber">
+          <DataField>vatNumber</DataField>
+        </Field>
+        <Field Name="registrationVATNumber">
+          <DataField>registrationVATNumber</DataField>
+        </Field>
+        <Field Name="court">
+          <DataField>court</DataField>
+        </Field>
+        <Field Name="activityCode">
+          <DataField>activityCode</DataField>
+        </Field>
+        <Field Name="transBBI">
+          <DataField>transBBI</DataField>
+        </Field>
+        <Field Name="transIntesa">
+          <DataField>transIntesa</DataField>
+        </Field>
+        <Field Name="transRaif">
+          <DataField>transRaif</DataField>
+        </Field>
+        <Field Name="transUni">
+          <DataField>transUni</DataField>
+        </Field>
+        <Field Name="transactionPrivredna">
+          <DataField>transactionPrivredna</DataField>
+        </Field>
+        <Field Name="transUnion">
+          <DataField>transUnion</DataField>
+        </Field>
+        <Field Name="courtNumber">
+          <DataField>courtNumber</DataField>
+        </Field>
+        <Field Name="PhoneNo">
+          <DataField>PhoneNo</DataField>
+        </Field>
+        <Field Name="PhoneNo2">
+          <DataField>PhoneNo2</DataField>
+        </Field>
+        <Field Name="FaxNo">
+          <DataField>FaxNo</DataField>
+        </Field>
+        <Field Name="Picture">
+          <DataField>Picture</DataField>
+        </Field>
+        <Field Name="CompInfo_Disp">
+          <DataField>CompInfo_Disp</DataField>
+        </Field>
+        <Field Name="BillingSIgnatory">
+          <DataField>BillingSIgnatory</DataField>
+        </Field>
+        <Field Name="CEO_Phone">
+          <DataField>CEO_Phone</DataField>
+        </Field>
+        <Field Name="KOntaktiAdd">
+          <DataField>KOntaktiAdd</DataField>
+        </Field>
+        <Field Name="PhoneAdd">
+          <DataField>PhoneAdd</DataField>
+        </Field>
+        <Field Name="EmailAdd">
+          <DataField>EmailAdd</DataField>
+        </Field>
+        <Field Name="KOntaktiOrg">
+          <DataField>KOntaktiOrg</DataField>
+        </Field>
+        <Field Name="PhoneOrg">
+          <DataField>PhoneOrg</DataField>
+        </Field>
+        <Field Name="EmailOrg">
+          <DataField>EmailOrg</DataField>
+        </Field>
+        <Field Name="EmailEracunKOntaktiOrg">
+          <DataField>EmailEracunKOntaktiOrg</DataField>
+        </Field>
+        <Field Name="EvidentialCode">
+          <DataField>EvidentialCode</DataField>
+        </Field>
+        <Field Name="CZKControl">
+          <DataField>CZKControl</DataField>
+        </Field>
+        <Field Name="CZKDate">
+          <DataField>CZKDate</DataField>
+        </Field>
+        <Field Name="CZKReal">
+          <DataField>CZKReal</DataField>
+        </Field>
+        <Field Name="CZKVerif">
+          <DataField>CZKVerif</DataField>
+        </Field>
+        <Field Name="Contract_No_">
+          <DataField>Contract_No_</DataField>
+        </Field>
+        <Field Name="NoteText">
+          <DataField>NoteText</DataField>
+        </Field>
+        <Field Name="NoteTextPrevious">
+          <DataField>NoteTextPrevious</DataField>
+        </Field>
+        <Field Name="TextIspisPrethodni2Napomene">
+          <DataField>TextIspisPrethodni2Napomene</DataField>
+        </Field>
+        <Field Name="ZaduzenoV">
+          <DataField>ZaduzenoV</DataField>
+        </Field>
+        <Field Name="RazduzenoV">
+          <DataField>RazduzenoV</DataField>
+        </Field>
+        <Field Name="NoteNapomena">
+          <DataField>NoteNapomena</DataField>
+        </Field>
+        <Field Name="NoteKomenar">
+          <DataField>NoteKomenar</DataField>
+        </Field>
+        <Field Name="Responsible_Department_Name">
+          <DataField>Responsible_Department_Name</DataField>
+        </Field>
+        <Field Name="CZK_Request_No_">
+          <DataField>CZK_Request_No_</DataField>
+        </Field>
+        <Field Name="Implementation_Time">
+          <DataField>Implementation_Time</DataField>
+        </Field>
+        <Field Name="ContractStart">
+          <DataField>ContractStart</DataField>
+        </Field>
+        <Field Name="ContractDescription">
+          <DataField>ContractDescription</DataField>
+        </Field>
+        <Field Name="GaugeSizeS">
+          <DataField>GaugeSizeS</DataField>
+        </Field>
+        <Field Name="AddressMMSerial">
+          <DataField>AddressMMSerial</DataField>
+        </Field>
+        <Field Name="AddressMMStroke">
+          <DataField>AddressMMStroke</DataField>
+        </Field>
+        <Field Name="AddressMMString">
+          <DataField>AddressMMString</DataField>
+        </Field>
+        <Field Name="TRImpulse">
+          <DataField>TRImpulse</DataField>
+        </Field>
+        <Field Name="TRImpulseFormat">
+          <DataField>TRImpulseFormat</DataField>
+        </Field>
+        <Field Name="AnticorrosiveProtectionDA">
+          <DataField>AnticorrosiveProtectionDA</DataField>
+        </Field>
+        <Field Name="AnticorrosiveProtectionNE">
+          <DataField>AnticorrosiveProtectionNE</DataField>
+        </Field>
+        <Field Name="FireProtectionDA">
+          <DataField>FireProtectionDA</DataField>
+        </Field>
+        <Field Name="FireProtectionNE">
+          <DataField>FireProtectionNE</DataField>
+        </Field>
+        <Field Name="FireProtectionNeTreba">
+          <DataField>FireProtectionNeTreba</DataField>
+        </Field>
+        <Field Name="OutdoorVentilationDA">
+          <DataField>OutdoorVentilationDA</DataField>
+        </Field>
+        <Field Name="OutdoorVentilationNE">
+          <DataField>OutdoorVentilationNE</DataField>
+        </Field>
+        <Field Name="OutdoorVentilationNedovoljno">
+          <DataField>OutdoorVentilationNedovoljno</DataField>
+        </Field>
+        <Field Name="OutdoorVentilationNijePotrebno">
+          <DataField>OutdoorVentilationNijePotrebno</DataField>
+        </Field>
+        <Field Name="GEO_WorkPlaces">
+          <DataField>GEO_WorkPlaces</DataField>
+        </Field>
+        <Field Name="Saldo">
+          <DataField>Saldo</DataField>
+        </Field>
+        <Field Name="SaldoFormat">
+          <DataField>SaldoFormat</DataField>
+        </Field>
+        <Field Name="Stroke_No__2">
+          <DataField>Stroke_No__2</DataField>
+        </Field>
+        <Field Name="Stroke_No_">
+          <DataField>Stroke_No_</DataField>
+        </Field>
+        <Field Name="Customer_String">
+          <DataField>Customer_String</DataField>
+        </Field>
+        <Field Name="Customer_String_2">
+          <DataField>Customer_String_2</DataField>
+        </Field>
+        <Field Name="Customer_Category">
+          <DataField>Customer_Category</DataField>
+        </Field>
+        <Field Name="Address">
+          <DataField>Address</DataField>
+        </Field>
+        <Field Name="AddressStreet">
+          <DataField>AddressStreet</DataField>
+        </Field>
+        <Field Name="Address_2">
+          <DataField>Address_2</DataField>
+        </Field>
+        <Field Name="Owner_Address">
+          <DataField>Owner_Address</DataField>
+        </Field>
+        <Field Name="ServiceHeaderZone">
+          <DataField>ServiceHeaderZone</DataField>
+        </Field>
+        <Field Name="AddressMMZone">
+          <DataField>AddressMMZone</DataField>
+        </Field>
+        <Field Name="DateOfConsumption">
+          <DataField>DateOfConsumption</DataField>
+        </Field>
+        <Field Name="DDCalibration">
+          <DataField>DDCalibration</DataField>
+        </Field>
+        <Field Name="YearProd">
+          <DataField>YearProd</DataField>
+        </Field>
+        <Field Name="AddressMMRMS">
+          <DataField>AddressMMRMS</DataField>
+        </Field>
+        <Field Name="ReadingValue">
+          <DataField>ReadingValue</DataField>
+        </Field>
+        <Field Name="DateOfRealisation">
+          <DataField>DateOfRealisation</DataField>
+        </Field>
+        <Field Name="Reading">
+          <DataField>Reading</DataField>
+        </Field>
+        <Field Name="ReadingFormat">
+          <DataField>ReadingFormat</DataField>
+        </Field>
+        <Field Name="RealisationDone">
+          <DataField>RealisationDone</DataField>
+        </Field>
+        <Field Name="DateOfRealisationP">
+          <DataField>DateOfRealisationP</DataField>
+        </Field>
+        <Field Name="RealisationDoneP">
+          <DataField>RealisationDoneP</DataField>
+        </Field>
+        <Field Name="RealisationDoneNot">
+          <DataField>RealisationDoneNot</DataField>
+        </Field>
+        <Field Name="RealisationDoneNotP">
+          <DataField>RealisationDoneNotP</DataField>
+        </Field>
+        <Field Name="YNRD">
+          <DataField>YNRD</DataField>
+        </Field>
+        <Field Name="YNRDP">
+          <DataField>YNRDP</DataField>
+        </Field>
+        <Field Name="ServiceHeaderApartment">
+          <DataField>ServiceHeaderApartment</DataField>
+        </Field>
+        <Field Name="ServiceHeaderFloor">
+          <DataField>ServiceHeaderFloor</DataField>
+        </Field>
+        <Field Name="ServiceHeaderMunici">
+          <DataField>ServiceHeaderMunici</DataField>
+        </Field>
+        <Field Name="ServiceHeaderMunici2">
+          <DataField>ServiceHeaderMunici2</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEExecutionCompanyName">
+          <DataField>ZahtjevLastEEExecutionCompanyName</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHProjectAccordance">
+          <DataField>ZahtjevLastEEHProjectAccordance</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHProjectAccordanceDare">
+          <DataField>ZahtjevLastEEHProjectAccordanceDare</DataField>
+        </Field>
+        <Field Name="IzvodjacRadova">
+          <DataField>IzvodjacRadova</DataField>
+        </Field>
+        <Field Name="IzvodjacProtokol">
+          <DataField>IzvodjacProtokol</DataField>
+        </Field>
+        <Field Name="IzvodjacProtokolDate">
+          <DataField>IzvodjacProtokolDate</DataField>
+        </Field>
+        <Field Name="EEDate">
+          <DataField>EEDate</DataField>
+        </Field>
+        <Field Name="EENo">
+          <DataField>EENo</DataField>
+        </Field>
+        <Field Name="PovrsinaZaGrijanje">
+          <DataField>PovrsinaZaGrijanje</DataField>
+        </Field>
+        <Field Name="Purpose">
+          <DataField>Purpose</DataField>
+        </Field>
+        <Field Name="VizuelniRMS">
+          <DataField>VizuelniRMS</DataField>
+        </Field>
+        <Field Name="VizuelniRMSNE">
+          <DataField>VizuelniRMSNE</DataField>
+        </Field>
+        <Field Name="VizuelniGAS">
+          <DataField>VizuelniGAS</DataField>
+        </Field>
+        <Field Name="VizuelniGASNE">
+          <DataField>VizuelniGASNE</DataField>
+        </Field>
+        <Field Name="Licnekarte_niz_novi">
+          <DataField>Licnekarte_niz_novi</DataField>
+        </Field>
+        <Field Name="ObservedFlawsRMSChecked">
+          <DataField>ObservedFlawsRMSChecked</DataField>
+        </Field>
+        <Field Name="ObservedFlawsRMSUnchecked">
+          <DataField>ObservedFlawsRMSUnchecked</DataField>
+        </Field>
+        <Field Name="VisualRMSChecked">
+          <DataField>VisualRMSChecked</DataField>
+        </Field>
+        <Field Name="VisualRMSUnchecked">
+          <DataField>VisualRMSUnchecked</DataField>
+        </Field>
+        <Field Name="VisualInspectionGasChecked">
+          <DataField>VisualInspectionGasChecked</DataField>
+        </Field>
+        <Field Name="VisualInspectionGasUnchecked">
+          <DataField>VisualInspectionGasUnchecked</DataField>
+        </Field>
+        <Field Name="NedostaciRMS">
+          <DataField>NedostaciRMS</DataField>
+        </Field>
+        <Field Name="NedostaciRMSNE">
+          <DataField>NedostaciRMSNE</DataField>
+        </Field>
+        <Field Name="PlombaIspravna">
+          <DataField>PlombaIspravna</DataField>
+        </Field>
+        <Field Name="PlombaIspravnaNE">
+          <DataField>PlombaIspravnaNE</DataField>
+        </Field>
+        <Field Name="StanjeBrojcanikUGI">
+          <DataField>StanjeBrojcanikUGI</DataField>
+        </Field>
+        <Field Name="CvrstocaaLjudi">
+          <DataField>CvrstocaaLjudi</DataField>
+        </Field>
+        <Field Name="DueDateG">
+          <DataField>DueDateG</DataField>
+        </Field>
+        <Field Name="Remark">
+          <DataField>Remark</DataField>
+        </Field>
+        <Field Name="Zatecenouotvorenom">
+          <DataField>Zatecenouotvorenom</DataField>
+        </Field>
+        <Field Name="Zatecenouozatvoreni">
+          <DataField>Zatecenouozatvoreni</DataField>
+        </Field>
+        <Field Name="SpojniElementiPlNE">
+          <DataField>SpojniElementiPlNE</DataField>
+        </Field>
+        <Field Name="SpojniElementiPlDA">
+          <DataField>SpojniElementiPlDA</DataField>
+        </Field>
+        <Field Name="ZaptivenostDA">
+          <DataField>ZaptivenostDA</DataField>
+        </Field>
+        <Field Name="SviOtvoreniNE">
+          <DataField>SviOtvoreniNE</DataField>
+        </Field>
+        <Field Name="DetekcijaGasnihDA">
+          <DataField>DetekcijaGasnihDA</DataField>
+        </Field>
+        <Field Name="DetekcijaGasnihNE">
+          <DataField>DetekcijaGasnihNE</DataField>
+        </Field>
+        <Field Name="Co2Da">
+          <DataField>Co2Da</DataField>
+        </Field>
+        <Field Name="Co2Ne">
+          <DataField>Co2Ne</DataField>
+        </Field>
+        <Field Name="UGiStatusC">
+          <DataField>UGiStatusC</DataField>
+        </Field>
+        <Field Name="UGiStatusC1">
+          <DataField>UGiStatusC1</DataField>
+        </Field>
+        <Field Name="UGiStatusC2">
+          <DataField>UGiStatusC2</DataField>
+        </Field>
+        <Field Name="SviOtvoreniDA">
+          <DataField>SviOtvoreniDA</DataField>
+        </Field>
+        <Field Name="ZaptivenostNE">
+          <DataField>ZaptivenostNE</DataField>
+        </Field>
+        <Field Name="RMSObjektDA">
+          <DataField>RMSObjektDA</DataField>
+        </Field>
+        <Field Name="RMSObjektNE">
+          <DataField>RMSObjektNE</DataField>
+        </Field>
+        <Field Name="RMSIskljucenDa">
+          <DataField>RMSIskljucenDa</DataField>
+        </Field>
+        <Field Name="GasPlomba">
+          <DataField>GasPlomba</DataField>
+        </Field>
+        <Field Name="GasLisca">
+          <DataField>GasLisca</DataField>
+        </Field>
+        <Field Name="GasPlombaSG">
+          <DataField>GasPlombaSG</DataField>
+        </Field>
+        <Field Name="GAsIskljucen">
+          <DataField>GAsIskljucen</DataField>
+        </Field>
+        <Field Name="GAsIskljucen_Ne">
+          <DataField>GAsIskljucen_Ne</DataField>
+        </Field>
+        <Field Name="RMSLisca">
+          <DataField>RMSLisca</DataField>
+        </Field>
+        <Field Name="RMSPlomba">
+          <DataField>RMSPlomba</DataField>
+        </Field>
+        <Field Name="RMSPlombaSG">
+          <DataField>RMSPlombaSG</DataField>
+        </Field>
+        <Field Name="UgiPogonDa">
+          <DataField>UgiPogonDa</DataField>
+        </Field>
+        <Field Name="UgiPogonNe">
+          <DataField>UgiPogonNe</DataField>
+        </Field>
+        <Field Name="UgiPustena">
+          <DataField>UgiPustena</DataField>
+        </Field>
+        <Field Name="UGINijePustena">
+          <DataField>UGINijePustena</DataField>
+        </Field>
+        <Field Name="StatusComp">
+          <DataField>StatusComp</DataField>
+        </Field>
+        <Field Name="StatusDue">
+          <DataField>StatusDue</DataField>
+        </Field>
+        <Field Name="StatusOdg">
+          <DataField>StatusOdg</DataField>
+        </Field>
+        <Field Name="StatusPar">
+          <DataField>StatusPar</DataField>
+        </Field>
+        <Field Name="StatusStorn">
+          <DataField>StatusStorn</DataField>
+        </Field>
+        <Field Name="ReopenNo">
+          <DataField>ReopenNo</DataField>
+        </Field>
+        <Field Name="ReopenYes">
+          <DataField>ReopenYes</DataField>
+        </Field>
+        <Field Name="DueReopen">
+          <DataField>DueReopen</DataField>
+        </Field>
+        <Field Name="StatusUnR">
+          <DataField>StatusUnR</DataField>
+        </Field>
+        <Field Name="DueDateStatus">
+          <DataField>DueDateStatus</DataField>
+        </Field>
+        <Field Name="AlternativeG">
+          <DataField>AlternativeG</DataField>
+        </Field>
+        <Field Name="AlternativeText">
+          <DataField>AlternativeText</DataField>
+        </Field>
+        <Field Name="PipeConnectionType">
+          <DataField>PipeConnectionType</DataField>
+        </Field>
+        <Field Name="PipeConnectionText">
+          <DataField>PipeConnectionText</DataField>
+        </Field>
+        <Field Name="AnticorrosiveProtection">
+          <DataField>AnticorrosiveProtection</DataField>
+        </Field>
+        <Field Name="ConnectionType">
+          <DataField>ConnectionType</DataField>
+        </Field>
+        <Field Name="ConnectionTypeText">
+          <DataField>ConnectionTypeText</DataField>
+        </Field>
+        <Field Name="AlternativeDate">
+          <DataField>AlternativeDate</DataField>
+        </Field>
+        <Field Name="PotvrdaServisera">
+          <DataField>PotvrdaServisera</DataField>
+        </Field>
+        <Field Name="ServiseC">
+          <DataField>ServiseC</DataField>
+        </Field>
+        <Field Name="PPzGid">
+          <DataField>PPzGid</DataField>
+        </Field>
+        <Field Name="OutdoorVentilation">
+          <DataField>OutdoorVentilation</DataField>
+        </Field>
+        <Field Name="PristupacanDA">
+          <DataField>PristupacanDA</DataField>
+        </Field>
+        <Field Name="PristupacanNE">
+          <DataField>PristupacanNE</DataField>
+        </Field>
+        <Field Name="ChimneyGid">
+          <DataField>ChimneyGid</DataField>
+        </Field>
+        <Field Name="UGIVanPogonaOd">
+          <DataField>UGIVanPogonaOd</DataField>
+        </Field>
+        <Field Name="ServiseDate">
+          <DataField>ServiseDate</DataField>
+        </Field>
+        <Field Name="ElectroC">
+          <DataField>ElectroC</DataField>
+        </Field>
+        <Field Name="ElectroCDate">
+          <DataField>ElectroCDate</DataField>
+        </Field>
+        <Field Name="ppm1">
+          <DataField>ppm1</DataField>
+        </Field>
+        <Field Name="ppm1Format">
+          <DataField>ppm1Format</DataField>
+        </Field>
+        <Field Name="Usability">
+          <DataField>Usability</DataField>
+        </Field>
+        <Field Name="UsabilityDA">
+          <DataField>UsabilityDA</DataField>
+        </Field>
+        <Field Name="UsabilityNE">
+          <DataField>UsabilityNE</DataField>
+        </Field>
+        <Field Name="LocationOfLeakage2">
+          <DataField>LocationOfLeakage2</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHDesigner_Name">
+          <DataField>ZahtjevLastEEHDesigner_Name</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHDesign_Company">
+          <DataField>ZahtjevLastEEHDesign_Company</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHFirefight_Accordance">
+          <DataField>ZahtjevLastEEHFirefight_Accordance</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHFirefight_Accordance_No_">
+          <DataField>ZahtjevLastEEHFirefight_Accordance_No_</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHChimney_Expert_Opinion">
+          <DataField>ZahtjevLastEEHChimney_Expert_Opinion</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHChimney_Expert_Date">
+          <DataField>ZahtjevLastEEHChimney_Expert_Date</DataField>
+        </Field>
+        <Field Name="ZahtjevLastEEHFirefightDate">
+          <DataField>ZahtjevLastEEHFirefightDate</DataField>
+        </Field>
+        <Field Name="GasniAparatiSum">
+          <DataField>GasniAparatiSum</DataField>
+        </Field>
+        <Field Name="CustName">
+          <DataField>CustName</DataField>
+        </Field>
+        <Field Name="ServiceHeaderPhone">
+          <DataField>ServiceHeaderPhone</DataField>
+        </Field>
+        <Field Name="ServiceHeaderPhone2">
+          <DataField>ServiceHeaderPhone2</DataField>
+        </Field>
+        <Field Name="ServiceHeaderAddPhone">
+          <DataField>ServiceHeaderAddPhone</DataField>
+        </Field>
+        <Field Name="CompInfoFax">
+          <DataField>CompInfoFax</DataField>
+        </Field>
+        <Field Name="CompInfo_Fax2">
+          <DataField>CompInfo_Fax2</DataField>
+        </Field>
+        <Field Name="CompPage">
+          <DataField>CompPage</DataField>
+        </Field>
+        <Field Name="StatusMm">
+          <DataField>StatusMm</DataField>
+        </Field>
+        <Field Name="Ugovora">
+          <DataField>Ugovora</DataField>
+        </Field>
+        <Field Name="Meter_Manufacturer_Desc">
+          <DataField>Meter_Manufacturer_Desc</DataField>
+        </Field>
+        <Field Name="MeterManufacturer">
+          <DataField>MeterManufacturer</DataField>
+        </Field>
+        <Field Name="ProizvRadioModule">
+          <DataField>ProizvRadioModule</DataField>
+        </Field>
+        <Field Name="ProizvCorrector">
+          <DataField>ProizvCorrector</DataField>
+        </Field>
+        <Field Name="GaugeSizeSC">
+          <DataField>GaugeSizeSC</DataField>
+        </Field>
+        <Field Name="GaugeSizeSRadioModule">
+          <DataField>GaugeSizeSRadioModule</DataField>
+        </Field>
+        <Field Name="SerialCorrector">
+          <DataField>SerialCorrector</DataField>
+        </Field>
+        <Field Name="SerialRadioModule">
+          <DataField>SerialRadioModule</DataField>
+        </Field>
+        <Field Name="YearCCorrector">
+          <DataField>YearCCorrector</DataField>
+        </Field>
+        <Field Name="YearCRM">
+          <DataField>YearCRM</DataField>
+        </Field>
+        <Field Name="YearPCorrector">
+          <DataField>YearPCorrector</DataField>
+        </Field>
+        <Field Name="YearPRadioM">
+          <DataField>YearPRadioM</DataField>
+        </Field>
+        <Field Name="ReadDateC">
+          <DataField>ReadDateC</DataField>
+        </Field>
+        <Field Name="ReadDateRM">
+          <DataField>ReadDateRM</DataField>
+        </Field>
+        <Field Name="ReadRC">
+          <DataField>ReadRC</DataField>
+        </Field>
+        <Field Name="ReadRRM">
+          <DataField>ReadRRM</DataField>
+        </Field>
+        <Field Name="ImpC">
+          <DataField>ImpC</DataField>
+        </Field>
+        <Field Name="ImpCFormat">
+          <DataField>ImpCFormat</DataField>
+        </Field>
+        <Field Name="ImpRM">
+          <DataField>ImpRM</DataField>
+        </Field>
+        <Field Name="ImpRMFormat">
+          <DataField>ImpRMFormat</DataField>
+        </Field>
+        <Field Name="AddressMMPurpose">
+          <DataField>AddressMMPurpose</DataField>
+        </Field>
+        <Field Name="Narudzbenice">
+          <DataField>Narudzbenice</DataField>
+        </Field>
+        <Field Name="Zahtjeva">
+          <DataField>Zahtjeva</DataField>
+        </Field>
+        <Field Name="Tekuce">
+          <DataField>Tekuce</DataField>
+        </Field>
+        <Field Name="Inter">
+          <DataField>Inter</DataField>
+        </Field>
+        <Field Name="Plana">
+          <DataField>Plana</DataField>
+        </Field>
+        <Field Name="Korekt">
+          <DataField>Korekt</DataField>
+        </Field>
+        <Field Name="InvesticionoOdr">
+          <DataField>InvesticionoOdr</DataField>
+        </Field>
+        <Field Name="Responsible_Department">
+          <DataField>Responsible_Department</DataField>
+        </Field>
+        <Field Name="Work_Order_No_">
+          <DataField>Work_Order_No_</DataField>
+        </Field>
+        <Field Name="Request_Department">
+          <DataField>Request_Department</DataField>
+        </Field>
+        <Field Name="Starting_Time">
+          <DataField>Starting_Time</DataField>
+        </Field>
+        <Field Name="Finishing_Time">
+          <DataField>Finishing_Time</DataField>
+        </Field>
+        <Field Name="Timeofticket">
+          <DataField>Timeofticket</DataField>
+        </Field>
+        <Field Name="Rokzahtjeva">
+          <DataField>Rokzahtjeva</DataField>
+        </Field>
+        <Field Name="Dateticket">
+          <DataField>Dateticket</DataField>
+        </Field>
+        <Field Name="Time_of_sender">
+          <DataField>Time_of_sender</DataField>
+        </Field>
+        <Field Name="Date_of_sender">
+          <DataField>Date_of_sender</DataField>
+        </Field>
+        <Field Name="Starting_Date">
+          <DataField>Starting_Date</DataField>
+        </Field>
+        <Field Name="Ending_Date">
+          <DataField>Ending_Date</DataField>
+        </Field>
+        <Field Name="Geo__Activity_Type">
+          <DataField>Geo__Activity_Type</DataField>
+        </Field>
+        <Field Name="Request_Group">
+          <DataField>Request_Group</DataField>
+        </Field>
+        <Field Name="Document_Date">
+          <DataField>Document_Date</DataField>
+        </Field>
+        <Field Name="Document_No_">
+          <DataField>Document_No_</DataField>
+        </Field>
+        <Field Name="Evidential_Number">
+          <DataField>Evidential_Number</DataField>
+        </Field>
+        <Field Name="AddressMMa">
+          <DataField>AddressMMa</DataField>
+        </Field>
+        <Field Name="StreetMM">
+          <DataField>StreetMM</DataField>
+        </Field>
+        <Field Name="AddressMMReadinMode">
+          <DataField>AddressMMReadinMode</DataField>
+        </Field>
+        <Field Name="HomeNoMM">
+          <DataField>HomeNoMM</DataField>
+        </Field>
+        <Field Name="MunicipalityNameMM">
+          <DataField>MunicipalityNameMM</DataField>
+        </Field>
+        <Field Name="FloorMM">
+          <DataField>FloorMM</DataField>
+        </Field>
+        <Field Name="ApartmentNoMm">
+          <DataField>ApartmentNoMm</DataField>
+        </Field>
+        <Field Name="StreetNoText">
+          <DataField>StreetNoText</DataField>
+        </Field>
+        <Field Name="streetSamo">
+          <DataField>streetSamo</DataField>
+        </Field>
+        <Field Name="AddressMMMjernoMjesto">
+          <DataField>AddressMMMjernoMjesto</DataField>
+        </Field>
+        <Field Name="Gradevinac">
+          <DataField>Gradevinac</DataField>
+        </Field>
+        <Field Name="SefRadilista">
+          <DataField>SefRadilista</DataField>
+        </Field>
+        <Field Name="Registration_No_">
+          <DataField>Registration_No_</DataField>
+        </Field>
+        <Field Name="Registry_Code">
+          <DataField>Registry_Code</DataField>
+        </Field>
+        <Field Name="Registry_No_">
+          <DataField>Registry_No_</DataField>
+        </Field>
+        <Field Name="Work_Order_Registry_No_">
+          <DataField>Work_Order_Registry_No_</DataField>
+        </Field>
+        <Field Name="BrojRegistraSlovima">
+          <DataField>BrojRegistraSlovima</DataField>
+        </Field>
+        <Field Name="Request_Department_Name">
+          <DataField>Request_Department_Name</DataField>
+        </Field>
+        <Field Name="Activity_Type">
+          <DataField>Activity_Type</DataField>
+        </Field>
+        <Field Name="DueDate">
+          <DataField>DueDate</DataField>
+        </Field>
+        <Field Name="Customer_No_">
+          <DataField>Customer_No_</DataField>
+        </Field>
+        <Field Name="Investor">
+          <DataField>Investor</DataField>
+        </Field>
+        <Field Name="BrojRN">
+          <DataField>BrojRN</DataField>
+        </Field>
+        <Field Name="VodjaGrupe">
+          <DataField>VodjaGrupe</DataField>
+        </Field>
+        <Field Name="ZvanjeVodja">
+          <DataField>ZvanjeVodja</DataField>
+        </Field>
+        <Field Name="Comp_Picture">
+          <DataField>Comp_Picture</DataField>
+        </Field>
+        <Field Name="SatiOVodja">
+          <DataField>SatiOVodja</DataField>
+        </Field>
+        <Field Name="SatiOVodjaFormat">
+          <DataField>SatiOVodjaFormat</DataField>
+        </Field>
+        <Field Name="SatiSnimanjeVodja">
+          <DataField>SatiSnimanjeVodja</DataField>
+        </Field>
+        <Field Name="SatiSnimanjeVodjaFormat">
+          <DataField>SatiSnimanjeVodjaFormat</DataField>
+        </Field>
+        <Field Name="CreateP">
+          <DataField>CreateP</DataField>
+        </Field>
+        <Field Name="Operator">
+          <DataField>Operator</DataField>
+        </Field>
+        <Field Name="SatiOperatorO">
+          <DataField>SatiOperatorO</DataField>
+        </Field>
+        <Field Name="SatiOperatorOFormat">
+          <DataField>SatiOperatorOFormat</DataField>
+        </Field>
+        <Field Name="SatiOperatorSnimanje">
+          <DataField>SatiOperatorSnimanje</DataField>
+        </Field>
+        <Field Name="SatiOperatorSnimanjeFormat">
+          <DataField>SatiOperatorSnimanjeFormat</DataField>
+        </Field>
+        <Field Name="ZvanjeOperater">
+          <DataField>ZvanjeOperater</DataField>
+        </Field>
+        <Field Name="Figurant1">
+          <DataField>Figurant1</DataField>
+        </Field>
+        <Field Name="FigurantZvanje">
+          <DataField>FigurantZvanje</DataField>
+        </Field>
+        <Field Name="Real__Process">
+          <DataField>Real__Process</DataField>
+        </Field>
+        <Field Name="Real__Contr__Empl__Name">
+          <DataField>Real__Contr__Empl__Name</DataField>
+        </Field>
+        <Field Name="Real__ProcessP">
+          <DataField>Real__ProcessP</DataField>
+        </Field>
+        <Field Name="Real__Contr__Empl__NameP">
+          <DataField>Real__Contr__Empl__NameP</DataField>
+        </Field>
+        <Field Name="Reason_For_Service_Order">
+          <DataField>Reason_For_Service_Order</DataField>
+        </Field>
+        <Field Name="Remark_For_Service_Order">
+          <DataField>Remark_For_Service_Order</DataField>
+        </Field>
+        <Field Name="Real__Verif__Empl__Name">
+          <DataField>Real__Verif__Empl__Name</DataField>
+        </Field>
+        <Field Name="Real__Verif__Empl__NameP">
+          <DataField>Real__Verif__Empl__NameP</DataField>
+        </Field>
+        <Field Name="Prep__Contr__Empl__Name">
+          <DataField>Prep__Contr__Empl__Name</DataField>
+        </Field>
+        <Field Name="Prep__Process__Empl__Name_">
+          <DataField>Prep__Process__Empl__Name_</DataField>
+        </Field>
+        <Field Name="Prep__Verif__Empl__Name">
+          <DataField>Prep__Verif__Empl__Name</DataField>
+        </Field>
+        <Field Name="SatiFigurantO">
+          <DataField>SatiFigurantO</DataField>
+        </Field>
+        <Field Name="SatiFigurantOFormat">
+          <DataField>SatiFigurantOFormat</DataField>
+        </Field>
+        <Field Name="RN_Source">
+          <DataField>RN_Source</DataField>
+        </Field>
+        <Field Name="SatiFiguratnS">
+          <DataField>SatiFiguratnS</DataField>
+        </Field>
+        <Field Name="SatiFiguratnSFormat">
+          <DataField>SatiFiguratnSFormat</DataField>
+        </Field>
+        <Field Name="Figurant2">
+          <DataField>Figurant2</DataField>
+        </Field>
+        <Field Name="Figurant2Zvanje">
+          <DataField>Figurant2Zvanje</DataField>
+        </Field>
+        <Field Name="SatiFigurant2O">
+          <DataField>SatiFigurant2O</DataField>
+        </Field>
+        <Field Name="SatiFigurant2OFormat">
+          <DataField>SatiFigurant2OFormat</DataField>
+        </Field>
+        <Field Name="SatiFiguratn2S">
+          <DataField>SatiFiguratn2S</DataField>
+        </Field>
+        <Field Name="SatiFiguratn2SFormat">
+          <DataField>SatiFiguratn2SFormat</DataField>
+        </Field>
+        <Field Name="Snim_Recording_Marking_Finished">
+          <DataField>Snim_Recording_Marking_Finished</DataField>
+        </Field>
+        <Field Name="Snim_Recording_Method">
+          <DataField>Snim_Recording_Method</DataField>
+        </Field>
+        <Field Name="Snim_DGM_Total_Length">
+          <DataField>Snim_DGM_Total_Length</DataField>
+        </Field>
+        <Field Name="Snim_DGM_Total_LengthFormat">
+          <DataField>Snim_DGM_Total_LengthFormat</DataField>
+        </Field>
+        <Field Name="Snim_PG_Total_Length">
+          <DataField>Snim_PG_Total_Length</DataField>
+        </Field>
+        <Field Name="Snim_PG_Total_LengthFormat">
+          <DataField>Snim_PG_Total_LengthFormat</DataField>
+        </Field>
+        <Field Name="Snim_Recording_No_of_Connections">
+          <DataField>Snim_Recording_No_of_Connections</DataField>
+        </Field>
+        <Field Name="Snim_No__of_Objects">
+          <DataField>Snim_No__of_Objects</DataField>
+        </Field>
+        <Field Name="Snim_No__of_Cutting">
+          <DataField>Snim_No__of_Cutting</DataField>
+        </Field>
+        <Field Name="UnitF1">
+          <DataField>UnitF1</DataField>
+        </Field>
+        <Field Name="UnitF2">
+          <DataField>UnitF2</DataField>
+        </Field>
+        <Field Name="UnitOp">
+          <DataField>UnitOp</DataField>
+        </Field>
+        <Field Name="UnitVodja">
+          <DataField>UnitVodja</DataField>
+        </Field>
+        <Field Name="Supervisory_Board">
+          <DataField>Supervisory_Board</DataField>
+        </Field>
+        <Field Name="Holder_of_works">
+          <DataField>Holder_of_works</DataField>
+        </Field>
+        <Field Name="Snim_Pipeline_Recording">
+          <DataField>Snim_Pipeline_Recording</DataField>
+        </Field>
+        <Field Name="Snim_Rec_Marking_Fully_Finished">
+          <DataField>Snim_Rec_Marking_Fully_Finished</DataField>
+        </Field>
+        <Field Name="Snim_Rec_Marking_Start_Date">
+          <DataField>Snim_Rec_Marking_Start_Date</DataField>
+        </Field>
+        <Field Name="Snim_Rec_Marking_End_Date">
+          <DataField>Snim_Rec_Marking_End_Date</DataField>
+        </Field>
+        <Field Name="Tras_Marking_Finished">
+          <DataField>Tras_Marking_Finished</DataField>
+        </Field>
+        <Field Name="Tras_Marking_Method">
+          <DataField>Tras_Marking_Method</DataField>
+        </Field>
+        <Field Name="Tras_Marking_DGM_Total_Length">
+          <DataField>Tras_Marking_DGM_Total_Length</DataField>
+        </Field>
+        <Field Name="Tras_Marking_DGM_Total_LengthFormat">
+          <DataField>Tras_Marking_DGM_Total_LengthFormat</DataField>
+        </Field>
+        <Field Name="Tras_Marking_PG_Total_Length">
+          <DataField>Tras_Marking_PG_Total_Length</DataField>
+        </Field>
+        <Field Name="Tras_Marking_PG_Total_LengthFormat">
+          <DataField>Tras_Marking_PG_Total_LengthFormat</DataField>
+        </Field>
+        <Field Name="Tras_Mark_No__of_Connections">
+          <DataField>Tras_Mark_No__of_Connections</DataField>
+        </Field>
+        <Field Name="Tras_MarkingFullyFinished">
+          <DataField>Tras_MarkingFullyFinished</DataField>
+        </Field>
+        <Field Name="Tras_Marking_Start_Date">
+          <DataField>Tras_Marking_Start_Date</DataField>
+        </Field>
+        <Field Name="Tras_Marking_End_Date">
+          <DataField>Tras_Marking_End_Date</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_Done">
+          <DataField>Obilj_Marking_Done</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_Method_2">
+          <DataField>Obilj_Marking_Method_2</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_DGM_Total_Length">
+          <DataField>Obilj_Marking_DGM_Total_Length</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_DGM_Total_LengthFormat">
+          <DataField>Obilj_Marking_DGM_Total_LengthFormat</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_PG_Total_Length">
+          <DataField>Obilj_Marking_PG_Total_Length</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_PG_Total_LengthFormat">
+          <DataField>Obilj_Marking_PG_Total_LengthFormat</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_No__of_Connections">
+          <DataField>Obilj_Marking_No__of_Connections</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_Fully_Done">
+          <DataField>Obilj_Marking_Fully_Done</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_Start_Date___2">
+          <DataField>Obilj_Marking_Start_Date___2</DataField>
+        </Field>
+        <Field Name="Obilj_Marking_End_Date_2">
+          <DataField>Obilj_Marking_End_Date_2</DataField>
+        </Field>
+        <Field Name="Harpoon">
+          <DataField>Harpoon</DataField>
+        </Field>
+        <Field Name="Harpoon_R">
+          <DataField>Harpoon_R</DataField>
+        </Field>
+        <Field Name="Spray">
+          <DataField>Spray</DataField>
+        </Field>
+        <Field Name="Spray_R">
+          <DataField>Spray_R</DataField>
+        </Field>
+        <Field Name="Bolcna">
+          <DataField>Bolcna</DataField>
+        </Field>
+        <Field Name="Bolcna_R">
+          <DataField>Bolcna_R</DataField>
+        </Field>
+        <Field Name="Palette">
+          <DataField>Palette</DataField>
+        </Field>
+        <Field Name="Palette_R">
+          <DataField>Palette_R</DataField>
+        </Field>
+        <Field Name="Trimble_M3">
+          <DataField>Trimble_M3</DataField>
+        </Field>
+        <Field Name="Trimble_M3_R">
+          <DataField>Trimble_M3_R</DataField>
+        </Field>
+        <Field Name="Sokkia_1x">
+          <DataField>Sokkia_1x</DataField>
+        </Field>
+        <Field Name="Sokkia_1x_R">
+          <DataField>Sokkia_1x_R</DataField>
+        </Field>
+        <Field Name="Zeiss_1x">
+          <DataField>Zeiss_1x</DataField>
+        </Field>
+        <Field Name="RNConnection">
+          <DataField>RNConnection</DataField>
+        </Field>
+        <Field Name="Zeiss_1x_R">
+          <DataField>Zeiss_1x_R</DataField>
+        </Field>
+        <Field Name="Zeiss_REC_ELTA_15">
+          <DataField>Zeiss_REC_ELTA_15</DataField>
+        </Field>
+        <Field Name="Zeiss_REC_ELTA_15_R">
+          <DataField>Zeiss_REC_ELTA_15_R</DataField>
+        </Field>
+        <Field Name="TRIMBLE_C5">
+          <DataField>TRIMBLE_C5</DataField>
+        </Field>
+        <Field Name="TRIMBLE_C5_R">
+          <DataField>TRIMBLE_C5_R</DataField>
+        </Field>
+        <Field Name="Zeiss_3x">
+          <DataField>Zeiss_3x</DataField>
+        </Field>
+        <Field Name="Zeiss_3x_R">
+          <DataField>Zeiss_3x_R</DataField>
+        </Field>
+        <Field Name="Sokkia_2_7_m">
+          <DataField>Sokkia_2_7_m</DataField>
+        </Field>
+        <Field Name="Sokkia_2_7_m_R">
+          <DataField>Sokkia_2_7_m_R</DataField>
+        </Field>
+        <Field Name="Sokkia_3_8_m">
+          <DataField>Sokkia_3_8_m</DataField>
+        </Field>
+        <Field Name="Sokkia_3_8_m_R">
+          <DataField>Sokkia_3_8_m_R</DataField>
+        </Field>
+        <Field Name="Sokkia_5_m">
+          <DataField>Sokkia_5_m</DataField>
+        </Field>
+        <Field Name="Sokkia_5_m_R">
+          <DataField>Sokkia_5_m_R</DataField>
+        </Field>
+        <Field Name="Sokkia_SET2030">
+          <DataField>Sokkia_SET2030</DataField>
+        </Field>
+        <Field Name="Sokkia_SET2030_R">
+          <DataField>Sokkia_SET2030_R</DataField>
+        </Field>
+        <Field Name="GPS___Others">
+          <DataField>GPS___Others</DataField>
+        </Field>
+        <Field Name="GPS___Others_R">
+          <DataField>GPS___Others_R</DataField>
+        </Field>
+        <Field Name="GPS_L1___Promark_3">
+          <DataField>GPS_L1___Promark_3</DataField>
+        </Field>
+        <Field Name="GPS_L1___Promark_3_R">
+          <DataField>GPS_L1___Promark_3_R</DataField>
+        </Field>
+        <Field Name="GPS_TRIMBLE_R8S">
+          <DataField>GPS_TRIMBLE_R8S</DataField>
+        </Field>
+        <Field Name="GPS_TRIMBLE_R8S_R">
+          <DataField>GPS_TRIMBLE_R8S_R</DataField>
+        </Field>
+        <Field Name="Wild_1x">
+          <DataField>Wild_1x</DataField>
+        </Field>
+        <Field Name="Wild_1x_R">
+          <DataField>Wild_1x_R</DataField>
+        </Field>
+        <Field Name="Wild_2_15_m">
+          <DataField>Wild_2_15_m</DataField>
+        </Field>
+        <Field Name="Wild_2_15_m_R">
+          <DataField>Wild_2_15_m_R</DataField>
+        </Field>
+        <Field Name="pedeset_m">
+          <DataField>pedeset_m</DataField>
+        </Field>
+        <Field Name="pedeset_m_R">
+          <DataField>pedeset_m_R</DataField>
+        </Field>
+        <Field Name="tridesetm">
+          <DataField>tridesetm</DataField>
+        </Field>
+        <Field Name="tridesetm_R">
+          <DataField>tridesetm_R</DataField>
+        </Field>
+        <Field Name="dvadesetm">
+          <DataField>dvadesetm</DataField>
+        </Field>
+        <Field Name="dvadesetm_R">
+          <DataField>dvadesetm_R</DataField>
+        </Field>
+        <Field Name="Leica_Disto">
+          <DataField>Leica_Disto</DataField>
+        </Field>
+        <Field Name="Leica_Disto_R">
+          <DataField>Leica_Disto_R</DataField>
+        </Field>
+        <Field Name="Accessories_for_Centering">
+          <DataField>Accessories_for_Centering</DataField>
+        </Field>
+        <Field Name="Accessories_for_Centering_R">
+          <DataField>Accessories_for_Centering_R</DataField>
+        </Field>
+        <Field Name="Tersus">
+          <DataField>Tersus</DataField>
+        </Field>
+        <Field Name="Topcon">
+          <DataField>Topcon</DataField>
+        </Field>
+        <Field Name="AccExe_Pos">
+          <DataField>AccExe_Pos</DataField>
+        </Field>
+        <Field Name="Acc2_Pos_">
+          <DataField>Acc2_Pos_</DataField>
+        </Field>
+        <Field Name="AccExeName">
+          <DataField>AccExeName</DataField>
+        </Field>
+        <Field Name="Acc2_Name">
+          <DataField>Acc2_Name</DataField>
+        </Field>
+        <Field Name="RecommissioningCosts">
+          <DataField>RecommissioningCosts</DataField>
+        </Field>
+        <Field Name="RecommissioningCostsFormat">
+          <DataField>RecommissioningCostsFormat</DataField>
+        </Field>
+        <Field Name="SILRowCounter">
+          <DataField>SILRowCounter</DataField>
+        </Field>
+        <Field Name="Meter_Manufacturer">
+          <DataField>Meter_Manufacturer</DataField>
+        </Field>
+        <Field Name="AddressGEOMM">
+          <DataField>AddressGEOMM</DataField>
+        </Field>
+        <Field Name="Municipality_NameGEOMM">
+          <DataField>Municipality_NameGEOMM</DataField>
+        </Field>
+        <Field Name="ServiceLineNo">
+          <DataField>ServiceLineNo</DataField>
+        </Field>
+        <Field Name="ServiceDescription">
+          <DataField>ServiceDescription</DataField>
+        </Field>
+        <Field Name="ServiceLineUnitMeasure">
+          <DataField>ServiceLineUnitMeasure</DataField>
+        </Field>
+        <Field Name="ServiceLinePlan">
+          <DataField>ServiceLinePlan</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanFormat">
+          <DataField>ServiceLinePlanFormat</DataField>
+        </Field>
+        <Field Name="ServicePlanRealised">
+          <DataField>ServicePlanRealised</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedFormat">
+          <DataField>ServicePlanRealisedFormat</DataField>
+        </Field>
+        <Field Name="ServiceUnitPrice">
+          <DataField>ServiceUnitPrice</DataField>
+        </Field>
+        <Field Name="ServiceUnitPriceFormat">
+          <DataField>ServiceUnitPriceFormat</DataField>
+        </Field>
+        <Field Name="ServiceTotal">
+          <DataField>ServiceTotal</DataField>
+        </Field>
+        <Field Name="ServiceTotalFormat">
+          <DataField>ServiceTotalFormat</DataField>
+        </Field>
+        <Field Name="SumOfServiceTotal">
+          <DataField>SumOfServiceTotal</DataField>
+        </Field>
+        <Field Name="SumOfServiceTotalFormat">
+          <DataField>SumOfServiceTotalFormat</DataField>
+        </Field>
+        <Field Name="ServiceLineNoRes">
+          <DataField>ServiceLineNoRes</DataField>
+        </Field>
+        <Field Name="ServiceDescriptionRes">
+          <DataField>ServiceDescriptionRes</DataField>
+        </Field>
+        <Field Name="ServiceLineUnitMeasureRes">
+          <DataField>ServiceLineUnitMeasureRes</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanRes">
+          <DataField>ServiceLinePlanRes</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanResFormat">
+          <DataField>ServiceLinePlanResFormat</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedRes">
+          <DataField>ServicePlanRealisedRes</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedResFormat">
+          <DataField>ServicePlanRealisedResFormat</DataField>
+        </Field>
+        <Field Name="ServiceUnitPriceRes">
+          <DataField>ServiceUnitPriceRes</DataField>
+        </Field>
+        <Field Name="ServiceUnitPriceResFormat">
+          <DataField>ServiceUnitPriceResFormat</DataField>
+        </Field>
+        <Field Name="ServiceTotalRes">
+          <DataField>ServiceTotalRes</DataField>
+        </Field>
+        <Field Name="ServiceTotalResFormat">
+          <DataField>ServiceTotalResFormat</DataField>
+        </Field>
+        <Field Name="SumOfServiceTotalRes">
+          <DataField>SumOfServiceTotalRes</DataField>
+        </Field>
+        <Field Name="SumOfServiceTotalResFormat">
+          <DataField>SumOfServiceTotalResFormat</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpNo">
+          <DataField>ServiceLineResourceEmpNo</DataField>
+        </Field>
+        <Field Name="RequestResourceType1">
+          <DataField>RequestResourceType1</DataField>
+        </Field>
+        <Field Name="BrojacLjudi">
+          <DataField>BrojacLjudi</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceNameEmp">
+          <DataField>ServiceLineResourceNameEmp</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpUnitofMeasureCode">
+          <DataField>ServiceLineResourceEmpUnitofMeasureCode</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanResourceEmp">
+          <DataField>ServiceLinePlanResourceEmp</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanResourceEmpFormat">
+          <DataField>ServiceLinePlanResourceEmpFormat</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedResourceEmp">
+          <DataField>ServicePlanRealisedResourceEmp</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedResourceEmpFormat">
+          <DataField>ServicePlanRealisedResourceEmpFormat</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpUnitPrice">
+          <DataField>ServiceLineResourceEmpUnitPrice</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpUnitPriceFormat">
+          <DataField>ServiceLineResourceEmpUnitPriceFormat</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpTot">
+          <DataField>ServiceLineResourceEmpTot</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpTotFormat">
+          <DataField>ServiceLineResourceEmpTotFormat</DataField>
+        </Field>
+        <Field Name="ServiceLineResourceEmpResourceName">
+          <DataField>ServiceLineResourceEmpResourceName</DataField>
+        </Field>
+        <Field Name="ServiceLineEducationLevelEmp">
+          <DataField>ServiceLineEducationLevelEmp</DataField>
+        </Field>
+        <Field Name="SchoolShort">
+          <DataField>SchoolShort</DataField>
+        </Field>
+        <Field Name="GASDescription">
+          <DataField>GASDescription</DataField>
+        </Field>
+        <Field Name="Gas_Appliance_Type">
+          <DataField>Gas_Appliance_Type</DataField>
+        </Field>
+        <Field Name="Power_To">
+          <DataField>Power_To</DataField>
+        </Field>
+        <Field Name="Power_ToFormat">
+          <DataField>Power_ToFormat</DataField>
+        </Field>
+        <Field Name="ExcerptArmoredWithAStopper">
+          <DataField>ExcerptArmoredWithAStopper</DataField>
+        </Field>
+        <Field Name="ExcerptArmoredWithAStopperDA">
+          <DataField>ExcerptArmoredWithAStopperDA</DataField>
+        </Field>
+        <Field Name="ExcerptArmoredWithAStopperNE">
+          <DataField>ExcerptArmoredWithAStopperNE</DataField>
+        </Field>
+        <Field Name="ConstCH4_DA">
+          <DataField>ConstCH4_DA</DataField>
+        </Field>
+        <Field Name="ConstCH4_NE">
+          <DataField>ConstCH4_NE</DataField>
+        </Field>
+        <Field Name="UGIPutIntoOperation_DA">
+          <DataField>UGIPutIntoOperation_DA</DataField>
+        </Field>
+        <Field Name="UGIPutIntoOperation_NE">
+          <DataField>UGIPutIntoOperation_NE</DataField>
+        </Field>
+        <Field Name="UsabilityUGI_Empty">
+          <DataField>UsabilityUGI_Empty</DataField>
+        </Field>
+        <Field Name="UsabilityUGI_DA">
+          <DataField>UsabilityUGI_DA</DataField>
+        </Field>
+        <Field Name="UsabilityUGI_NE">
+          <DataField>UsabilityUGI_NE</DataField>
+        </Field>
+        <Field Name="DescriptionB">
+          <DataField>DescriptionB</DataField>
+        </Field>
+        <Field Name="DescriptionG">
+          <DataField>DescriptionG</DataField>
+        </Field>
+        <Field Name="DescriptionGP">
+          <DataField>DescriptionGP</DataField>
+        </Field>
+        <Field Name="GAT_Gas_stove">
+          <DataField>GAT_Gas_stove</DataField>
+        </Field>
+        <Field Name="GAT_Gas_heater">
+          <DataField>GAT_Gas_heater</DataField>
+        </Field>
+        <Field Name="GAT_Boiler">
+          <DataField>GAT_Boiler</DataField>
+        </Field>
+        <Field Name="GAT_Combined_boiler">
+          <DataField>GAT_Combined_boiler</DataField>
+        </Field>
+        <Field Name="GAT_Instantaneous_boiler">
+          <DataField>GAT_Instantaneous_boiler</DataField>
+        </Field>
+        <Field Name="GAT_Circulating_boiler">
+          <DataField>GAT_Circulating_boiler</DataField>
+        </Field>
+        <Field Name="GAT_Condensing_boiler">
+          <DataField>GAT_Condensing_boiler</DataField>
+        </Field>
+        <Field Name="GAT_Fireplace">
+          <DataField>GAT_Fireplace</DataField>
+        </Field>
+        <Field Name="GAT_Burner">
+          <DataField>GAT_Burner</DataField>
+        </Field>
+        <Field Name="GAT_Tiled_stove">
+          <DataField>GAT_Tiled_stove</DataField>
+        </Field>
+        <Field Name="GAT_Appliance_without_a_thermocouple">
+          <DataField>GAT_Appliance_without_a_thermocouple</DataField>
+        </Field>
+        <Field Name="GAT_Infrared_heater">
+          <DataField>GAT_Infrared_heater</DataField>
+        </Field>
+        <Field Name="DescriptionO">
+          <DataField>DescriptionO</DataField>
+        </Field>
+        <Field Name="DescriptionKombinovani">
+          <DataField>DescriptionKombinovani</DataField>
+        </Field>
+        <Field Name="DescriptionProtocni">
+          <DataField>DescriptionProtocni</DataField>
+        </Field>
+        <Field Name="DescriptionCirkularni">
+          <DataField>DescriptionCirkularni</DataField>
+        </Field>
+        <Field Name="DescriptionKondezacijski">
+          <DataField>DescriptionKondezacijski</DataField>
+        </Field>
+        <Field Name="DescriptionKamin">
+          <DataField>DescriptionKamin</DataField>
+        </Field>
+        <Field Name="DescriptionGorionik">
+          <DataField>DescriptionGorionik</DataField>
+        </Field>
+        <Field Name="DescriptionKaljevaPec">
+          <DataField>DescriptionKaljevaPec</DataField>
+        </Field>
+        <Field Name="DescriptionICGrijalica">
+          <DataField>DescriptionICGrijalica</DataField>
+        </Field>
+        <Field Name="DescriptionAparatBezTermoelemnta">
+          <DataField>DescriptionAparatBezTermoelemnta</DataField>
+        </Field>
+        <Field Name="Mandatory_Attachment_Type">
+          <DataField>Mandatory_Attachment_Type</DataField>
+        </Field>
+        <Field Name="YesNoDelivered">
+          <DataField>YesNoDelivered</DataField>
+        </Field>
+        <Field Name="BrojacMandatory">
+          <DataField>BrojacMandatory</DataField>
+        </Field>
+        <Field Name="Comment">
+          <DataField>Comment</DataField>
+        </Field>
+        <Field Name="ServiceLineNoCost">
+          <DataField>ServiceLineNoCost</DataField>
+        </Field>
+        <Field Name="ServiceDescriptionCost">
+          <DataField>ServiceDescriptionCost</DataField>
+        </Field>
+        <Field Name="ServiceLineUnitMeasureCost">
+          <DataField>ServiceLineUnitMeasureCost</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanCost">
+          <DataField>ServiceLinePlanCost</DataField>
+        </Field>
+        <Field Name="ServiceLinePlanCostFormat">
+          <DataField>ServiceLinePlanCostFormat</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedCost">
+          <DataField>ServicePlanRealisedCost</DataField>
+        </Field>
+        <Field Name="ServicePlanRealisedCostFormat">
+          <DataField>ServicePlanRealisedCostFormat</DataField>
+        </Field>
+        <Field Name="ServiceUnitPriceCost">
+          <DataField>ServiceUnitPriceCost</DataField>
+        </Field>
+        <Field Name="ServiceUnitPriceCostFormat">
+          <DataField>ServiceUnitPriceCostFormat</DataField>
+        </Field>
+        <Field Name="ServiceTotalCost">
+          <DataField>ServiceTotalCost</DataField>
+        </Field>
+        <Field Name="ServiceTotalCostFormat">
+          <DataField>ServiceTotalCostFormat</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

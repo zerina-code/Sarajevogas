@@ -1,0 +1,209 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="JIB">
+          <DataField>JIB</DataField>
+        </Field>
+        <Field Name="CompanyName">
+          <DataField>CompanyName</DataField>
+        </Field>
+        <Field Name="CompanyAdress">
+          <DataField>CompanyAdress</DataField>
+        </Field>
+        <Field Name="PostCode">
+          <DataField>PostCode</DataField>
+        </Field>
+        <Field Name="MunicipalityCode">
+          <DataField>MunicipalityCode</DataField>
+        </Field>
+        <Field Name="City">
+          <DataField>City</DataField>
+        </Field>
+        <Field Name="CompEmail">
+          <DataField>CompEmail</DataField>
+        </Field>
+        <Field Name="CompPhone">
+          <DataField>CompPhone</DataField>
+        </Field>
+        <Field Name="CompEmployeeNo">
+          <DataField>CompEmployeeNo</DataField>
+        </Field>
+        <Field Name="Oblig">
+          <DataField>Oblig</DataField>
+        </Field>
+        <Field Name="Changed">
+          <DataField>Changed</DataField>
+        </Field>
+        <Field Name="Basic">
+          <DataField>Basic</DataField>
+        </Field>
+        <Field Name="BrutoIznos">
+          <DataField>BrutoIznos</DataField>
+        </Field>
+        <Field Name="BrutoIznosFormat">
+          <DataField>BrutoIznosFormat</DataField>
+        </Field>
+        <Field Name="EmpFirstName">
+          <DataField>EmpFirstName</DataField>
+        </Field>
+        <Field Name="Zanimanje">
+          <DataField>Zanimanje</DataField>
+        </Field>
+        <Field Name="EmpLastName">
+          <DataField>EmpLastName</DataField>
+        </Field>
+        <Field Name="EmpBirthDate">
+          <DataField>EmpBirthDate</DataField>
+        </Field>
+        <Field Name="EmpID">
+          <DataField>EmpID</DataField>
+        </Field>
+        <Field Name="EmpGender">
+          <DataField>EmpGender</DataField>
+        </Field>
+        <Field Name="EmpAddress">
+          <DataField>EmpAddress</DataField>
+        </Field>
+        <Field Name="EmpCity">
+          <DataField>EmpCity</DataField>
+        </Field>
+        <Field Name="EmpPostCode">
+          <DataField>EmpPostCode</DataField>
+        </Field>
+        <Field Name="EmpMunicipalityCode">
+          <DataField>EmpMunicipalityCode</DataField>
+        </Field>
+        <Field Name="EmpEduLevel">
+          <DataField>EmpEduLevel</DataField>
+        </Field>
+        <Field Name="EmpVoc">
+          <DataField>EmpVoc</DataField>
+        </Field>
+        <Field Name="EmpEmail">
+          <DataField>EmpEmail</DataField>
+        </Field>
+        <Field Name="EmpHours">
+          <DataField>EmpHours</DataField>
+        </Field>
+        <Field Name="EmploymentDate">
+          <DataField>EmploymentDate</DataField>
+        </Field>
+        <Field Name="EducationLevel_pom">
+          <DataField>EducationLevel_pom</DataField>
+        </Field>
+        <Field Name="EmpPositionCode">
+          <DataField>EmpPositionCode</DataField>
+        </Field>
+        <Field Name="EmpPosition_pom">
+          <DataField>EmpPosition_pom</DataField>
+        </Field>
+        <Field Name="Today">
+          <DataField>Today</DataField>
+        </Field>
+        <Field Name="GenderVar">
+          <DataField>GenderVar</DataField>
+        </Field>
+        <Field Name="CompEmpFirstName">
+          <DataField>CompEmpFirstName</DataField>
+        </Field>
+        <Field Name="CompEmpLastName">
+          <DataField>CompEmpLastName</DataField>
+        </Field>
+        <Field Name="CompEmpID">
+          <DataField>CompEmpID</DataField>
+        </Field>
+        <Field Name="CompEmpPhoneNo">
+          <DataField>CompEmpPhoneNo</DataField>
+        </Field>
+        <Field Name="EmpMaidenName">
+          <DataField>EmpMaidenName</DataField>
+        </Field>
+        <Field Name="SvrhaDoprinosa">
+          <DataField>SvrhaDoprinosa</DataField>
+        </Field>
+        <Field Name="FirstNumber">
+          <DataField>FirstNumber</DataField>
+        </Field>
+        <Field Name="SecondNumber">
+          <DataField>SecondNumber</DataField>
+        </Field>
+        <Field Name="Registration">
+          <DataField>Registration</DataField>
+        </Field>
+        <Field Name="Cancellation">
+          <DataField>Cancellation</DataField>
+        </Field>
+        <Field Name="Promjena">
+          <DataField>Promjena</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>

@@ -1,0 +1,197 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Report xmlns="http://schemas.microsoft.com/sqlserver/reporting/2016/01/reportdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <AutoRefresh>0</AutoRefresh>
+  <DataSources>
+    <DataSource Name="DataSource">
+      <ConnectionProperties>
+        <DataProvider>SQL</DataProvider>
+        <ConnectString />
+      </ConnectionProperties>
+      <rd:SecurityType>None</rd:SecurityType>
+    </DataSource>
+  </DataSources>
+  <ReportSections>
+    <ReportSection>
+      <Body>
+        <Height>2in</Height>
+        <Style />
+      </Body>
+      <Width>6.5in</Width>
+      <Page>
+        <Style />
+      </Page>
+    </ReportSection>
+  </ReportSections>
+  <Code>Public Function BlankZero(ByVal Value As Decimal)
+    if Value = 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankPos(ByVal Value As Decimal)
+    if Value &gt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankZeroAndPos(ByVal Value As Decimal)
+    if Value &gt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNeg(ByVal Value As Decimal)
+    if Value &lt; 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+
+Public Function BlankNegAndZero(ByVal Value As Decimal)
+    if Value &lt;= 0 then
+        Return ""
+    end if
+    Return Value
+End Function
+</Code>
+  <Language>=User!Language</Language>
+  <ConsumeContainerWhitespace>true</ConsumeContainerWhitespace>
+  <rd:ReportUnitType>Inch</rd:ReportUnitType>
+  <rd:ReportID>0eeb6585-38ae-40f1-885b-8d50088d51b4</rd:ReportID>
+  <DataSets>
+    <DataSet Name="DataSet_Result">
+      <Fields>
+        <Field Name="EmpNo">
+          <DataField>EmpNo</DataField>
+        </Field>
+        <Field Name="KopanijaNaziv">
+          <DataField>KopanijaNaziv</DataField>
+        </Field>
+        <Field Name="KompanijaAdresa">
+          <DataField>KompanijaAdresa</DataField>
+        </Field>
+        <Field Name="JIB">
+          <DataField>JIB</DataField>
+        </Field>
+        <Field Name="ZaposlenikIme">
+          <DataField>ZaposlenikIme</DataField>
+        </Field>
+        <Field Name="ZaposlenikPrezime">
+          <DataField>ZaposlenikPrezime</DataField>
+        </Field>
+        <Field Name="ZaposlenikAdresa1">
+          <DataField>ZaposlenikAdresa1</DataField>
+        </Field>
+        <Field Name="ZaposlenikAdresa2">
+          <DataField>ZaposlenikAdresa2</DataField>
+        </Field>
+        <Field Name="JMB">
+          <DataField>JMB</DataField>
+        </Field>
+        <Field Name="IDYear">
+          <DataField>IDYear</DataField>
+        </Field>
+        <Field Name="sumZDR">
+          <DataField>sumZDR</DataField>
+        </Field>
+        <Field Name="sumZDRFormat">
+          <DataField>sumZDRFormat</DataField>
+        </Field>
+        <Field Name="sumNZ">
+          <DataField>sumNZ</DataField>
+        </Field>
+        <Field Name="sumNZFormat">
+          <DataField>sumNZFormat</DataField>
+        </Field>
+        <Field Name="sumPIO">
+          <DataField>sumPIO</DataField>
+        </Field>
+        <Field Name="sumPIOFormat">
+          <DataField>sumPIOFormat</DataField>
+        </Field>
+        <Field Name="BrojRadnika">
+          <DataField>BrojRadnika</DataField>
+        </Field>
+        <Field Name="WageNo">
+          <DataField>WageNo</DataField>
+        </Field>
+        <Field Name="MjesecObracuna">
+          <DataField>MjesecObracuna</DataField>
+        </Field>
+        <Field Name="GodinaObracuna">
+          <DataField>GodinaObracuna</DataField>
+        </Field>
+        <Field Name="DirectBruto">
+          <DataField>DirectBruto</DataField>
+        </Field>
+        <Field Name="DirectBrutoFormat">
+          <DataField>DirectBrutoFormat</DataField>
+        </Field>
+        <Field Name="IndirectBruto">
+          <DataField>IndirectBruto</DataField>
+        </Field>
+        <Field Name="IndirectBrutoFormat">
+          <DataField>IndirectBrutoFormat</DataField>
+        </Field>
+        <Field Name="Bruto">
+          <DataField>Bruto</DataField>
+        </Field>
+        <Field Name="BrutoFormat">
+          <DataField>BrutoFormat</DataField>
+        </Field>
+        <Field Name="Neto">
+          <DataField>Neto</DataField>
+        </Field>
+        <Field Name="NetoFormat">
+          <DataField>NetoFormat</DataField>
+        </Field>
+        <Field Name="TaxDeduction">
+          <DataField>TaxDeduction</DataField>
+        </Field>
+        <Field Name="TaxDeductionFormat">
+          <DataField>TaxDeductionFormat</DataField>
+        </Field>
+        <Field Name="TaxBasis">
+          <DataField>TaxBasis</DataField>
+        </Field>
+        <Field Name="TaxBasisFormat">
+          <DataField>TaxBasisFormat</DataField>
+        </Field>
+        <Field Name="Ttax">
+          <DataField>Ttax</DataField>
+        </Field>
+        <Field Name="TtaxFormat">
+          <DataField>TtaxFormat</DataField>
+        </Field>
+        <Field Name="NetFinal">
+          <DataField>NetFinal</DataField>
+        </Field>
+        <Field Name="NetFinalFormat">
+          <DataField>NetFinalFormat</DataField>
+        </Field>
+        <Field Name="PayDate">
+          <DataField>PayDate</DataField>
+        </Field>
+        <Field Name="TotalIndirectNeto">
+          <DataField>TotalIndirectNeto</DataField>
+        </Field>
+        <Field Name="TotalIndirectNetoFormat">
+          <DataField>TotalIndirectNetoFormat</DataField>
+        </Field>
+        <Field Name="GodinaPorezna">
+          <DataField>GodinaPorezna</DataField>
+        </Field>
+        <Field Name="GodinaObracuna1">
+          <DataField>GodinaObracuna1</DataField>
+        </Field>
+      </Fields>
+      <Query>
+        <DataSourceName>DataSource</DataSourceName>
+        <CommandText />
+      </Query>
+    </DataSet>
+  </DataSets>
+</Report>
