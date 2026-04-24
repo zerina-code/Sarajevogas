@@ -1093,6 +1093,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Calcuation Header - Field Summer or Winter Zone - Property OptionCaption</note>
         </trans-unit>
+        <trans-unit id="Table 1608917190 - Field 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Calcuation Header - Field Undo Calculation - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1608917190 - Field 620408650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>V</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -2347,6 +2352,16 @@
           <source>UnCorrection new - gauge</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field UnCorrection result- gauge - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2419670394 - Field 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field Undo Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2419670394 - Field 782846268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field Undo Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2419670394 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit Price</source>
@@ -4907,6 +4922,16 @@
           <source>UnCorrection new - gauge</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field UnCorrection result- gauge - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3233577815 - Field 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Undo Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3233577815 - Field 782846268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Document No.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Undo Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit Price</source>
@@ -54822,6 +54847,16 @@
           <source>TS_knjizenja 2</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TS_knjizenja 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Undo Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4068478049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Undo Create and Posting - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 4075811583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>UnpaidInvoices</source>
