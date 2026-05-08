@@ -2,7 +2,7 @@ page 50201 "Travel Order List SG"
 {
     PageType = List;
     SourceTable = "Travel Order Header SG";
-    Caption = 'Putni nalozi';
+    Caption = 'Putni nalozi';`
     UsageCategory = Lists;
     ApplicationArea = All;
     CardPageId = "Travel Order Card SG";
@@ -86,7 +86,7 @@ page 50201 "Travel Order List SG"
                 ApplicationArea = All;
                 Image = New;
                 RunObject = page "Travel Order Card SG";
-                RunPageMode = Create;
+                                RunPageMode = Create;
             }
         }
     }
