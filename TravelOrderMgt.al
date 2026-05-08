@@ -1,4 +1,4 @@
-codeunit 50200 "Travel Order Mgt. SG"
+codeunit 50028 "Travel Order Mgt. SG"
 {
     // ============================================================
     // Travel Order Management Codeunit

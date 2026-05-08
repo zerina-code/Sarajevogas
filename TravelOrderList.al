@@ -1,4 +1,4 @@
-page 50239 "Travel Order List SG"
+page 50010 "Travel Order List SG"
 {
     PageType = List;
     SourceTable = "Travel Order Header SG";

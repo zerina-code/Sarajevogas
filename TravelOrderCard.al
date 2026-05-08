@@ -1,4 +1,4 @@
-page 50240 "Travel Order Card SG"
+page 50009 "Travel Order Card SG"
 {
     PageType = Card;
     SourceTable = "Travel Order Header SG";

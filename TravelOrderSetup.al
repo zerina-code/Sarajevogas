@@ -1,4 +1,4 @@
-table 50201 "Travel Order Setup SG"
+table 50017 "Travel Order Setup SG"
 {
     DataClassification = ToBeClassified;
     Caption = 'Postavke putnih naloga';

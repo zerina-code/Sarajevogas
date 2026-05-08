@@ -1,4 +1,4 @@
-page 50010 "Wage Types"
+page 50410 "Wage Types"
 {
     // //
 

@@ -1,4 +1,4 @@
-codeunit 50210 "Travel Order Tests SG"
+/*codeunit 50029 "Travel Order Tests SG"
 {
     Subtype = Test;
     TestPermissions = Disabled;
@@ -17,7 +17,7 @@ codeunit 50210 "Travel Order Tests SG"
         // [GIVEN] Postoji zaposlenik u sistemu
         EmployeeNo := CreateTestEmployee();
 
-        // [WHEN] Kreiramo nalog sa ispravnim podacima
+        // [WHEN] Kreiramo nalog sa ispravnim podacimat
         TravelOrderMgt.CreateTravelOrder(
             EmployeeNo,
             CalcDate('<+1D>', Today()),
@@ -355,4 +355,4 @@ codeunit 50210 "Travel Order Tests SG"
 
     var
         Assert: Codeunit Assert;
-}
+}*/

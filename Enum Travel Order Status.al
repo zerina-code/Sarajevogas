@@ -1,4 +1,4 @@
-enum 50500 "Travel Order Status"
+enum 50038 "Travel Order Status"
 {
     Extensible = false;
 

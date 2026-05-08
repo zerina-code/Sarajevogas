@@ -1,4 +1,4 @@
-table 50185 "Travel Order Header SG"
+table 50030 "Travel Order Header SG"
 {
     DataClassification = ToBeClassified;
     Caption = 'Putni nalog - zaglavlje';
@@ -219,6 +219,12 @@ table 50185 "Travel Order Header SG"
             begin
                 CheckEditAllowed();
             end;
+        }
+
+        field(23; "Travel Status"; Enum "Travel Order Status")
+        {
+            DataClassification = CustomerContent;
+            Caption = 'Status';
         }
     }
 

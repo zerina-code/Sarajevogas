@@ -1,4 +1,4 @@
-table 50030 "Wage Value Entry"
+table 50330 "Wage Value Entry"
 {
     Caption = 'Wage Value Entry';
 
