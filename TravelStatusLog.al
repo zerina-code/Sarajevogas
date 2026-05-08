@@ -1,4 +1,4 @@
-table 50502 "Travel Status Log"
+table 50009 "Travel Status Log"
 {
     DataClassification = CustomerContent;
 

@@ -1,4 +1,4 @@
-/*codeunit 50210 "Travel Order Tests SG"
+codeunit 50210 "Travel Order Tests SG"
 {
     Subtype = Test;
     TestPermissions = Disabled;
@@ -356,4 +356,3 @@
     var
         Assert: Codeunit Assert;
 }
-*/

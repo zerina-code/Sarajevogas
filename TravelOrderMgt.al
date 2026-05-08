@@ -1,4 +1,4 @@
-/*codeunit 50200 "Travel Order Mgt. SG"
+codeunit 50200 "Travel Order Mgt. SG"
 {
     // ============================================================
     // Travel Order Management Codeunit
@@ -163,4 +163,3 @@
             Error('Akontacija ne može biti negativna.');
     end;
 }
-*/
