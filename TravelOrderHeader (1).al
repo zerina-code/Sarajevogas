@@ -1,4 +1,4 @@
-table 50200 "Travel Order Header SG"
+table 50185 "Travel Order Header SG"
 {
     DataClassification = ToBeClassified;
     Caption = 'Putni nalog - zaglavlje';

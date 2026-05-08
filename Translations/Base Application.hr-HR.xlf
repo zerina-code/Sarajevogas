@@ -1297,6 +1297,13 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Calcuation Header - Field Summer or Winter Zone - Property OptionCaption</note>
         </trans-unit>
+        <trans-unit id="Table 1608917190 - Field 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Calcuation Header - Field Undo Calculation - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1608917190 - Field 620408650 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>V</source>
           <target>Validate</target>
@@ -2417,7 +2424,6 @@
           <source>Q. total Sum - War</source>
           <target>Zbirni iznos za posebnu taksu </target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field Q. total Sum - War - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2419670394 - Field 748987846 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -2803,6 +2809,20 @@
           <target>Nekorigovano rezultat</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field UnCorrection result- gauge - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2419670394 - Field 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field Undo Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2419670394 - Field 782846268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Document No.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Calculation Journal Line - Field Undo Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 2419670394 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit Price</source>
@@ -4542,7 +4562,6 @@
           <source>Billing Created Memo</source>
           <target>Kreirano storno odobrenje</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Billing Created Memo - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 725639085 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -5179,7 +5198,6 @@
           <source>Main. VAT Percentage</source>
           <target>Procenat PDV-a za uslugu</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Main. VAT Percentage - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 1259531913 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -5510,7 +5528,6 @@
           <source>Q. total Sum - War</source>
           <target>Zbirni iznos za posebnu taksu </target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Q. total Sum - War - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 909280722 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -5643,7 +5660,6 @@
           <source>SM3 VAT Percentage</source>
           <target>Procenat PDV-a za SM3</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field SM3 VAT Percentage - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 2003301287 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -5776,7 +5792,6 @@
           <source>Sub. VAT Percentage</source>
           <target>Procenat PDV-a za subvenciju</target>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Sub. VAT Percentage - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 2290905271 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -5880,6 +5895,20 @@
           <target>Nekorigovano rezultat</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field UnCorrection result- gauge - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3233577815 - Field 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Undo Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3233577815 - Field 782846268 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Document No.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Control list - Field Undo Document No. - Property Caption</note>
         </trans-unit>
         <trans-unit id="Table 3233577815 - Field 2937233469 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Unit Price</source>
@@ -32797,6 +32826,237 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Transport Line Temp - Field Workdays - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3498211015 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Putni nalog - zaglavlje</source>
+          <target>Putni nalog - zaglavlje</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - NamedType 1538920008" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Akontacija ne može biti negativna.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - NamedType AdvanceNegativeErr</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - NamedType 3948460144" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Putni nalog %1 se ne može mijenjati u statusu %2.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2">%1=Broj naloga, %2=Status</note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - NamedType EditNotAllowedErr</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 812430434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Akontacija</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Advance Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 4041162204 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odobrio</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Approved By - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3027137289 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum odobrenja</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Approved Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3824028047 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Troškovno mjesto</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Cost Center Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 2542713143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zemlja putovanja</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 2369664869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kreirao</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Created By - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 2500892784 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum kreiranja</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Created Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 4198939294 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Valuta</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Currency Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 1521402580 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum polaska</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Departure Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3258031123 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme polaska</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Departure Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3461834954 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Napomena</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Description - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3040929904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odredište</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Destination - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3828476602 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ime i prezime zaposlenika</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Employee Full Name - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 3269974079 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Radno mjesto zaposlenika</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Employee Job Title - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 1964419135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra zaposlenika</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Employee No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj naloga</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 1351594800 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serija brojeva</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field No. Series - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 1834324738 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Svrha putovanja</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Purpose - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 935961474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum dolaska</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Return Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 420856705 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme dolaska</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Return Time - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <target>Status</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3498211015 - Field 254479997 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta prijevoza</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Header SG - Field Transport Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897495607 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Postavke putnih naloga</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Setup SG - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897495607 - Field 1663593181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Primarni ključ</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Setup SG - Field Primary Key - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3897495607 - Field 3225847782 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Serija brojeva putnih naloga</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Setup SG - Field Travel Order Nos. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3440426916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Travel Status Log</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Log - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3440426916 - Field 4002189929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Entry number</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Log - Field Entry number - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3440426916 - Field 2955941580 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>New Status</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Log - Field New Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3440426916 - Field 1032931831 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Previous Status</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Log - Field Previous Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3440426916 - Field 1945696731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Travel Order Status number</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Log - Field Travel Order Status number - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1206698392 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TS_knjizenja</source>
           <target>TS_knjizenja</target>
@@ -41972,6 +42232,13 @@
           <target>Izvrši preraspodijelu po sporazumu</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Calculation List - Action Agreement - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 2888880381 - Action 3886023398 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Average Calculation</source>
+          <target>[NAB: SUGGESTION]Prosjek kategorije stambeni sektor</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Calculation List - Action Average Calculation - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 2888880381 - Action 3604934336 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Ažuriraj saldo preraspodjela</source>
@@ -51207,6 +51474,314 @@
           <target>Određuje količinu artikla koja se prenosi.</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Transfer Line Factbox - Control Quantity - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Putni nalog</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3455143910 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Administrativni podaci</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control AdministrativeInfo - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 4041162204 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Korisnik koji je odobrio nalog.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Approved By - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3027137289 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum odobrenja.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Approved Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 2369664869 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Korisnik koji je kreirao nalog.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Created By - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 2500892784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum kreiranja naloga.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Created Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3461834954 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Napomena uz nalog.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 479768715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Financijski podaci</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Financial - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 812430434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos akontacije (ne može biti negativan).</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Advance Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3824028047 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Troškovno mjesto.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Cost Center Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 4198939294 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Valuta akontacije.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Currency Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 2445482498 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Opći podaci</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control General - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3828476602 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ime i prezime zaposlenika.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Employee Full Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3269974079 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Radno mjesto zaposlenika.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Employee Job Title - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 1964419135 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odaberite zaposlenika.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Employee No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj putnog naloga (auto-generisan).</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trenutni status putnog naloga.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 2297991623 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Detalji putovanja</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control TripDetails - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 2542713143 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zemlja putovanja.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Country Code - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 1521402580 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum polaska.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Departure Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3258031123 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme polaska.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Departure Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 3040929904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odredište putovanja.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Destination - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 1834324738 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Svrha putovanja.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Purpose - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 935961474 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum dolaska.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Return Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 420856705 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrijeme dolaska.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Return Time - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 254479997 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Vrsta prijevoza.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Transport Type - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Action 803889193 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odobri putni nalog.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Approve - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Action 803889193 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odobri</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Approve - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Action 788258546 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otkaži putni nalog.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Cancel - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Action 788258546 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otkaži nalog</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Cancel - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Action 2674503554 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvori putni nalog.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Close - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Action 2674503554 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvori nalog</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Close - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Travel Order List SG</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 812430434 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Akontacija.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Advance Amount - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 2369664869 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Kreirao.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Created By - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 2500892784 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum kreiranja.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Created Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 1521402580 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum polaska.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Departure Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 3040929904 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odredište.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Destination - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 3828476602 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ime i prezime zaposlenika.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Employee Full Name - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 1964419135 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Šifra zaposlenika.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Employee No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 4200184881 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj putnog naloga.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control No. - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 935961474 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum dolaska.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Return Date - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status naloga.</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 4113760668 - Action 3359286430 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Novi putni nalog</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Action NewTravelOrder - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3222644369 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TS_Posting Group</source>
@@ -65743,6 +66318,20 @@
           <target>TS_knjizenja 2</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Report TS_knjizenja 2 - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 3918178035 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Undo Calculation - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Report 4068478049 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Undo Calculation</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Report Undo Create and Posting - Property Caption</note>
         </trans-unit>
         <trans-unit id="Report 4075811583 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>UnpaidInvoices</source>
@@ -97515,8 +98104,9 @@
         </trans-unit>
         <trans-unit id="Enum 2434572082 - EnumValue 745384097 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Not considered</source>
-          <target> </target>
+          <target>[NAB: SUGGESTION] </target>
           <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Information of processing - EnumValue Not considered - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2434572082 - EnumValue 1290568575 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
@@ -99090,6 +99680,76 @@
           <target>Neaktivan</target>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Status Cust/MM - EnumValue Terminated - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odobreno</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Approved - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 101448091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno-okazano</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue CancelledClosed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otvoreno</source>
+          <target>[NAB: SUGGESTION]Otvoreno</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">Suggested translation inserted.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Open - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 2090347357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno-knjizeno</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue PostedClosed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 98756922 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odobreno</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Approved - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 98756922 - EnumValue 4069904181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otkazano</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Cancelled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 98756922 - EnumValue 1778072510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 98756922 - EnumValue 1263236467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno otkazano</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed Cancelled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 98756922 - EnumValue 218460677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno knjiženo</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed Posted - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 98756922 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otvoren</source>
+          <target>[NAB: NOT TRANSLATED]</target>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="NAB AL Tool Refresh Xlf" annotates="general" priority="3">New translation.</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Open - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2086471295 - EnumValue 3478138521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Atest</source>

@@ -1,8 +1,12 @@
-page 50201 "Travel Order List SG"
+page 50239 "Travel Order List SG"
 {
     PageType = List;
     SourceTable = "Travel Order Header SG";
+<<<<<<< HEAD
     Caption = 'Putni nalozi';`
+=======
+    Caption = 'Travel Order List SG';
+>>>>>>> origin/f/statusi-kontrola
     UsageCategory = Lists;
     ApplicationArea = All;
     CardPageId = "Travel Order Card SG";
