@@ -12,12 +12,12 @@ enum 50038 "Travel Order Status"
         Caption = 'Odobreno';
     }
 
-    value(2; PostedClosed)
+    value(2; ClosedPosted)
     {
         Caption = 'Zatvoreno-knjizeno';
     }
-
-    value(3; CancelledClosed)
+    
+    value(3; ClosedCancelled)
     {
         Caption = 'Zatvoreno-okazano';
     }
