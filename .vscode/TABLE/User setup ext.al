@@ -550,6 +550,10 @@ tableextension 50072 User_setup_ext extends "User Setup"
         field(50059; "Type of vehicle"; enum "Type of Vehicle")
         {
         }
+        field(50060; "User Role"; Enum "Travel Order User Role SG")
+        {
+            Caption = 'Uloga';
+        }
 
 
 

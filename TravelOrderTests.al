@@ -164,7 +164,7 @@
         );
 
         // Simuliramo status Closed Posted
-        TravelOrderHeader.Status := TravelOrderHeader.Status::"Closed Posted";
+        TravelOrderHeader.Status := TravelOrderHeader.Status::"ClosedPosted";
         TravelOrderHeader.Modify();
 
         // [WHEN/THEN] Pokušaj izmjene mora biti blokiran
@@ -303,7 +303,7 @@
         TravelOrderMgt.CloseTravelOrder(TravelOrderNo, true); // AsPosted = true
 
         TravelOrderHeader.Get(TravelOrderNo);
-        Assert.AreEqual(TravelOrderHeader.Status::"Closed Posted", TravelOrderHeader.Status,
+        Assert.AreEqual(TravelOrderHeader.Status::"ClosedPosted", TravelOrderHeader.Status,
             'Status mora biti Zatvoreno knjiženo');
 
         // [STEP 6] Izmjena zatvorenog naloga - mora biti blokirana

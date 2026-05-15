@@ -2,7 +2,7 @@ page 50010 "Travel Order List SG"
 {
     PageType = List;
     SourceTable = "Travel Order Header SG";
-    Caption = 'Travel Order List SG';
+    Caption = 'Travel Order List';
     UsageCategory = Lists;
     ApplicationArea = All;
     CardPageId = "Travel Order Card SG";
@@ -98,9 +98,9 @@ page 50010 "Travel Order List SG"
                 StatusStyle := 'Favorable';
             Rec.Status::Approved:
                 StatusStyle := 'Ambiguous';
-            Rec.Status::Closed, Rec.Status::"Closed Posted":
+            Rec.Status::Closed, Rec.Status::"ClosedPosted":
                 StatusStyle := 'Subordinate';
-            Rec.Status::Cancelled, Rec.Status::"Closed Cancelled":
+            Rec.Status::Cancelled, Rec.Status::"ClosedCancelled":
                 StatusStyle := 'Unfavorable';
             else
                 StatusStyle := 'Standard';

@@ -188,7 +188,7 @@ page 50009 "Travel Order Card SG"
                 ApplicationArea = All;
                 Image = Close;
                 ToolTip = 'Zatvori putni nalog.';
-                Enabled = Rec.Status = Rec.Status::Approved;
+                //  Enabled = Rec.Status = Rec.Status::Approved;
 
                 trigger OnAction()
                 begin
@@ -203,7 +203,7 @@ page 50009 "Travel Order Card SG"
                 ApplicationArea = All;
                 Image = Cancel;
                 ToolTip = 'Otkaži putni nalog.';
-                Enabled = Rec.Status in [Rec.Status::Open, Rec.Status::Approved];
+                //     Enabled = Rec.Status in [Rec.Status::Open, Rec.Status::Approved];
 
                 trigger OnAction()
                 begin
@@ -239,9 +239,9 @@ page 50009 "Travel Order Card SG"
                 StatusStyle := 'Favorable';
             Rec.Status::Approved:
                 StatusStyle := 'Ambiguous';
-            Rec.Status::Closed, Rec.Status::"Closed Posted":
+            Rec.Status::Closed, Rec.Status::"ClosedPosted":
                 StatusStyle := 'Subordinate';
-            Rec.Status::Cancelled, Rec.Status::"Closed Cancelled":
+            Rec.Status::Cancelled, Rec.Status::"ClosedCancelled":
                 StatusStyle := 'Unfavorable';
             else
                 StatusStyle := 'Standard';

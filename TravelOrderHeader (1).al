@@ -242,6 +242,13 @@ table 50030 "Travel Order Header SG"
         }
     }
 
+    local procedure CheckEditable()
+    begin
+        if not ("Travel Status" in
+            ["Travel Status"::Open, "Travel Status"::Approved]) then
+            Error('Nalog nije moguće uređivati u statusu %1.', "Travel Status");
+    end;
+
     trigger OnInsert()
     var
         NoSeriesMgt: Codeunit NoSeriesManagement;
@@ -257,6 +264,8 @@ table 50030 "Travel Order Header SG"
                 "No.",
                 "No. Series"
             );
+            if "Travel Status" = "Travel Status"::Open then exit;
+            "Travel Status" := "Travel Status"::Open;
         end;
         Status := Status::Open;
         "Created By" := CopyStr(UserId(), 1, MaxStrLen("Created By"));
@@ -266,6 +275,7 @@ table 50030 "Travel Order Header SG"
     trigger OnModify()
     begin
         CheckEditAllowed();
+        CheckEditable();
     end;
 
     trigger OnDelete()
@@ -280,8 +290,8 @@ table 50030 "Travel Order Header SG"
     local procedure CheckEditAllowed()
     begin
         if Status in [
-            Status::"Closed Posted",
-            Status::"Closed Cancelled",
+            Status::"ClosedPosted",
+            Status::"ClosedCancelled",
             Status::Cancelled,
             Status::Closed
         ] then

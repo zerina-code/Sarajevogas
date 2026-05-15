@@ -14,11 +14,11 @@ enum 50039 "Travel Order Status SG"
     {
         Caption = 'Zatvoreno';
     }
-    value(3; "Closed Posted")
+    value(3; "ClosedPosted")
     {
         Caption = 'Zatvoreno knjiženo';
     }
-    value(4; "Closed Cancelled")
+    value(4; "ClosedCancelled")
     {
         Caption = 'Zatvoreno otkazano';
     }

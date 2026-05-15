@@ -1,4 +1,4 @@
-enum 50049 "Travel Order User Role"
+enum 50049 "Travel Order User Role SG"
 {
     Extensible = false;
 

@@ -122,7 +122,7 @@ codeunit 50028 "Travel Order Mgt. SG"
             Error('Samo odobreni nalozi se mogu zatvoriti.');
 
         if AsPosted then
-            TravelOrderHeader.Status := TravelOrderHeader.Status::"Closed Posted"
+            TravelOrderHeader.Status := TravelOrderHeader.Status::"ClosedPosted"
         else
             TravelOrderHeader.Status := TravelOrderHeader.Status::Closed;
 
