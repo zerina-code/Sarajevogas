@@ -17408,6 +17408,116 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Position temporery - Field Work Group - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 3354101676 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Proknjiženi putni nalog</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 812430434 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Akontacija</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Advance Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 1521402580 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum polaska</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Departure Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 3040929904 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odredište</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Destination - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 1964419135 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zaposlenik</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Employee No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 4200184881 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj naloga</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 1988168528 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum knjiženja</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Posted At - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 1964822230 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Proknjižio</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Posted By - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 1834324738 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Svrha putovanja</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Purpose - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 935961474 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum povratka</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Return Date - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 3354101676 - Field 4027585923 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Originalni broj naloga</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Header - Field Travel Order No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Proknjižene linije putnog naloga</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 4135646586 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tip korekcije</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Correction Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 4135646586 - Property 62802879" size-unit="char" translate="yes" xml:space="preserve">
+          <source> ,Ishrana,Smještaj i ishrana,Bez smještaja</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Correction Type - Property OptionCaption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 2542713143 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Država (ISO)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Country Code - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 2378210335 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trajanje (sati)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Duration Hours - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 3305973151 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum i vrijeme ulaska</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Entry DateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 1605791707 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum i vrijeme izlaska</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Exit DateTime - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 3320823955 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Redni broj</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Line No. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 1435780890 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos dnevnice</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Per Diem Amount - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 1238832412 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Iznos dnevnice (BAM)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Per Diem Amount BAM - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 2994900179 - Field 2313207420 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj proknjiženog naloga</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Posted Travel Order Line - Field Posted Order No. - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 2727196802 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Profession</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -43084,7 +43194,7 @@
           <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Action Close - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 4113760668 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Travel Order List SG</source>
+          <source>Travel Order List</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order List SG - Property Caption</note>
         </trans-unit>
@@ -79268,6 +79378,11 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">TableExtension User_setup_ext - Field User Name - Property Caption</note>
         </trans-unit>
+        <trans-unit id="TableExtension 2857111473 - Field 2662147671 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
+          <source>Uloga</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">TableExtension User_setup_ext - Field User Role - Property Caption</note>
+        </trans-unit>
         <trans-unit id="TableExtension 2857111473 - Field 943590331 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve" al-object-target="Table 337631938">
           <source>UserEmp</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -83078,20 +83193,20 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Approved - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 1339655038 - EnumValue 101448091 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 1339655038 - EnumValue 3269010731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zatvoreno-okazano</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue CancelledClosed - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue ClosedCancelled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 1962271869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno-knjizeno</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue ClosedPosted - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1339655038 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Otvoreno</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Open - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 1339655038 - EnumValue 2090347357 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatvoreno-knjizeno</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue PostedClosed - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 98756922 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Odobreno</source>
@@ -83108,20 +83223,35 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 1263236467 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 98756922 - EnumValue 3269010731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zatvoreno otkazano</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed Cancelled - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue ClosedCancelled - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 218460677 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+        <trans-unit id="Enum 98756922 - EnumValue 1962271869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Zatvoreno knjiženo</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed Posted - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue ClosedPosted - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 98756922 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Otvoren</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Open - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3824207137 - EnumValue 78484086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Računovodstvo</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order User Role SG - EnumValue Accountant - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3824207137 - EnumValue 1498446062 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zaposlenik</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order User Role SG - EnumValue Employee - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3824207137 - EnumValue 1077592717 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Menadžer</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order User Role SG - EnumValue Manager - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2086471295 - EnumValue 3478138521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Atest</source>
