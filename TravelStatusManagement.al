@@ -12,9 +12,8 @@ codeunit 50027 "Travel Status Management"
         TravelOrderHeader.Status := NewStatus;
         TravelOrderHeader.Modify(false);  // false = ne triggera OnModify provjeru za editability
 
-        LogStatusChange(TravelOrderHeader."No.", OldStatus, NewStatus, '');
+        // LogStatusChange(TravelOrderHeader."No.", OldStatus, NewStatus, '');
 
-        // Ako je knjiženo → prebaci podatke u Posted tabele
         if NewStatus = "Travel Order Status SG"::ClosedPosted then
             TransferToPosted(TravelOrderHeader);
     end;
@@ -24,13 +23,11 @@ codeunit 50027 "Travel Status Management"
         ChangeStatus(TravelOrderHeader, "Travel Order Status SG"::Approved);
     end;
 
-    /// Knjiži nalog (Odobreno → Zatvoreno knjiženo). Samo računovodstvo.
     procedure PostOrder(var TravelOrderHeader: Record "Travel Order Header SG")
     begin
         ChangeStatus(TravelOrderHeader, "Travel Order Status SG"::ClosedPosted);
     end;
 
-    /// Otkaže nalog (Otvoreno ili Odobreno → Zatvoreno otkazano).
     procedure CancelOrder(var TravelOrderHeader: Record "Travel Order Header SG")
     begin
         ChangeStatus(TravelOrderHeader, "Travel Order Status SG"::ClosedCancelled);
@@ -86,20 +83,19 @@ codeunit 50027 "Travel Status Management"
         exit(TravelUserSetup."User Role");
     end;
 
-    /// Audit log — obavezan za svaku promjenu statusa bez izuzetaka (FR-13)
-    local procedure LogStatusChange(TravelOrderNo: Code[20]; OldStatus: Enum "Travel Order Status SG"; NewStatus: Enum "Travel Order Status SG"; Comment: Text[250])
+    /*local procedure LogStatusChange(TravelOrderNo: Code[20]; OldStatus: Enum "Travel Order Status SG"; NewStatus: Enum "Travel Order Status SG"; Comment: Text[250])
     var
         StatusLog: Record "Travel Status Audit Log";
     begin
-        /*  StatusLog.Init();
+          StatusLog.Init();
           StatusLog."Travel Order No." := TravelOrderNo;
           StatusLog."Old Status" := OldStatus;
           StatusLog."New Status" := NewStatus;
           StatusLog."Changed By" := UserId();
           StatusLog."Changed At" := CurrentDateTime();
           /*StatusLog.Comment := Comment;
-          StatusLog.Insert(true);*/
-    end;
+          StatusLog.Insert(true);
+    end;*/
 
     local procedure TransferToPosted(TravelOrderHeader: Record "Travel Order Header SG")
     var

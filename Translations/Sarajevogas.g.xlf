@@ -27618,41 +27618,6 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Travel Order Setup SG - Field Travel Order Nos. - Property Caption</note>
         </trans-unit>
-        <trans-unit id="Table 1416413055 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Travel Status Audit Log</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1416413055 - Field 608489273 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Changed At</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Field Changed At - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1416413055 - Field 4120197227 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Changed By</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Field Changed By - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1416413055 - Field 883711285 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Entry No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Field Entry No. - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1416413055 - Field 2955941580 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>New Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Field New Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1416413055 - Field 1138927965 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Old Status</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Field Old Status - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Table 1416413055 - Field 4027585923 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Travel Order No.</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Audit Log - Field Travel Order No. - Property Caption</note>
-        </trans-unit>
         <trans-unit id="Table 3440426916 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Travel Status Log</source>
           <note from="Developer" annotates="general" priority="2"></note>

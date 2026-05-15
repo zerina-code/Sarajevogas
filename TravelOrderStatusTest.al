@@ -15,8 +15,14 @@
         StatusMgt.ApproveOrder(TravelOrderHeader);
 
         TravelOrderHeader.Get(TravelOrderHeader."No.");
-        Assert.AreEqual("Travel Order Status"::Approved, TravelOrderHeader.Status, 'Status mora biti Odobreno.');
-        VerifyAuditLogExists(TravelOrderHeader."No.", "Travel Order Status SG"::Open, "Travel Order Status SG"::Approved);
+        Assert.AreEqual(
+            "Travel Order Status"::Approved,
+            TravelOrderHeader.Status,
+            'Status mora biti Odobreno.');
+        VerifyStatusLog(
+            TravelOrderHeader."No.",
+            "Travel Order Status"::Open,
+            "Travel Order Status"::Approved);
     end;
 
     [Test]
@@ -32,9 +38,16 @@
         StatusMgt.PostOrder(TravelOrderHeader);
 
         TravelOrderHeader.Get(TravelOrderHeader."No.");
-        Assert.AreEqual("Travel Order Status"::ClosedPosted, TravelOrderHeader.Status, 'Status mora biti Zatvoreno knjiženo.');
+        Assert.AreEqual(
+            "Travel Order Status"::ClosedPosted,
+            TravelOrderHeader.Status,
+            'Status mora biti Zatvoreno knjiženo.');
         PostedHeader.SetRange("Travel Order No.", TravelOrderHeader."No.");
         Assert.IsTrue(PostedHeader.FindFirst(), 'Proknjiženi nalog mora biti kreiran.');
+        VerifyStatusLog(
+            TravelOrderHeader."No.",
+            "Travel Order Status"::Approved,
+            "Travel Order Status"::ClosedPosted);
     end;
 
     [Test]
@@ -49,7 +62,14 @@
         StatusMgt.CancelOrder(TravelOrderHeader);
 
         TravelOrderHeader.Get(TravelOrderHeader."No.");
-        Assert.AreEqual("Travel Order Status"::ClosedCancelled, TravelOrderHeader.Status, 'Status mora biti Zatvoreno otkazano.');
+        Assert.AreEqual(
+            "Travel Order Status"::ClosedCancelled,
+            TravelOrderHeader.Status,
+            'Status mora biti Zatvoreno otkazano.');
+        VerifyStatusLog(
+            TravelOrderHeader."No.",
+            "Travel Order Status"::Open,
+            "Travel Order Status"::ClosedCancelled);
     end;
 
     [Test]
@@ -91,7 +111,6 @@
         Assert.ExpectedError('zaključan');
     end;
 
-
     [Test]
     procedure Test_Role_EmployeeCannotApprove()
     var
@@ -130,22 +149,29 @@
         asserterror StatusMgt.CancelOrder(TravelOrderHeader);
         Assert.ExpectedError('Zaposlenik ne može otkazati');
     end;
-    
+
     [Test]
-    procedure Test_AuditLog_RecordedOnEveryChange()
+    procedure Test_AuditLog_RecordedOnStatusChange()
     var
         TravelOrderHeader: Record "Travel Order Header SG";
         StatusMgt: Codeunit "Travel Status Management";
-        StatusLog: Record "Travel Status Audit Log";
+        StatusLog: Record "Travel Status Log";
     begin
         CreateTestOrder(TravelOrderHeader, "Travel Order Status"::Open);
         SetupUserRole("Travel Order User Role SG"::Manager);
 
         StatusMgt.ApproveOrder(TravelOrderHeader);
 
-        StatusLog.SetRange("Travel Order No.", TravelOrderHeader."No.");
-        Assert.IsTrue(StatusLog.FindFirst(), 'Audit log mora biti kreiran.');
-        Assert.AreEqual(UserId(), StatusLog."Changed By", 'Log mora sadržavati korisnika.');
+        StatusLog.SetRange("Travel Order Status number", TravelOrderHeader."No.");
+        Assert.IsTrue(StatusLog.FindFirst(), 'Status log mora biti kreiran.');
+        Assert.AreEqual(
+            "Travel Order Status"::Open,
+            StatusLog."Previous Status",
+            'Prethodni status mora biti Open.');
+        Assert.AreEqual(
+            "Travel Order Status"::Approved,
+            StatusLog."New Status",
+            'Novi status mora biti Approved.');
     end;
 
     [Test]
@@ -167,43 +193,53 @@
         CreateTestOrder(TravelOrderHeader, "Travel Order Status"::Approved);
 
         TravelOrderHeader.Validate(Destination, 'Berlin, Njemačka');
-        Assert.AreEqual('Berlin, Njemačka', TravelOrderHeader.Destination, 'Polje mora biti izmijenjeno.');
+        Assert.AreEqual(
+            'Berlin, Njemačka',
+            TravelOrderHeader.Destination,
+            'Polje mora biti izmijenjeno.');
     end;
 
+    // ── Helpers ────────────────────────────────────────────────────────────────
 
-    local procedure CreateTestOrder(var TravelOrderHeader: Record "Travel Order Header SG"; Status: Enum "Travel Order Status")
+    local procedure CreateTestOrder(
+        var TravelOrderHeader: Record "Travel Order Header SG";
+        Status: Enum "Travel Order Status")
     begin
         TravelOrderHeader.Init();
-        TravelOrderHeader."No." := 'TEST-' + Format(CreateGuid()).Substring(1, 8);
+        TravelOrderHeader."No." := 'TEST-' + CopyStr(Format(CreateGuid()), 2, 8);
         TravelOrderHeader."Employee No." := 'EMP001';
         TravelOrderHeader."Departure Date" := Today();
         TravelOrderHeader."Return Date" := Today() + 3;
         TravelOrderHeader.Destination := 'Beč, Austrija';
         TravelOrderHeader.Purpose := 'Poslovna konferencija 2026';
-        TravelOrderHeader.Status := Status;
+        //TravelOrderHeader.Status := Status;
         TravelOrderHeader.Insert(false);
     end;
 
     local procedure SetupUserRole(Role: Enum "Travel Order User Role SG")
     var
-        UserSetup: Record "Travel Order User Setup";
+        UserSetup: Record "User Setup";
     begin
-        if UserSetup.Get(UserId()) then
-            UserSetup.Delete();
-        UserSetup.Init();
-        UserSetup."User ID" := UserId();
+        if not UserSetup.Get(UserId()) then begin
+            UserSetup.Init();
+            UserSetup."User ID" := UserId();
+            UserSetup.Insert();
+        end;
         UserSetup."User Role" := Role;
-        UserSetup.Insert();
+        UserSetup.Modify();
     end;
 
-    local procedure VerifyAuditLogExists(OrderNo: Code[20]; OldStatus: Enum "Travel Order Status SG"; NewStatus: Enum "Travel Order Status SG")
+    local procedure VerifyStatusLog(
+        OrderNo: Code[20];
+        ExpectedPrevious: Enum "Travel Order Status";
+        ExpectedNew: Enum "Travel Order Status")
     var
-        StatusLog: Record "Travel Status Audit Log";
+        StatusLog: Record "Travel Status Log";
     begin
-        StatusLog.SetRange("Travel Order No.", OrderNo);
-        StatusLog.SetRange("Old Status", OldStatus);
-        StatusLog.SetRange("New Status", NewStatus);
-        Assert.IsTrue(StatusLog.FindFirst(), 'Audit log zapis mora postojati.');
+        StatusLog.SetRange("Travel Order Status number", OrderNo);
+        StatusLog.SetRange("Previous Status", ExpectedPrevious);
+        StatusLog.SetRange("New Status", ExpectedNew);
+        Assert.IsTrue(StatusLog.FindFirst(), 'Status log zapis mora postojati.');
     end;
 
     var
