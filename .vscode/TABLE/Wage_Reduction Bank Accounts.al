@@ -1,4 +1,4 @@
-table 50009 "Wage/Reduction Bank Accounts"
+table 50309 "Wage/Reduction Bank Accounts"
 {
     Caption = 'Wage/Reduction Bank Accounts';
     DrillDownPageID = "Wage/Reduction bank accounts";

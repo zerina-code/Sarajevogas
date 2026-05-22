@@ -1,4 +1,4 @@
-table 50016 "Position Minimal Education"
+table 50300 "Position Minimal Education"
 
 
 

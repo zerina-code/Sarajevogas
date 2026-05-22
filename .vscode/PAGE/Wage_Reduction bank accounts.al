@@ -1,4 +1,4 @@
-page 50009 "Wage/Reduction bank accounts"
+page 50409 "Wage/Reduction bank accounts"
 {
     Caption = 'Wage/Reduction bank accounts';
     PageType = List;
@@ -21,7 +21,7 @@ page 50009 "Wage/Reduction bank accounts"
                 }
                 field("Fax No."; "Fax No.")
                 {
-                    Visible=false;
+                    Visible = false;
                 }
                 field("No."; "No.")
                 {

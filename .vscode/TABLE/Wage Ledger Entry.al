@@ -1,4 +1,4 @@
-table 50029 "Wage Ledger Entry"
+table 50329 "Wage Ledger Entry"
 {
     // //SPNPL01.00 JB 07.06.2004.
     // 
