@@ -27643,6 +27643,61 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Table Travel Status Log - Field Travel Order Status number - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Table 617396880 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boravak po Državama</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 3841726260 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj Linije</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Broj Linije - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 665339521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Broj Naloga</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Broj Naloga - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 1497055120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum/Vrijeme Izlaska</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Datum Vrijeme Izlaska - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 923668238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum/Vrijeme Ulaska</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Datum Vrijeme Ulaska - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 45608797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Država</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field ISO Kod Drzave - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 808747808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Naziv Države</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Naziv Drzave - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 4133565929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tip Boravka</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Tip Boravka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 820109169 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trajanje (min)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Trajanje Minuta - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Table 617396880 - Field 1803928004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trajanje</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Table Travel Stay By Country - Field Trajanje Tekst - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Table 1206698392 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>TS_knjizenja</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -42888,6 +42943,91 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Status history MM - Action ActionName - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Page 1683200388 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boravak po Državama</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 1497055120 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum i vrijeme izlaska iz države.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Datum Vrijeme Izlaska - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 1497055120 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Izlazak</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Datum Vrijeme Izlaska - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 923668238 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Datum i vrijeme ulaska u državu.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Datum Vrijeme Ulaska - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 923668238 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Ulazak</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Datum Vrijeme Ulaska - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 45608797 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Odaberite državu iz padajuće liste. Ručni unos nije dozvoljen.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control ISO Kod Drzave - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 45608797 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Država (ISO)</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control ISO Kod Drzave - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 808747808 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Pun naziv države — automatski se popunjava.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Naziv Drzave - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 808747808 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Naziv Države</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Naziv Drzave - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 513339096 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status stavke boravka.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Status - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 513339096 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 4133565929 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard ili Tranzit. Tranzit se obračunava identično standardnom boravku.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Tip Boravka - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 4133565929 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tip</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Tip Boravka - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 1803928004 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Automatski izračunato trajanje boravka (sati i minute).</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Trajanje Tekst - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Control 1803928004 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Trajanje</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Control Trajanje Tekst - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Action 1292320570 - Property 1295455071" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Provjerava da nema vremenskih praznina ili preklapanja između svih stavki.</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Action ValidirajKontinuitet - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 1683200388 - Action 1292320570 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>&amp;Validiraj kontinuitet</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Stay By Country Subf. - Action ValidirajKontinuitet - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Page 3271221942 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Streets</source>
           <note from="Developer" annotates="general" priority="2"></note>
@@ -43032,6 +43172,11 @@
           <source>Napomena uz nalog.</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control Description - Property ToolTip</note>
+        </trans-unit>
+        <trans-unit id="Page 3102017162 - Control 829746685 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Boravak po Državama</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Page Travel Order Card SG - Control BoravakPoDrzavama - Property Caption</note>
         </trans-unit>
         <trans-unit id="Page 3102017162 - Control 479768715 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Financijski podaci</source>
@@ -83158,50 +83303,30 @@
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Approved - Property Caption</note>
         </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 4069904181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Otkazano</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Cancelled - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 1339655038 - EnumValue 1778072510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zatvoreno</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Closed - Property Caption</note>
+        </trans-unit>
         <trans-unit id="Enum 1339655038 - EnumValue 3269010731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatvoreno-okazano</source>
+          <source>Zatvoreno otkazano</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue ClosedCancelled - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1339655038 - EnumValue 1962271869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatvoreno-knjizeno</source>
+          <source>Zatvoreno knjiženo</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue ClosedPosted - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 1339655038 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Otvoreno</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Open - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 2913119229 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Odobreno</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Approved - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 4069904181 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Otkazano</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Cancelled - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 1778072510 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatvoreno</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Closed - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 3269010731 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatvoreno otkazano</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue ClosedCancelled - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 1962271869 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
-          <source>Zatvoreno knjiženo</source>
-          <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue ClosedPosted - Property Caption</note>
-        </trans-unit>
-        <trans-unit id="Enum 98756922 - EnumValue 4259830144 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Otvoren</source>
           <note from="Developer" annotates="general" priority="2"></note>
-          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status SG - EnumValue Open - Property Caption</note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order Status - EnumValue Open - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 3824207137 - EnumValue 78484086 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Računovodstvo</source>
@@ -83217,6 +83342,36 @@
           <source>Menadžer</source>
           <note from="Developer" annotates="general" priority="2"></note>
           <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Order User Role SG - EnumValue Manager - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3132922541 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Status Boravka</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Stay Status - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3132922541 - EnumValue 4089278426 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Aktivan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Stay Status - EnumValue Aktivan - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 3132922541 - EnumValue 3695538321 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Zaključan</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Stay Status - EnumValue Zakljucan - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 845947513 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tip Boravka</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Stay Type - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 845947513 - EnumValue 2672704373 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Standard</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Stay Type - EnumValue Standard - Property Caption</note>
+        </trans-unit>
+        <trans-unit id="Enum 845947513 - EnumValue 2099056186 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
+          <source>Tranzit</source>
+          <note from="Developer" annotates="general" priority="2"></note>
+          <note from="Xliff Generator" annotates="general" priority="3">Enum Travel Stay Type - EnumValue Tranzit - Property Caption</note>
         </trans-unit>
         <trans-unit id="Enum 2086471295 - EnumValue 3478138521 - Property 2879900210" size-unit="char" translate="yes" xml:space="preserve">
           <source>Atest</source>

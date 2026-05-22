@@ -1,4 +1,4 @@
-table 50018 "Wage Calculation"
+table 50318 "Wage Calculation"
 {
     Caption = 'Wage Calculation';
 

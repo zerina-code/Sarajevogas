@@ -1,4 +1,4 @@
-table 50013 "Contribution Category"
+table 50301 "Contribution Category"
 {
     Caption = 'Contribution Category';
     LookupPageID = "Contribution Category List";

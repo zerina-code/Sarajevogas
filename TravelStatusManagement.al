@@ -1,8 +1,8 @@
 codeunit 50027 "Travel Status Management"
 {
-    procedure ChangeStatus(var TravelOrderHeader: Record "Travel Order Header SG"; NewStatus: Enum "Travel Order Status SG")
+    procedure ChangeStatus(var TravelOrderHeader: Record "Travel Order Header SG"; NewStatus: Enum "Travel Order Status")
     var
-        OldStatus: Enum "Travel Order Status SG";
+        OldStatus: Enum "Travel Order Status";
     begin
         OldStatus := TravelOrderHeader.Status;
 
@@ -14,60 +14,60 @@ codeunit 50027 "Travel Status Management"
 
         // LogStatusChange(TravelOrderHeader."No.", OldStatus, NewStatus, '');
 
-        if NewStatus = "Travel Order Status SG"::ClosedPosted then
+        if NewStatus = "Travel Order Status"::ClosedPosted then
             TransferToPosted(TravelOrderHeader);
     end;
 
     procedure ApproveOrder(var TravelOrderHeader: Record "Travel Order Header SG")
     begin
-        ChangeStatus(TravelOrderHeader, "Travel Order Status SG"::Approved);
+        ChangeStatus(TravelOrderHeader, "Travel Order Status"::Approved);
     end;
 
     procedure PostOrder(var TravelOrderHeader: Record "Travel Order Header SG")
     begin
-        ChangeStatus(TravelOrderHeader, "Travel Order Status SG"::ClosedPosted);
+        ChangeStatus(TravelOrderHeader, "Travel Order Status"::ClosedPosted);
     end;
 
     procedure CancelOrder(var TravelOrderHeader: Record "Travel Order Header SG")
     begin
-        ChangeStatus(TravelOrderHeader, "Travel Order Status SG"::ClosedCancelled);
+        ChangeStatus(TravelOrderHeader, "Travel Order Status"::ClosedCancelled);
     end;
 
-    local procedure ValidateTransition(OldStatus: Enum "Travel Order Status SG"; NewStatus: Enum "Travel Order Status SG")
+    local procedure ValidateTransition(OldStatus: Enum "Travel Order Status"; NewStatus: Enum "Travel Order Status")
     begin
         // Iz zaključanih statusa ne može ništa
-        if OldStatus in ["Travel Order Status SG"::ClosedPosted, "Travel Order Status SG"::ClosedCancelled] then
+        if OldStatus in ["Travel Order Status"::ClosedPosted, "Travel Order Status"::ClosedCancelled] then
             Error('Status "%1" je zaključan. Promjena statusa nije dozvoljena.', OldStatus);
 
         case OldStatus of
-            "Travel Order Status SG"::Open:
+            "Travel Order Status"::Open:
                 // Iz Otvoreno može ići samo u Odobreno ili Zatvoreno otkazano
-                if not (NewStatus in ["Travel Order Status SG"::Approved, "Travel Order Status SG"::ClosedCancelled]) then
+                if not (NewStatus in ["Travel Order Status"::Approved, "Travel Order Status"::ClosedCancelled]) then
                     Error('Nevažeći prijelaz statusa: %1 → %2. Dozvoljeno: Odobreno ili Zatvoreno otkazano.', OldStatus, NewStatus);
 
-            "Travel Order Status SG"::Approved:
+            "Travel Order Status"::Approved:
                 // Iz Odobreno može ići u Zatvoreno knjiženo ili Zatvoreno otkazano
-                if not (NewStatus in ["Travel Order Status SG"::ClosedPosted, "Travel Order Status SG"::ClosedCancelled]) then
+                if not (NewStatus in ["Travel Order Status"::ClosedPosted, "Travel Order Status"::ClosedCancelled]) then
                     Error('Nevažeći prijelaz statusa: %1 → %2. Dozvoljeno: Zatvoreno knjiženo ili Zatvoreno otkazano.', OldStatus, NewStatus);
         end;
     end;
 
-    local procedure ValidateUserRole(NewStatus: Enum "Travel Order Status SG")
+    local procedure ValidateUserRole(NewStatus: Enum "Travel Order Status")
     var
         UserRole: Enum "Travel Order User Role SG";
     begin
         UserRole := GetCurrentUserRole();
 
         case NewStatus of
-            "Travel Order Status SG"::Approved:
+            "Travel Order Status"::Approved:
                 if UserRole <> "Travel Order User Role SG"::Manager then
                     Error('Samo korisnik s ulogom Menadžer može odobriti putni nalog.');
 
-            "Travel Order Status SG"::ClosedPosted:
+            "Travel Order Status"::ClosedPosted:
                 if UserRole <> "Travel Order User Role SG"::Accountant then
                     Error('Samo korisnik s ulogom Računovodstvo može knjižiti putni nalog.');
 
-            "Travel Order Status SG"::ClosedCancelled:
+            "Travel Order Status"::ClosedCancelled:
                 // Otkazivanje može Manager ili Accountant (zaposlenik ne može sam)
                 if UserRole = "Travel Order User Role SG"::Employee then
                     Error('Zaposlenik ne može otkazati putni nalog. Kontaktirajte menadžera.');

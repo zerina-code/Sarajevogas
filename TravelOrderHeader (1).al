@@ -104,7 +104,8 @@ table 50030 "Travel Order Header SG"
 
             trigger OnValidate()
             begin
-                CheckEditAllowed();
+                if Status = "Travel Order Status"::ClosedPosted then
+                    Error('Izmjene nisu dozvoljene');
             end;
         }
         field(10; "Purpose"; Text[500])
@@ -152,7 +153,7 @@ table 50030 "Travel Order Header SG"
                 CheckEditAllowed();
             end;
         }
-        field(14; "Status"; Enum "Travel Order Status SG")
+        field(14; "Status"; Enum "Travel Order Status")
         {
             Caption = 'Status';
             Editable = false;

@@ -1,5 +1,5 @@
-/// Proknjižene linije putnog naloga — prebacuju se pri knjiženju (FR-13)
-table 50301 "Posted Travel Order Line"
+
+table 50013 "Posted Travel Order Line"
 {
     Caption = 'Proknjižene linije putnog naloga';
     DataClassification = CustomerContent;

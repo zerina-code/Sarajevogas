@@ -1,4 +1,4 @@
-page 50011 "Work Performance"
+page 50311 "Work Performance"
 //ED 01 START
 {
     Caption = 'Work Performance';

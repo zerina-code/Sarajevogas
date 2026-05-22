@@ -97,6 +97,14 @@ page 50009 "Travel Order Card SG"
                     MultiLine = true;
                 }
             }
+
+            part(BoravakPoDrzavama; "Stay By Country Subf.")
+            {
+                ApplicationArea = All;
+                Caption = 'Boravak po Državama';
+                SubPageLink = "Broj Naloga" = field("No.");
+                UpdatePropagation = Both;
+            }
             group(Financial)
             {
                 Caption = 'Financijski podaci';
@@ -120,6 +128,7 @@ page 50009 "Travel Order Card SG"
                     Editable = IsEditableVar;
                 }
             }
+
             group(AdministrativeInfo)
             {
                 Caption = 'Administrativni podaci';

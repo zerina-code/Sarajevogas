@@ -1,4 +1,4 @@
-table 50300 "Posted Travel Order Header"
+table 50016 "Posted Travel Order Header"
 {
     Caption = 'Proknjiženi putni nalog';
     DataClassification = CustomerContent;
