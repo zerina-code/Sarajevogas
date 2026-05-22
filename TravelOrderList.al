@@ -65,6 +65,7 @@ page 50010 "Travel Order List SG"
                     ApplicationArea = All;
                     ToolTip = 'Datum kreiranja.';
                 }
+
             }
         }
         area(FactBoxes)

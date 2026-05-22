@@ -12,7 +12,7 @@ codeunit 50027 "Travel Status Management"
         TravelOrderHeader.Status := NewStatus;
         TravelOrderHeader.Modify(false);  // false = ne triggera OnModify provjeru za editability
 
-        LogStatusChange(TravelOrderHeader."No.", OldStatus, NewStatus, '');
+        // LogStatusChange(TravelOrderHeader."No.", OldStatus, NewStatus, '');
 
         // Ako je knjiženo → prebaci podatke u Posted tabele
         if NewStatus = "Travel Order Status SG"::ClosedPosted then
@@ -112,7 +112,7 @@ codeunit 50027 "Travel Status Management"
         PostedNo := NoSeriesMgt.GetNextNo('PUTNALOGPROK', Today(), true);
         PostedHeader.Init();
         PostedHeader."No." := PostedNo;
-        PostedHeader."Travel Order No." := TravelOrderHeader."No.";
+        PostedHeader."Travel Order No." := Format(TravelOrderHeader."No.");
         PostedHeader."Employee No." := TravelOrderHeader."Employee No.";
         PostedHeader."Departure Date" := TravelOrderHeader."Departure Date";
         PostedHeader."Return Date" := TravelOrderHeader."Return Date";

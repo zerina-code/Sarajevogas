@@ -81,7 +81,7 @@ codeunit 50009 "Modiy Permissions"
     tabledata "G/L Account" = rimd,
     tabledata "Country/Region" = rimd,
     TableData "Bank Account" = rimd,
-
+ tabledata "Travel Order Header SG" = rimd,
     tabledata "Service Cr.Memo Header" = rimd,
     TableData "Service Invoice Header" = rimd;
 

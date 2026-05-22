@@ -8,7 +8,7 @@ page 50016 "Wage Setup"
     PageType = Card;
     // Permissions = TableData 50016 = rimd;
     RefreshOnActivate = true;
-    //SaveValues = false;
+    SaveValues = true;
     SourceTable = "Wage Setup";
     UsageCategory = Administration;
     ApplicationArea = All;
@@ -233,6 +233,9 @@ page 50016 "Wage Setup"
                 {
                 }
                 field("Transport No. Series"; "Transport No. Series")
+                {
+                }
+                field("Travel Order Nos."; "Travel Order Nos.")
                 {
                 }
                 field("Reduction No. Series"; "Reduction No. Series")
